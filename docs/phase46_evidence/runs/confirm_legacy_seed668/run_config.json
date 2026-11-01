@@ -1,0 +1,286 @@
+{
+  "config": {
+    "dataset": "monuseg",
+    "source": "phase46_V_mid",
+    "feature_cache": "cache/phase46/V_mid_development.pt",
+    "protocol": "configs/data_protocol_v1.json",
+    "seed": 668,
+    "max_epochs": 2000,
+    "min_epochs": 50,
+    "patience": 50,
+    "batch_size": 2,
+    "learning_rate": 0.001,
+    "optimizer": "Adam",
+    "weight_decay": 0.0,
+    "scheduler": "cosine_warm_restarts",
+    "scheduler_T_0": 10,
+    "scheduler_T_mult": 1,
+    "scheduler_eta_min": 0.0001,
+    "dice_weight": 0.5,
+    "bce_weight": 0.5,
+    "deterministic": true,
+    "device": "cuda",
+    "workers": 0,
+    "preload": true,
+    "amp": false,
+    "precision": "float32",
+    "unet_pretrained": false,
+    "geometric_augmentation": false,
+    "fusion": "legacy",
+    "feature_mode": "legacy",
+    "architecture": "V_mid"
+  },
+  "identity": {
+    "config_sha256": "2756d2d4e0c0e1a3b7b69506ed9052d6dbc07f9333513e55278fa3edcb870d8e",
+    "feature_cache_sha256": "a2fc1b44ecc540a6446db2e83afa87e491ab53ebb1454c2948155419155f55f7",
+    "protocol_sha256": "19525218af810220369e41c4e5d2e3a54d8aec1d554f6ead6b287c22101e83d0",
+    "manifest_sha256": {
+      "train": "84819a09993b4b9a16748045ad4345673f25c000351cc4fba5df3a40a4b9fbe3",
+      "val": "c7cee082aef57de4dc4dd652011101c7acdc3df855c5a882aa0d17002ed40d9a"
+    },
+    "code_sha256": {
+      "src/experiment/__init__.py": "d9ec5ee915dd3f0cf07e7d949de2025817be74f8c7a38bda00e618a9cb53de07",
+      "src/experiment/common.py": "e1ce4d511f8933f3b464ab2a12f84fcb48e262403eb2ac141718d8039efc9f0f",
+      "src/experiment/data.py": "e9cd8160744fb42c557a2761048f338b140e5c858f4496867b2964b61a293208",
+      "src/experiment/engine.py": "6a98593332355ab6684b410c8e40b83c07b6fc8f70fe38401813282af5b1b959",
+      "src/experiment/loss.py": "a6dfb3ad8739480331143442456fd06a8f8b3a55aa20581561dfa13a80d7715d",
+      "src/experiment/model.py": "4363007f0687c54f94dda81283a7b126faa8eeb872936c69e694ab47c378c067",
+      "src/experiment/text.py": "123239ddb27806963905e75ea0eaafc6ae08a346cea2f15431c934bea0c78e82",
+      "src/phase45/__init__.py": "2bae3371165956a9fba4466b2b7f8f69e1751c099b541c282fca21d368b099ca",
+      "src/phase45/attributes.py": "a3cd8094740105b413c245ea238fee17b24985856915aa9ee6c57de54e1ffe59",
+      "src/phase45/budget.py": "dd3a7f7d292497815ae4151f59782d7558d1b137130975be4757060ee249136e",
+      "src/phase45/data.py": "bc5cde83b2258e85c386fe7ce93bc088c8116113d3f156120ab7db97e26b53fa",
+      "src/phase45/text.py": "a0db9faa9361c4114d0b1959c89ff347aa05fbdd6b7f590a04dd28e38b719046",
+      "src/phase45/model.py": "e4cd794eb4dd262ca49a0d00008e7d664b7cda469e4929ff890d1e9ffdce999a",
+      "src/phase45/engine.py": "60f95c3745bd4cda3907f5503454b9e5b4c224ceb98793aa93f15ac86ec7b5c0",
+      "src/phase46/__init__.py": "579ca479015b0caaa82125c2ff6e29168e203d75806922e750cff1845bf95c42",
+      "src/phase46/budget.py": "fcd89bac66f2dcc0e9b5236f745c3b526ab094c2de97c25e6937ce714627b321",
+      "src/phase46/data.py": "a7b3ed7f87421b17936b19c33e42b1ea349a53ec9dda4aac3d77f01bce1e6bc5",
+      "src/phase46/model.py": "59273d0729798bb8a88c5174627aa61db4edad155d120fa5588ea68f0a53cfcb",
+      "src/phase46/engine.py": "30d91e4e5b11171c25373c5b9ea6abd3b97f13dd03cfee0350df3632de251756",
+      "src/lvit/nets/LViT.py": "25daed5053d01b017307944b25901d89e61897a95ae41188fb5d27d1731b2a4a",
+      "src/lvit/nets/UNet.py": "16282c479bea5dc945fe348acdb54941bfd38517c9a7a87361853c4036fcc7e3",
+      "src/lvit/nets/Vit.py": "97dae44c284ad1bef92957e7bd96db9055042d6396e492da97943cd13a339d88",
+      "src/lvit/nets/pixlevel.py": "647e6aab18b51eab01479ef5d8b50df91a8641aca3c26819e493c599e345e482",
+      "src/lvit/nets/textlevel.py": "2bd132984927e971fd2eade9cc23a64081f5e0d12d07ee02bcaf65566e49c19b"
+    },
+    "metrics_code_sha256": "7c791184fc61809c8b89de7397c34f3de1a128ba6bb7ca14dfc3f894dfb269a7"
+  },
+  "versions": {
+    "torch": "2.5.1+cu124",
+    "torchvision": "0.20.1+cu124",
+    "transformers": "4.51.3",
+    "timm": "1.0.15",
+    "opencv-python-headless": "4.11.0.86",
+    "numpy": "2.1.3"
+  },
+  "parameter_count": 40054882,
+  "created_at": "2026-11-02T00:16:26+0800",
+  "text_encoder": {
+    "version": "phase45_bert_full64_wordpiece_mean_pool10_v1",
+    "model_path": "/root/autodl-tmp/Qwen2.5-VL-3B-LViT/weights/bert-base-uncased",
+    "model_files_sha256": {
+      "config.json": "7160e1553ad2ca51d8c1cb066be533db31826e12d173824c1bb0cb1a4f187d20",
+      "model.safetensors": "68d45e234eb4a928074dfd868cead0219ab85354cc53d20e772753c6bb9169d3",
+      "tokenizer.json": "ce64fce797c24f68df90b40a3f74f579b336a493db14bd583fd520ea0d8c9a98",
+      "tokenizer_config.json": "a025160ef0431f1a392f6f050c1310f4c5d9fb6f275932dbccba73c4d214bf10",
+      "vocab.txt": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
+    },
+    "max_sequence_length_including_special": 64,
+    "aggregation": "last_hidden_state_mean_contiguous_hashhash_then_adaptive_avg_pool10",
+    "positions": 10,
+    "short_feature_padding": "adaptive_pool_no_padding",
+    "text_preparation": "raw_text_no_filler",
+    "upstream_reference": "https://github.com/imgarylai/bert-embedding/blob/master/bert_embedding/bert.py",
+    "legacy_checkpoint_equivalence": false
+  },
+  "initial_model_sha256": "aca099e921dcf1107035c03ec418e16fa169b80dffb14f3e3138d6d4cae35dec",
+  "feature_mapping": {
+    "4ebfa45624cbfcabbc37": {
+      "split": "train",
+      "source_sample_id": null,
+      "unchanged_feature": null,
+      "text_policy": "per_image_legacy"
+    },
+    "178eb8bf2964678ed1c4": {
+      "split": "train",
+      "source_sample_id": null,
+      "unchanged_feature": null,
+      "text_policy": "per_image_legacy"
+    },
+    "5c513b311c0304805f86": {
+      "split": "train",
+      "source_sample_id": null,
+      "unchanged_feature": null,
+      "text_policy": "per_image_legacy"
+    },
+    "b6633e3c5b3e51a77077": {
+      "split": "train",
+      "source_sample_id": null,
+      "unchanged_feature": null,
+      "text_policy": "per_image_legacy"
+    },
+    "779f832a4f97a44b7e8a": {
+      "split": "train",
+      "source_sample_id": null,
+      "unchanged_feature": null,
+      "text_policy": "per_image_legacy"
+    },
+    "0a9b0013c964e3f69fc9": {
+      "split": "train",
+      "source_sample_id": null,
+      "unchanged_feature": null,
+      "text_policy": "per_image_legacy"
+    },
+    "433522316f725a1c0bfb": {
+      "split": "train",
+      "source_sample_id": null,
+      "unchanged_feature": null,
+      "text_policy": "per_image_legacy"
+    },
+    "8797a589e4c7c01a0a02": {
+      "split": "train",
+      "source_sample_id": null,
+      "unchanged_feature": null,
+      "text_policy": "per_image_legacy"
+    },
+    "f24082fd913a70fc0582": {
+      "split": "train",
+      "source_sample_id": null,
+      "unchanged_feature": null,
+      "text_policy": "per_image_legacy"
+    },
+    "0a0bef10f500dc48430b": {
+      "split": "train",
+      "source_sample_id": null,
+      "unchanged_feature": null,
+      "text_policy": "per_image_legacy"
+    },
+    "430c6ec33f979caae50e": {
+      "split": "train",
+      "source_sample_id": null,
+      "unchanged_feature": null,
+      "text_policy": "per_image_legacy"
+    },
+    "838d210645c955277656": {
+      "split": "train",
+      "source_sample_id": null,
+      "unchanged_feature": null,
+      "text_policy": "per_image_legacy"
+    },
+    "476239a271709ecdb0d1": {
+      "split": "train",
+      "source_sample_id": null,
+      "unchanged_feature": null,
+      "text_policy": "per_image_legacy"
+    },
+    "888b2882a2f8d842c4e1": {
+      "split": "train",
+      "source_sample_id": null,
+      "unchanged_feature": null,
+      "text_policy": "per_image_legacy"
+    },
+    "0b1645db46be2fd44a6a": {
+      "split": "train",
+      "source_sample_id": null,
+      "unchanged_feature": null,
+      "text_policy": "per_image_legacy"
+    },
+    "bad6e53876eeb122b70c": {
+      "split": "train",
+      "source_sample_id": null,
+      "unchanged_feature": null,
+      "text_policy": "per_image_legacy"
+    },
+    "3fcb1306b6be4060cfc7": {
+      "split": "train",
+      "source_sample_id": null,
+      "unchanged_feature": null,
+      "text_policy": "per_image_legacy"
+    },
+    "2fe3edc5433966407bec": {
+      "split": "train",
+      "source_sample_id": null,
+      "unchanged_feature": null,
+      "text_policy": "per_image_legacy"
+    },
+    "6cdb388b5bbc0268bc6e": {
+      "split": "train",
+      "source_sample_id": null,
+      "unchanged_feature": null,
+      "text_policy": "per_image_legacy"
+    },
+    "41e2991d7477b8a7c174": {
+      "split": "train",
+      "source_sample_id": null,
+      "unchanged_feature": null,
+      "text_policy": "per_image_legacy"
+    },
+    "5af6c2afbc86ba054d9c": {
+      "split": "train",
+      "source_sample_id": null,
+      "unchanged_feature": null,
+      "text_policy": "per_image_legacy"
+    },
+    "b8f1fee012ffaf568f70": {
+      "split": "train",
+      "source_sample_id": null,
+      "unchanged_feature": null,
+      "text_policy": "per_image_legacy"
+    },
+    "b36dc7447f923c6bf173": {
+      "split": "train",
+      "source_sample_id": null,
+      "unchanged_feature": null,
+      "text_policy": "per_image_legacy"
+    },
+    "3e2b323a3540bf192a71": {
+      "split": "train",
+      "source_sample_id": null,
+      "unchanged_feature": null,
+      "text_policy": "per_image_legacy"
+    },
+    "615aeda65a045299c2fc": {
+      "split": "val",
+      "source_sample_id": null,
+      "unchanged_feature": null,
+      "text_policy": "per_image_legacy"
+    },
+    "aaa5770dbc460c55562e": {
+      "split": "val",
+      "source_sample_id": null,
+      "unchanged_feature": null,
+      "text_policy": "per_image_legacy"
+    },
+    "d93f2c167af993de1702": {
+      "split": "val",
+      "source_sample_id": null,
+      "unchanged_feature": null,
+      "text_policy": "per_image_legacy"
+    },
+    "c37276d8c97c1805c527": {
+      "split": "val",
+      "source_sample_id": null,
+      "unchanged_feature": null,
+      "text_policy": "per_image_legacy"
+    },
+    "998ae3dda0e13ad1ab23": {
+      "split": "val",
+      "source_sample_id": null,
+      "unchanged_feature": null,
+      "text_policy": "per_image_legacy"
+    },
+    "02185f96dc0e6a4100d2": {
+      "split": "val",
+      "source_sample_id": null,
+      "unchanged_feature": null,
+      "text_policy": "per_image_legacy"
+    }
+  },
+  "counts": {
+    "train": 24,
+    "val": 6
+  },
+  "gpu": "NVIDIA GeForce RTX 4080 SUPER",
+  "test_access": "training never instantiates a test loader; evaluate selected best separately"
+}

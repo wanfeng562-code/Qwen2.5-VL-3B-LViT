@@ -1,0 +1,68 @@
+{
+  "status": "passed",
+  "check_count": 12,
+  "checks": [
+    {
+      "mode": "correct",
+      "seed": 666,
+      "six_images_conditions_bitwise_equal": true
+    },
+    {
+      "mode": "correct",
+      "seed": 667,
+      "six_images_conditions_bitwise_equal": true
+    },
+    {
+      "mode": "correct",
+      "seed": 668,
+      "six_images_conditions_bitwise_equal": true
+    },
+    {
+      "mode": "constant",
+      "seed": 666,
+      "six_images_conditions_bitwise_equal": true
+    },
+    {
+      "mode": "constant",
+      "seed": 667,
+      "six_images_conditions_bitwise_equal": true
+    },
+    {
+      "mode": "constant",
+      "seed": 668,
+      "six_images_conditions_bitwise_equal": true
+    },
+    {
+      "mode": "shuffled",
+      "seed": 666,
+      "six_images_conditions_bitwise_equal": true
+    },
+    {
+      "mode": "shuffled",
+      "seed": 667,
+      "six_images_conditions_bitwise_equal": true
+    },
+    {
+      "mode": "shuffled",
+      "seed": 668,
+      "six_images_conditions_bitwise_equal": true
+    },
+    {
+      "mode": "legacy",
+      "seed": 666,
+      "six_images_conditions_bitwise_equal": true
+    },
+    {
+      "mode": "legacy",
+      "seed": 667,
+      "six_images_conditions_bitwise_equal": true
+    },
+    {
+      "mode": "legacy",
+      "seed": 668,
+      "six_images_conditions_bitwise_equal": true
+    }
+  ],
+  "script_sha256": "2a5b48664b4e56a952b56c7b3093a87d606b46637c930fb7f8ed531469b2d13f",
+  "test_accessed": false
+}

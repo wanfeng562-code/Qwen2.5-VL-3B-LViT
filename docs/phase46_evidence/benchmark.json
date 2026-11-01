@@ -1,0 +1,111 @@
+{
+  "status": "completed",
+  "split": "val",
+  "sample_id": "615aeda65a045299c2fc",
+  "batch_size": 1,
+  "warmup_runs": 2,
+  "measured_runs": 10,
+  "model_load_seconds": 5.317562244832516,
+  "first_run": {
+    "preprocess_seconds": 0.1784722451120615,
+    "vision_seconds": 0.7088059009984136,
+    "segmentation_and_binary_copy_seconds": 0.23082742746919394,
+    "total_seconds": 1.118105573579669
+  },
+  "timings": {
+    "preprocess_seconds": {
+      "mean": 0.17065246319398283,
+      "median": 0.16843498777598143,
+      "minimum": 0.1611300017684698,
+      "maximum": 0.18988591711968184
+    },
+    "vision_seconds": {
+      "mean": 0.3431142754852772,
+      "median": 0.34113341430202127,
+      "minimum": 0.3380968142300844,
+      "maximum": 0.35589883476495743
+    },
+    "segmentation_and_binary_copy_seconds": {
+      "mean": 0.01691402802243829,
+      "median": 0.01644832966849208,
+      "minimum": 0.014864093624055386,
+      "maximum": 0.020320232026278973
+    },
+    "total_seconds": {
+      "mean": 0.5306807667016983,
+      "median": 0.5323523990809917,
+      "minimum": 0.5171355130150914,
+      "maximum": 0.5476075196638703
+    }
+  },
+  "measured_samples": [
+    {
+      "preprocess_seconds": 0.16353409551084042,
+      "vision_seconds": 0.35589883476495743,
+      "segmentation_and_binary_copy_seconds": 0.016546284779906273,
+      "total_seconds": 0.5359792150557041
+    },
+    {
+      "preprocess_seconds": 0.16738310642540455,
+      "vision_seconds": 0.3405051529407501,
+      "segmentation_and_binary_copy_seconds": 0.016350374557077885,
+      "total_seconds": 0.5242386339232326
+    },
+    {
+      "preprocess_seconds": 0.16261569131165743,
+      "vision_seconds": 0.3396557280793786,
+      "segmentation_and_binary_copy_seconds": 0.014864093624055386,
+      "total_seconds": 0.5171355130150914
+    },
+    {
+      "preprocess_seconds": 0.1611300017684698,
+      "vision_seconds": 0.3411895614117384,
+      "segmentation_and_binary_copy_seconds": 0.016309548169374466,
+      "total_seconds": 0.5186291113495827
+    },
+    {
+      "preprocess_seconds": 0.1615822520107031,
+      "vision_seconds": 0.34107726719230413,
+      "segmentation_and_binary_copy_seconds": 0.020320232026278973,
+      "total_seconds": 0.5229797512292862
+    },
+    {
+      "preprocess_seconds": 0.1735808588564396,
+      "vision_seconds": 0.34315132442861795,
+      "segmentation_and_binary_copy_seconds": 0.01628470327705145,
+      "total_seconds": 0.533016886562109
+    },
+    {
+      "preprocess_seconds": 0.17828613426536322,
+      "vision_seconds": 0.3380968142300844,
+      "segmentation_and_binary_copy_seconds": 0.016100709326565266,
+      "total_seconds": 0.5324836578220129
+    },
+    {
+      "preprocess_seconds": 0.1694868691265583,
+      "vision_seconds": 0.3440196979790926,
+      "segmentation_and_binary_copy_seconds": 0.018714573234319687,
+      "total_seconds": 0.5322211403399706
+    },
+    {
+      "preprocess_seconds": 0.18988591711968184,
+      "vision_seconds": 0.34079171158373356,
+      "segmentation_and_binary_copy_seconds": 0.01692989096045494,
+      "total_seconds": 0.5476075196638703
+    },
+    {
+      "preprocess_seconds": 0.17903970554471016,
+      "vision_seconds": 0.34675666224211454,
+      "segmentation_and_binary_copy_seconds": 0.016719870269298553,
+      "total_seconds": 0.5425162380561233
+    }
+  ],
+  "peak_allocated_bytes": 7969723392,
+  "peak_reserved_bytes": 8243904512,
+  "validation_feature_bitwise_equal": true,
+  "cached_vs_live_probability_bitwise_equal": true,
+  "test_accessed": false,
+  "checkpoint_sha256": "dfebdde3856a4ba046335f032c726d6ed938901d036c7bb117c788c9396e074f",
+  "script_sha256": "cc6cc34eb7de6bf30f2501ec28258c4a0ec919ca602b78979cef87684516cbc8",
+  "scope": "Full Qwen weights plus LViT resident; only Qwen visual tower executes. Constant training-mean text is preloaded. Includes image preprocessing, visual extraction, segmentation and binary CPU transfer; excludes file output, model loading and initial hashes from warm timings."
+}

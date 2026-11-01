@@ -1,0 +1,1878 @@
+{
+  "status": "passed",
+  "check_count": 6,
+  "checks": [
+    "development_gate_and_frozen_sources",
+    "all_test_image_and_mask_hashes_and_frozen_preprocessing",
+    "all_conditions_use_train_only_means_and_within_test_derangements",
+    "all_168_new_prediction_pngs_independently_rescored",
+    "all_42_old_baseline_prediction_pngs_independently_rescored",
+    "three_seed_aggregates_and_all_six_success_gates_recomputed"
+  ],
+  "new_pngs": 168,
+  "old_pngs": 42,
+  "aggregates": {
+    "candidate": {
+      "dice": {
+        "mean_percent": 77.12259371813511,
+        "sample_sd_percent": 0.8439418837722331
+      },
+      "iou": {
+        "mean_percent": 62.93075252221783,
+        "sample_sd_percent": 1.0601621517883106
+      }
+    },
+    "constant": {
+      "dice": {
+        "mean_percent": 75.77207310155106,
+        "sample_sd_percent": 1.149702922272022
+      },
+      "iou": {
+        "mean_percent": 61.39429953927183,
+        "sample_sd_percent": 1.281874999187915
+      }
+    },
+    "shuffled": {
+      "dice": {
+        "mean_percent": 74.73371492354276,
+        "sample_sd_percent": 1.5013434897792244
+      },
+      "iou": {
+        "mean_percent": 59.909691096946446,
+        "sample_sd_percent": 1.7720662457778662
+      }
+    },
+    "legacy": {
+      "dice": {
+        "mean_percent": 76.10210538493325,
+        "sample_sd_percent": 0.34716888648781485
+      },
+      "iou": {
+        "mean_percent": 61.66288548206387,
+        "sample_sd_percent": 0.37684543360258754
+      }
+    }
+  },
+  "seed_deltas_vs_old_pp": {
+    "666": -1.7364766699081824,
+    "667": 0.7865157847887105,
+    "668": -0.30585704397442237
+  },
+  "success_gates": {
+    "dice_target": false,
+    "iou_target": false,
+    "beats_fixed": true,
+    "beats_shuffled": true,
+    "not_below_matched_legacy": true,
+    "two_seeds_improved": false
+  },
+  "target_achieved": false,
+  "records": {
+    "candidate_666": [
+      {
+        "sample_id": "95667597434ffba35b0a",
+        "dice": 0.7425409661630135,
+        "iou": 0.5905090712158138,
+        "tp": 8723,
+        "fp": 4647,
+        "fn": 1402,
+        "prediction_sha256": "313ceed899dfd4eae6dc132be96877c517cfaa87fd665e683c50885600156de5"
+      },
+      {
+        "sample_id": "9b5106498012d7d4c73b",
+        "dice": 0.8097712347549975,
+        "iou": 0.6803492390711211,
+        "tp": 11221,
+        "fp": 2622,
+        "fn": 2650,
+        "prediction_sha256": "834908f27d117e3a1a19ca18951e151611c6e723052de1b6a61d276a316f1634"
+      },
+      {
+        "sample_id": "86ebc00fdc565c238d56",
+        "dice": 0.7604191361244133,
+        "iou": 0.6134485924112607,
+        "tp": 8019,
+        "fp": 2608,
+        "fn": 2445,
+        "prediction_sha256": "343e300f567232cb8c822a86dfe5514dac9904b031d494a8ed906dd62e0f5a67"
+      },
+      {
+        "sample_id": "ea80151a5363c5bf2ccd",
+        "dice": 0.7293368572801537,
+        "iou": 0.5739812801361445,
+        "tp": 6071,
+        "fp": 3177,
+        "fn": 1329,
+        "prediction_sha256": "4e980f27f8bee74ed6beabb0ce23b61e521fba4b270185a6894b875b39405867"
+      },
+      {
+        "sample_id": "42e726b1bce1c22c72ff",
+        "dice": 0.7175411635565313,
+        "iou": 0.5595042454122159,
+        "tp": 8171,
+        "fp": 1865,
+        "fn": 4568,
+        "prediction_sha256": "79ba4b9c1a9af9bb2bacebd6d9c558e3f4b1639384ba01bbd55d63b78c9e37a5"
+      },
+      {
+        "sample_id": "616e5da7b556a2377e14",
+        "dice": 0.7595729171133313,
+        "iou": 0.6123478982300885,
+        "tp": 8857,
+        "fp": 3049,
+        "fn": 2558,
+        "prediction_sha256": "2ebc9caab2820eb17e2143f8b0010d7ce970c09811ca442fbf4f9f539c6ab1b5"
+      },
+      {
+        "sample_id": "fc934e9df0ead80c87f1",
+        "dice": 0.7785240363088696,
+        "iou": 0.6373633697680618,
+        "tp": 9563,
+        "fp": 3401,
+        "fn": 2040,
+        "prediction_sha256": "9ab4e65554d9767c45d5bb1fa344913f6fe8f2c255086e09ad8a161907b146a7"
+      },
+      {
+        "sample_id": "e38e240b06a8377a76fb",
+        "dice": 0.7546345561467376,
+        "iou": 0.6059543083288361,
+        "tp": 6737,
+        "fp": 3458,
+        "fn": 923,
+        "prediction_sha256": "95bfbeb454c4156fb4c7e90d78d397c22a547a9c083b0f290ef977f409b61d02"
+      },
+      {
+        "sample_id": "9b91554828113669de50",
+        "dice": 0.8140442132639792,
+        "iou": 0.6864035087719298,
+        "tp": 9703,
+        "fp": 3026,
+        "fn": 1407,
+        "prediction_sha256": "105bc1f86f5a1d83a998efdd2ffefbad60f8f4111839dcc2a7c083460ee2c302"
+      },
+      {
+        "sample_id": "086b90f5a48f9c111189",
+        "dice": 0.7699884416302327,
+        "iou": 0.6260009805523779,
+        "tp": 7661,
+        "fp": 2532,
+        "fn": 2045,
+        "prediction_sha256": "9ba7ddd675cac626b63c8857d852f187a7ad3d70d2cb18d7da4fe598d758b26d"
+      },
+      {
+        "sample_id": "92cc9d177dc738c7141a",
+        "dice": 0.7694624500752962,
+        "iou": 0.6253059487070342,
+        "tp": 5876,
+        "fp": 2133,
+        "fn": 1388,
+        "prediction_sha256": "e2a773f4c6edcc98d111b937978450799f4243085a6797344c0729b85c639081"
+      },
+      {
+        "sample_id": "7d111ed7e0d99f25e03a",
+        "dice": 0.6358253145817913,
+        "iou": 0.46608790016277807,
+        "tp": 4295,
+        "fp": 4566,
+        "fn": 354,
+        "prediction_sha256": "4bd701302c6331c633f515ef0c740d0fdd37aa7d36c9c64ad0e8a2b5834a6110"
+      },
+      {
+        "sample_id": "30542586415ef294585e",
+        "dice": 0.8100838844259021,
+        "iou": 0.6807907497202537,
+        "tp": 9126,
+        "fp": 2557,
+        "fn": 1722,
+        "prediction_sha256": "1b139f85fbfc5c79cc67ab7d3578583afc89814f8a7a28bed6e7df8f8818bc74"
+      },
+      {
+        "sample_id": "78cc9f864779444ec2ea",
+        "dice": 0.8231836134839717,
+        "iou": 0.6995004683109585,
+        "tp": 8962,
+        "fp": 3051,
+        "fn": 799,
+        "prediction_sha256": "f0bbe3d771a813f8f26494b8cdb358ea3da4f0971c121e47cef7cfcd187491a4"
+      }
+    ],
+    "constant_666": [
+      {
+        "sample_id": "95667597434ffba35b0a",
+        "dice": 0.7237371994016799,
+        "iou": 0.5670753696357735,
+        "tp": 9435,
+        "fp": 6513,
+        "fn": 690,
+        "prediction_sha256": "c4f902a9a00ff3b8e5b62b9a5ff6e7d8007fa6a9e12f61045a5f8936b59c7e9f"
+      },
+      {
+        "sample_id": "9b5106498012d7d4c73b",
+        "dice": 0.8272141255605381,
+        "iou": 0.7053411399211376,
+        "tp": 11806,
+        "fp": 2867,
+        "fn": 2065,
+        "prediction_sha256": "44b2863e2cb64e6acf19bd79150ce4923147490891ecf38dd034d4ef700847a7"
+      },
+      {
+        "sample_id": "86ebc00fdc565c238d56",
+        "dice": 0.7538621767054331,
+        "iou": 0.604958907925895,
+        "tp": 8686,
+        "fp": 3894,
+        "fn": 1778,
+        "prediction_sha256": "206779e3da74b81f08a39bc7ac50ec78f1694bf269c6555e19148d9035eee935"
+      },
+      {
+        "sample_id": "ea80151a5363c5bf2ccd",
+        "dice": 0.7244521337946943,
+        "iou": 0.5679537028664436,
+        "tp": 6281,
+        "fp": 3659,
+        "fn": 1119,
+        "prediction_sha256": "298a34877cabfa7f4b9552204ccf9b68b8ce794980ff4fb01a207145558079d9"
+      },
+      {
+        "sample_id": "42e726b1bce1c22c72ff",
+        "dice": 0.7315281276238456,
+        "iou": 0.5767003144133709,
+        "tp": 10455,
+        "fp": 5390,
+        "fn": 2284,
+        "prediction_sha256": "faaf056be5315dbf054455f79078ae096735275215e07742c1be3cc847a5377b"
+      },
+      {
+        "sample_id": "616e5da7b556a2377e14",
+        "dice": 0.7303362881665963,
+        "iou": 0.5752202582146617,
+        "tp": 10381,
+        "fp": 6632,
+        "fn": 1034,
+        "prediction_sha256": "6ccf218b65e4f50fc2a574d4f9fe56725ce8512e6271bd7d1cb02946cf9fb62a"
+      },
+      {
+        "sample_id": "fc934e9df0ead80c87f1",
+        "dice": 0.7519675399629228,
+        "iou": 0.6025224215246637,
+        "tp": 10749,
+        "fp": 6237,
+        "fn": 854,
+        "prediction_sha256": "9ef05c6477407e0f0055e0208e63e73e87fd0f8f65df10b9e7466379cb102beb"
+      },
+      {
+        "sample_id": "e38e240b06a8377a76fb",
+        "dice": 0.7510664068671336,
+        "iou": 0.6013661663012312,
+        "tp": 7131,
+        "fp": 4198,
+        "fn": 529,
+        "prediction_sha256": "b28927407fa8768ba5865709ab15e87042e10495fbfb0e949d35e10e8d0f401e"
+      },
+      {
+        "sample_id": "9b91554828113669de50",
+        "dice": 0.8244674326368728,
+        "iou": 0.7013565217391304,
+        "tp": 10082,
+        "fp": 3265,
+        "fn": 1028,
+        "prediction_sha256": "fde0be1c5b3c6b0f24236bd4c9d543dceb1f854a6b3d5517a1c290e83b736b2d"
+      },
+      {
+        "sample_id": "086b90f5a48f9c111189",
+        "dice": 0.7682369768836802,
+        "iou": 0.62368894216362,
+        "tp": 8325,
+        "fp": 3642,
+        "fn": 1381,
+        "prediction_sha256": "1dcc89756752324f1810eded822a29c9ddbdf7d452c67b223758e2595a7c5518"
+      },
+      {
+        "sample_id": "92cc9d177dc738c7141a",
+        "dice": 0.7524012806830309,
+        "iou": 0.6030795551753636,
+        "tp": 6345,
+        "fp": 3257,
+        "fn": 919,
+        "prediction_sha256": "7542ebd3afe12cc6123028f0ed5c3b62522aed68877c11759d2ade5097114bf5"
+      },
+      {
+        "sample_id": "7d111ed7e0d99f25e03a",
+        "dice": 0.4828705776981639,
+        "iou": 0.31827909379381597,
+        "tp": 4313,
+        "fp": 8902,
+        "fn": 336,
+        "prediction_sha256": "6168d405eb8c2f3238c63998555366a2d5642b68dedf40d7c81374cce94c1c40"
+      },
+      {
+        "sample_id": "30542586415ef294585e",
+        "dice": 0.8082798592423929,
+        "iou": 0.6782463697630793,
+        "tp": 9762,
+        "fp": 3545,
+        "fn": 1086,
+        "prediction_sha256": "b5d158ae3f16d149acb57c630e6c8f7574a21c3615e0eb7fd7051cb2ba3b98c8"
+      },
+      {
+        "sample_id": "78cc9f864779444ec2ea",
+        "dice": 0.8027187620228273,
+        "iou": 0.6704512996286776,
+        "tp": 9389,
+        "fp": 4243,
+        "fn": 372,
+        "prediction_sha256": "a176eed159401d9fe2490bdb9d493412f9514d86028d4b5ba7932cb8370187f6"
+      }
+    ],
+    "candidate_667": [
+      {
+        "sample_id": "95667597434ffba35b0a",
+        "dice": 0.7440454304040528,
+        "iou": 0.5924142866436797,
+        "tp": 9106,
+        "fp": 5246,
+        "fn": 1019,
+        "prediction_sha256": "4a982911d4b1f9b644d96ad83a475cea4b265f1ad604afa4a25c5adb24d95ac9"
+      },
+      {
+        "sample_id": "9b5106498012d7d4c73b",
+        "dice": 0.8155999853795826,
+        "iou": 0.6886186890507344,
+        "tp": 11157,
+        "fp": 2331,
+        "fn": 2714,
+        "prediction_sha256": "ef57e5f76d7ac31accc77960d6370899f018b52dc26baa301b3948fbe884331f"
+      },
+      {
+        "sample_id": "86ebc00fdc565c238d56",
+        "dice": 0.7111422715996117,
+        "iou": 0.5517616536948698,
+        "tp": 6593,
+        "fp": 1485,
+        "fn": 3871,
+        "prediction_sha256": "b878d0a2b54b8e5f12ed1401317e8c3d41593817387b632d2f20c7a3f01c8105"
+      },
+      {
+        "sample_id": "ea80151a5363c5bf2ccd",
+        "dice": 0.7408070513703346,
+        "iou": 0.5883189325166794,
+        "tp": 5379,
+        "fp": 1743,
+        "fn": 2021,
+        "prediction_sha256": "32c8561efcf885d6da46ac2ba7a1b0dcc9a00a25ace3bfdd27df84f35bcbaa5e"
+      },
+      {
+        "sample_id": "42e726b1bce1c22c72ff",
+        "dice": 0.7381923707784834,
+        "iou": 0.5850276648223451,
+        "tp": 8776,
+        "fp": 2262,
+        "fn": 3963,
+        "prediction_sha256": "d805e45c36c90a11e29a2e0a4c6a7c89f8106ae42f9fa1e5343ebe5b79928b79"
+      },
+      {
+        "sample_id": "616e5da7b556a2377e14",
+        "dice": 0.7564860105654471,
+        "iou": 0.6083453961860407,
+        "tp": 9666,
+        "fp": 4474,
+        "fn": 1749,
+        "prediction_sha256": "0c6b3490116af7b45c34ec10388833469cb5b0046be6e456be6550b7b85e9729"
+      },
+      {
+        "sample_id": "fc934e9df0ead80c87f1",
+        "dice": 0.7835580247872878,
+        "iou": 0.6441392526349409,
+        "tp": 10084,
+        "fp": 4052,
+        "fn": 1519,
+        "prediction_sha256": "3d0e89455ec5c00897fdae0f08054444a6363f159b11afbcae8ed06fa3c35bf3"
+      },
+      {
+        "sample_id": "e38e240b06a8377a76fb",
+        "dice": 0.768451519536903,
+        "iou": 0.6239717978848414,
+        "tp": 6903,
+        "fp": 3403,
+        "fn": 757,
+        "prediction_sha256": "c69a3e29aa7fed28d48b175f65da935dc5cb5f40ead20f8a4a7d72e5d3606a4b"
+      },
+      {
+        "sample_id": "9b91554828113669de50",
+        "dice": 0.8310705729057206,
+        "iou": 0.7109672779575692,
+        "tp": 9886,
+        "fp": 2795,
+        "fn": 1224,
+        "prediction_sha256": "f46da2b52192250f903099ca654d1e9993c7bf67b58b16b448004471e8fe35b2"
+      },
+      {
+        "sample_id": "086b90f5a48f9c111189",
+        "dice": 0.7822894405172887,
+        "iou": 0.6424264242642427,
+        "tp": 7138,
+        "fp": 1405,
+        "fn": 2568,
+        "prediction_sha256": "66f555173a83acf8a2f2dd31d25441da34c8f43c6e468d3bbd11df5a240df2f6"
+      },
+      {
+        "sample_id": "92cc9d177dc738c7141a",
+        "dice": 0.7830247555648013,
+        "iou": 0.6434188034188034,
+        "tp": 5646,
+        "fp": 1511,
+        "fn": 1618,
+        "prediction_sha256": "cbef3d9302f7b8d81da2333ca066c3142de844ad32bcd22c5139deeeebcba3cd"
+      },
+      {
+        "sample_id": "7d111ed7e0d99f25e03a",
+        "dice": 0.7183802699550075,
+        "iou": 0.5605252892991809,
+        "tp": 4311,
+        "fp": 3042,
+        "fn": 338,
+        "prediction_sha256": "813c8f9f2962cf0681a537ec902ad8080d308d3a212286eef5f78089df6f6279"
+      },
+      {
+        "sample_id": "30542586415ef294585e",
+        "dice": 0.8153824717848683,
+        "iou": 0.6883086332627617,
+        "tp": 8778,
+        "fp": 1905,
+        "fn": 2070,
+        "prediction_sha256": "3e02145b47bc62f7ca895232a403d39a5d3cd9a5a446811a9a3c0d0b4abf143c"
+      },
+      {
+        "sample_id": "78cc9f864779444ec2ea",
+        "dice": 0.8173721340388007,
+        "iou": 0.6911490567444635,
+        "tp": 9269,
+        "fp": 3650,
+        "fn": 492,
+        "prediction_sha256": "9811d115004d9510afb09b0176f2f33f07202d38a83ca861fd2455f7a369de85"
+      }
+    ],
+    "candidate_668": [
+      {
+        "sample_id": "95667597434ffba35b0a",
+        "dice": 0.7470192229702328,
+        "iou": 0.5961936820300362,
+        "tp": 9210,
+        "fp": 5323,
+        "fn": 915,
+        "prediction_sha256": "a8b493209f4093376ed6b4103de480900aa05654b6d2772c73156c256687fe04"
+      },
+      {
+        "sample_id": "9b5106498012d7d4c73b",
+        "dice": 0.8144655255634352,
+        "iou": 0.6870028186658315,
+        "tp": 10968,
+        "fp": 2094,
+        "fn": 2903,
+        "prediction_sha256": "f3368fcafc4d4506a44541ff670dc6227ed1408e531a4cff6416466b2f3064ed"
+      },
+      {
+        "sample_id": "86ebc00fdc565c238d56",
+        "dice": 0.7427691981107042,
+        "iou": 0.5907978049810046,
+        "tp": 6998,
+        "fp": 1381,
+        "fn": 3466,
+        "prediction_sha256": "9175653c28a69f47791053cfe406b71941f6c9b0ba7a4da0ecc5827798c890c2"
+      },
+      {
+        "sample_id": "ea80151a5363c5bf2ccd",
+        "dice": 0.7408256880733946,
+        "iou": 0.5883424408014571,
+        "tp": 5168,
+        "fp": 1384,
+        "fn": 2232,
+        "prediction_sha256": "586f71448583ce9830e03b6f958baa0632d84274005c1685882fa2bdd2d143c7"
+      },
+      {
+        "sample_id": "42e726b1bce1c22c72ff",
+        "dice": 0.7454894754426996,
+        "iou": 0.5942472867700912,
+        "tp": 8925,
+        "fp": 2280,
+        "fn": 3814,
+        "prediction_sha256": "b84de6e5cbe9344f8fbc77096a9178b052218479cb84dbe2f63c441ed1815060"
+      },
+      {
+        "sample_id": "616e5da7b556a2377e14",
+        "dice": 0.7647081941442326,
+        "iou": 0.6190506490201069,
+        "tp": 9729,
+        "fp": 4301,
+        "fn": 1686,
+        "prediction_sha256": "adaaaed42da2344786a964596d77f1c348c3b365c9570fd616d2a685e667a9d6"
+      },
+      {
+        "sample_id": "fc934e9df0ead80c87f1",
+        "dice": 0.7880436895090761,
+        "iou": 0.6502245028864657,
+        "tp": 10137,
+        "fp": 3987,
+        "fn": 1466,
+        "prediction_sha256": "53e8106e97891ffd328faf485e0183131e5c7f30bbd525f5e38a41e96025d8d1"
+      },
+      {
+        "sample_id": "e38e240b06a8377a76fb",
+        "dice": 0.7959854646132549,
+        "iou": 0.6611095142282265,
+        "tp": 6900,
+        "fp": 2777,
+        "fn": 760,
+        "prediction_sha256": "e6c8dee030d124f4528825790bd33b9c4a5c893b45069fdb24453029d3c26798"
+      },
+      {
+        "sample_id": "9b91554828113669de50",
+        "dice": 0.8411312849162011,
+        "iou": 0.7258210304308527,
+        "tp": 9636,
+        "fp": 2166,
+        "fn": 1474,
+        "prediction_sha256": "634380cfa5be0a55905449adb87aeaf4276d35d9e9b7ba99af7380622ac325d6"
+      },
+      {
+        "sample_id": "086b90f5a48f9c111189",
+        "dice": 0.7566488580989843,
+        "iou": 0.608556048729814,
+        "tp": 6444,
+        "fp": 883,
+        "fn": 3262,
+        "prediction_sha256": "361c83458ea29538ebc3f41e9553763d1dca582a4c38617e385ce2b0bc8533c6"
+      },
+      {
+        "sample_id": "92cc9d177dc738c7141a",
+        "dice": 0.7898300201670988,
+        "iou": 0.6526603975717177,
+        "tp": 5483,
+        "fp": 1137,
+        "fn": 1781,
+        "prediction_sha256": "16c8112d971bae75ea4390ba014d43877a3cc27e046a4273ebd5ddb6ed61d642"
+      },
+      {
+        "sample_id": "7d111ed7e0d99f25e03a",
+        "dice": 0.7582036460649177,
+        "iou": 0.6105700372386136,
+        "tp": 4263,
+        "fp": 2333,
+        "fn": 386,
+        "prediction_sha256": "7102ae635457632ea4750fc8612307fc568614ff365325e21efc03435094914a"
+      },
+      {
+        "sample_id": "30542586415ef294585e",
+        "dice": 0.8183436387483605,
+        "iou": 0.6925394434313803,
+        "tp": 8735,
+        "fp": 1765,
+        "fn": 2113,
+        "prediction_sha256": "a91ae27b394261f476387976a5219d1c5bb9639e78b36e42f1352cbf45ab0221"
+      },
+      {
+        "sample_id": "78cc9f864779444ec2ea",
+        "dice": 0.8072943610967408,
+        "iou": 0.6768596833658642,
+        "tp": 9363,
+        "fp": 4072,
+        "fn": 398,
+        "prediction_sha256": "34554dec574fad2e1d9fc09ec4076eb91de5fbf4134aeb28f2ca1b51af0c8e41"
+      }
+    ],
+    "legacy_666": [
+      {
+        "sample_id": "95667597434ffba35b0a",
+        "dice": 0.7182378988002877,
+        "iou": 0.5603519546474548,
+        "tp": 9489,
+        "fp": 6809,
+        "fn": 636,
+        "prediction_sha256": "fe6a227befbc1469fb80ffeb7e08d08f27f5f2cd11fc780a08ca28f5ad9f578e"
+      },
+      {
+        "sample_id": "9b5106498012d7d4c73b",
+        "dice": 0.8306497175141243,
+        "iou": 0.7103514917260538,
+        "tp": 11762,
+        "fp": 2687,
+        "fn": 2109,
+        "prediction_sha256": "faf5ad99a8ab9d10ea72ed72adf4698631ba4ddd074e1a5c512c895db0b39292"
+      },
+      {
+        "sample_id": "86ebc00fdc565c238d56",
+        "dice": 0.7742812925010552,
+        "iou": 0.6316957453321089,
+        "tp": 8255,
+        "fp": 2604,
+        "fn": 2209,
+        "prediction_sha256": "21ca749f76fa70c32bddd385e9b9be80a40fcc2e72c848da2798c6b06e45bde9"
+      },
+      {
+        "sample_id": "ea80151a5363c5bf2ccd",
+        "dice": 0.7590439276485789,
+        "iou": 0.6116605934409162,
+        "tp": 5875,
+        "fp": 2205,
+        "fn": 1525,
+        "prediction_sha256": "ced5ece9cfbf07847d5a63dd34fcdee9d76e6f8d0e42905156a5146a82e9a772"
+      },
+      {
+        "sample_id": "42e726b1bce1c22c72ff",
+        "dice": 0.7324147433689286,
+        "iou": 0.5778031414750802,
+        "tp": 10631,
+        "fp": 5660,
+        "fn": 2108,
+        "prediction_sha256": "d423d83f6b372430fb097f0b66af602fbf2e39f25677d19d0622c1cb67381257"
+      },
+      {
+        "sample_id": "616e5da7b556a2377e14",
+        "dice": 0.7111934410483345,
+        "iou": 0.5518232632419484,
+        "tp": 10366,
+        "fp": 7370,
+        "fn": 1049,
+        "prediction_sha256": "955d3e9d3575a3f4e9e7bf588abdc80b692bb655f32d56df718c31af1bf6d870"
+      },
+      {
+        "sample_id": "fc934e9df0ead80c87f1",
+        "dice": 0.737537413561771,
+        "iou": 0.5842053629823414,
+        "tp": 10719,
+        "fp": 6745,
+        "fn": 884,
+        "prediction_sha256": "d25b9abedba6f729373707160e7d8ce2e43f0ba6565870671927b3cc054b7da7"
+      },
+      {
+        "sample_id": "e38e240b06a8377a76fb",
+        "dice": 0.7779352571007426,
+        "iou": 0.6365745036184821,
+        "tp": 6861,
+        "fp": 3118,
+        "fn": 799,
+        "prediction_sha256": "ffe2c353d85538a19e48e0956e809b48f9bb344bc0e337b21bdfcc6f12c52d39"
+      },
+      {
+        "sample_id": "9b91554828113669de50",
+        "dice": 0.825688823481318,
+        "iou": 0.7031260878646522,
+        "tp": 10099,
+        "fp": 3253,
+        "fn": 1011,
+        "prediction_sha256": "d4c4ff9fed099f8e1e96c2230560936b67721a286c0f83642d7a9d3ea60134b9"
+      },
+      {
+        "sample_id": "086b90f5a48f9c111189",
+        "dice": 0.7922474699255299,
+        "iou": 0.6559683794466403,
+        "tp": 8298,
+        "fp": 2944,
+        "fn": 1408,
+        "prediction_sha256": "1bf402ae39a61c0688afaa4a21603724bed3ae6a5673541193d46dd341c21b31"
+      },
+      {
+        "sample_id": "92cc9d177dc738c7141a",
+        "dice": 0.7704103024857741,
+        "iou": 0.6265588464536244,
+        "tp": 6431,
+        "fp": 3000,
+        "fn": 833,
+        "prediction_sha256": "4bbfd2a469ea23af549f69280d1a4967a60b2f427bc971fabfd0589c8e0dcb5f"
+      },
+      {
+        "sample_id": "7d111ed7e0d99f25e03a",
+        "dice": 0.5929135509120134,
+        "iou": 0.4213767756034568,
+        "tp": 4242,
+        "fp": 5418,
+        "fn": 407,
+        "prediction_sha256": "d47e12da7b882045f505e43ab42aad70b8f9e8f7557d242ff5b847b3029a32fb"
+      },
+      {
+        "sample_id": "30542586415ef294585e",
+        "dice": 0.8068690485879385,
+        "iou": 0.6762619372442019,
+        "tp": 9914,
+        "fp": 3812,
+        "fn": 934,
+        "prediction_sha256": "b76d6b187852c7e304055174d22d530190640c3c5b8956310d9a30fc18b28679"
+      },
+      {
+        "sample_id": "78cc9f864779444ec2ea",
+        "dice": 0.7687699842149998,
+        "iou": 0.6243918474687705,
+        "tp": 9497,
+        "fp": 5449,
+        "fn": 264,
+        "prediction_sha256": "9261bb789e857327cff369ed82e393c8d9ec708463a373525f5354e297ed98be"
+      }
+    ],
+    "legacy_667": [
+      {
+        "sample_id": "95667597434ffba35b0a",
+        "dice": 0.7415006560897054,
+        "iou": 0.5891943127962085,
+        "tp": 9324,
+        "fp": 5700,
+        "fn": 801,
+        "prediction_sha256": "fccc0a34bac659c3c89296a93a2e7c19ea6d1d7c8673975476f74b0e60c13ec9"
+      },
+      {
+        "sample_id": "9b5106498012d7d4c73b",
+        "dice": 0.8223257126728761,
+        "iou": 0.6982624325943679,
+        "tp": 11654,
+        "fp": 2819,
+        "fn": 2217,
+        "prediction_sha256": "83f4f7556518a9265014291cd5d6f63527176c480d68829525c9dd86e83f7f3f"
+      },
+      {
+        "sample_id": "86ebc00fdc565c238d56",
+        "dice": 0.7544838397344276,
+        "iou": 0.6057599763085807,
+        "tp": 8182,
+        "fp": 3043,
+        "fn": 2282,
+        "prediction_sha256": "19c97a1353f068c47bebe337a60fc726767bf36c9aed248a6ed179d2be74d03f"
+      },
+      {
+        "sample_id": "ea80151a5363c5bf2ccd",
+        "dice": 0.7366052927594577,
+        "iou": 0.5830365510777882,
+        "tp": 6221,
+        "fp": 3270,
+        "fn": 1179,
+        "prediction_sha256": "ae4ecb9c3b8599e5c18ec10e66433687115eb7f43b45d3e2b26a182475c4ec23"
+      },
+      {
+        "sample_id": "42e726b1bce1c22c72ff",
+        "dice": 0.7402175987783928,
+        "iou": 0.5875757575757575,
+        "tp": 9695,
+        "fp": 3761,
+        "fn": 3044,
+        "prediction_sha256": "20523753204a8600718dfa3be94f9a49403deea9f41452a53103237b3a714ab5"
+      },
+      {
+        "sample_id": "616e5da7b556a2377e14",
+        "dice": 0.7448280912452858,
+        "iou": 0.5934072345390898,
+        "tp": 10171,
+        "fp": 5725,
+        "fn": 1244,
+        "prediction_sha256": "0bce0c39d96309ebdc3b4f8a671d1b2cd6fee9362d57bb5d3a202d15d64da562"
+      },
+      {
+        "sample_id": "fc934e9df0ead80c87f1",
+        "dice": 0.7607971014492754,
+        "iou": 0.6139407052219168,
+        "tp": 10499,
+        "fp": 5498,
+        "fn": 1104,
+        "prediction_sha256": "28f09f9dfc80eeed4f631612642a71fa780dafb60041b79350c8db22878876cb"
+      },
+      {
+        "sample_id": "e38e240b06a8377a76fb",
+        "dice": 0.7396707051879465,
+        "iou": 0.5868868622134582,
+        "tp": 7143,
+        "fp": 4511,
+        "fn": 517,
+        "prediction_sha256": "5ef4e8359426f6ddfa6e7436563b7d27f1f86c8fd49ab35460cb2a8a727439f2"
+      },
+      {
+        "sample_id": "9b91554828113669de50",
+        "dice": 0.8165651644336175,
+        "iou": 0.6899958830794566,
+        "tp": 10056,
+        "fp": 3464,
+        "fn": 1054,
+        "prediction_sha256": "ead78f6e45f3248d60e4934532dd8ce24b0c55120e976aca9555933991316b0e"
+      },
+      {
+        "sample_id": "086b90f5a48f9c111189",
+        "dice": 0.7829685964095401,
+        "iou": 0.643342968882843,
+        "tp": 7567,
+        "fp": 2056,
+        "fn": 2139,
+        "prediction_sha256": "7aeb14c6d8dbf66e1121075c8b51e5804857329d3ca1d9cd4031a385a2666dac"
+      },
+      {
+        "sample_id": "92cc9d177dc738c7141a",
+        "dice": 0.7773208722741433,
+        "iou": 0.6357521402364452,
+        "tp": 6238,
+        "fp": 2548,
+        "fn": 1026,
+        "prediction_sha256": "cdd701101349c1b38322a8c6725f4732bc56e2455309e8580aa123ed10a00ae0"
+      },
+      {
+        "sample_id": "7d111ed7e0d99f25e03a",
+        "dice": 0.6402502606882169,
+        "iou": 0.4708588957055215,
+        "tp": 4298,
+        "fp": 4479,
+        "fn": 351,
+        "prediction_sha256": "274a764a7a609a29af3dbdad892b1605073e9cd8bdb1ddfb0dfedb371a2fdfda"
+      },
+      {
+        "sample_id": "30542586415ef294585e",
+        "dice": 0.8153585065761562,
+        "iou": 0.6882744789055225,
+        "tp": 9609,
+        "fp": 3113,
+        "fn": 1239,
+        "prediction_sha256": "22fd1d51bd663e7682a2a4ec56ac9d9d687d939c38ff202d7dbefc87058ff408"
+      },
+      {
+        "sample_id": "78cc9f864779444ec2ea",
+        "dice": 0.8107755244146575,
+        "iou": 0.6817682792944448,
+        "tp": 9315,
+        "fp": 3902,
+        "fn": 446,
+        "prediction_sha256": "c6a9475c0cba0fbe95f7035be13f33fd9d480303ded293756fe222074ee8b51c"
+      }
+    ],
+    "legacy_668": [
+      {
+        "sample_id": "95667597434ffba35b0a",
+        "dice": 0.7328062298859709,
+        "iou": 0.57829058757133,
+        "tp": 9222,
+        "fp": 5822,
+        "fn": 903,
+        "prediction_sha256": "bf8eef26e534a2fdff55803951714278b1af9e6310bbb5b56de0bafa8c09007a"
+      },
+      {
+        "sample_id": "9b5106498012d7d4c73b",
+        "dice": 0.825249025552187,
+        "iou": 0.7024884792626728,
+        "tp": 11433,
+        "fp": 2404,
+        "fn": 2438,
+        "prediction_sha256": "e7fa02402eed69771bce10d794421589dd5ecb7692b8f8ed8859a31f30812a7f"
+      },
+      {
+        "sample_id": "86ebc00fdc565c238d56",
+        "dice": 0.7705106402537114,
+        "iou": 0.6266915887850467,
+        "tp": 8382,
+        "fp": 2911,
+        "fn": 2082,
+        "prediction_sha256": "dc963aa8bd62b00f62de90da1be5a932c13ae33cef9a8eb08cfc088579895394"
+      },
+      {
+        "sample_id": "ea80151a5363c5bf2ccd",
+        "dice": 0.7485606932913157,
+        "iou": 0.5981598062953996,
+        "tp": 6176,
+        "fp": 2925,
+        "fn": 1224,
+        "prediction_sha256": "906bf33a337e17264405a1a5f7fc10aee3ba0df5ce6797a1146558cb64a12ea9"
+      },
+      {
+        "sample_id": "42e726b1bce1c22c72ff",
+        "dice": 0.7412380518889394,
+        "iou": 0.5888627734586874,
+        "tp": 9771,
+        "fp": 3854,
+        "fn": 2968,
+        "prediction_sha256": "fdc2bb23006fbcceac27b8dbad96c9286a5ffc8d1036c4e43b76ca244fbe6f39"
+      },
+      {
+        "sample_id": "616e5da7b556a2377e14",
+        "dice": 0.7380041534593945,
+        "iou": 0.5847912697037935,
+        "tp": 10128,
+        "fp": 5904,
+        "fn": 1287,
+        "prediction_sha256": "9b83ce1ec35fa270fe55481738789d23264a409971e17604c343eac01ad38af8"
+      },
+      {
+        "sample_id": "fc934e9df0ead80c87f1",
+        "dice": 0.7527793614595211,
+        "iou": 0.6035655105422547,
+        "tp": 10563,
+        "fp": 5898,
+        "fn": 1040,
+        "prediction_sha256": "480800608c6280165d51c278959a797f280b8dc4b25c2494522d3858ed8fd990"
+      },
+      {
+        "sample_id": "e38e240b06a8377a76fb",
+        "dice": 0.745585489463857,
+        "iou": 0.594369311899294,
+        "tp": 6988,
+        "fp": 4097,
+        "fn": 672,
+        "prediction_sha256": "69694623058ba6b3610227a9819c9cfc1f2b0698ce3ba47ccdd1d21477bae273"
+      },
+      {
+        "sample_id": "9b91554828113669de50",
+        "dice": 0.8259348713250604,
+        "iou": 0.7034830105696247,
+        "tp": 9917,
+        "fp": 2987,
+        "fn": 1193,
+        "prediction_sha256": "ca89e18a8b4b8a7cac5901a9523fc4ac9df64bc3b0d135c30a5b6fcfa56ded3b"
+      },
+      {
+        "sample_id": "086b90f5a48f9c111189",
+        "dice": 0.7844953911604822,
+        "iou": 0.645407171190791,
+        "tp": 8298,
+        "fp": 3151,
+        "fn": 1408,
+        "prediction_sha256": "9d70146813e2f41a6fc8c672c76f842a1efdb4fa4f82e9610898f0535c9f2d09"
+      },
+      {
+        "sample_id": "92cc9d177dc738c7141a",
+        "dice": 0.755224057301841,
+        "iou": 0.6067148563819669,
+        "tp": 6379,
+        "fp": 3250,
+        "fn": 885,
+        "prediction_sha256": "2f67617a79f2ac8ad1ef0f5c22abb2db02c546c3f1ffabeb102bd7f6117e380a"
+      },
+      {
+        "sample_id": "7d111ed7e0d99f25e03a",
+        "dice": 0.6653998416468725,
+        "iou": 0.49857617465590887,
+        "tp": 4202,
+        "fp": 3779,
+        "fn": 447,
+        "prediction_sha256": "8134b915702643cc3c934f7fda5c85f420158e3593501dd4be66332c2d166686"
+      },
+      {
+        "sample_id": "30542586415ef294585e",
+        "dice": 0.8033514046328241,
+        "iou": 0.671334431630972,
+        "tp": 9780,
+        "fp": 3720,
+        "fn": 1068,
+        "prediction_sha256": "6e734aefa97fdccbc5409ab752d8922575d0fe6db7a737fd50ab2a3471d81b90"
+      },
+      {
+        "sample_id": "78cc9f864779444ec2ea",
+        "dice": 0.79188425648489,
+        "iou": 0.6554705215419501,
+        "tp": 9250,
+        "fp": 4351,
+        "fn": 511,
+        "prediction_sha256": "6b001209681e0f5dbf387a89993ac8261c1cfe28b6864d5da860932841984fdb"
+      }
+    ],
+    "constant_667": [
+      {
+        "sample_id": "95667597434ffba35b0a",
+        "dice": 0.7136402673537209,
+        "iou": 0.5547750362844702,
+        "tp": 9556,
+        "fp": 7100,
+        "fn": 569,
+        "prediction_sha256": "67ffa5396f75cf1c521812a7749ed946dfa4a5b2bb3fb97a91f6edd038944a19"
+      },
+      {
+        "sample_id": "9b5106498012d7d4c73b",
+        "dice": 0.8266454315687428,
+        "iou": 0.7045146060784893,
+        "tp": 11938,
+        "fp": 3074,
+        "fn": 1933,
+        "prediction_sha256": "fdbd7f1f22381af4991377c5dd2f6b6a5b3a2aa5d7c59634c4df2ed0a3f3f2e2"
+      },
+      {
+        "sample_id": "86ebc00fdc565c238d56",
+        "dice": 0.7689509344731936,
+        "iou": 0.6246306146572104,
+        "tp": 8455,
+        "fp": 3072,
+        "fn": 2009,
+        "prediction_sha256": "6c99bf1dc06434f7fb51076b0a6ac0c49ddfaf3e6cd91cd3c266d99b5e6ae457"
+      },
+      {
+        "sample_id": "ea80151a5363c5bf2ccd",
+        "dice": 0.7583282114320836,
+        "iou": 0.6107316107316108,
+        "tp": 6169,
+        "fp": 2701,
+        "fn": 1231,
+        "prediction_sha256": "b4e64610f990dcd389a2d8861e903ff9893a3519f4c55419547ec541aec0e6de"
+      },
+      {
+        "sample_id": "42e726b1bce1c22c72ff",
+        "dice": 0.7361261847912597,
+        "iou": 0.582436455232425,
+        "tp": 10174,
+        "fp": 4729,
+        "fn": 2565,
+        "prediction_sha256": "3fba7ba91251d256449a5fc1628dd56b5b988cb39c9ec3f337b6c05c0d0da544"
+      },
+      {
+        "sample_id": "616e5da7b556a2377e14",
+        "dice": 0.7080628342695684,
+        "iou": 0.548062903561758,
+        "tp": 10525,
+        "fp": 7789,
+        "fn": 890,
+        "prediction_sha256": "cd41c20c5d48f50bce7b79a5607589c881e75f8b19dacb29f83f77b6c0a02064"
+      },
+      {
+        "sample_id": "fc934e9df0ead80c87f1",
+        "dice": 0.7411699396294498,
+        "iou": 0.5887768039248112,
+        "tp": 10681,
+        "fp": 6538,
+        "fn": 922,
+        "prediction_sha256": "2803197a84c53eca12a0abc6b8de9a01b204f349441802886ef93e672b9e660a"
+      },
+      {
+        "sample_id": "e38e240b06a8377a76fb",
+        "dice": 0.738111254851229,
+        "iou": 0.5849257770852129,
+        "tp": 7132,
+        "fp": 4533,
+        "fn": 528,
+        "prediction_sha256": "3a12677c86d034321d01856c000e0c80c574a8b4ad457c43fb789b9a677cc62b"
+      },
+      {
+        "sample_id": "9b91554828113669de50",
+        "dice": 0.8148999405587478,
+        "iou": 0.6876212131344881,
+        "tp": 10282,
+        "fp": 3843,
+        "fn": 828,
+        "prediction_sha256": "d28a1d10b45c2664ae317fe4ea36b5c9a36c6d5916e4a0bc6524479363372285"
+      },
+      {
+        "sample_id": "086b90f5a48f9c111189",
+        "dice": 0.7946555578134525,
+        "iou": 0.6592767428137908,
+        "tp": 7821,
+        "fp": 2157,
+        "fn": 1885,
+        "prediction_sha256": "13d6e04e8a58caabb1dde63d39616ba00db71e387affb03d3e42e7942d49007b"
+      },
+      {
+        "sample_id": "92cc9d177dc738c7141a",
+        "dice": 0.7947923908234849,
+        "iou": 0.659465128474043,
+        "tp": 6288,
+        "fp": 2271,
+        "fn": 976,
+        "prediction_sha256": "9dcc6cec08dc465f3fee7d3e53a5dbd272cdafdeae3d20aa42f6570dda122dba"
+      },
+      {
+        "sample_id": "7d111ed7e0d99f25e03a",
+        "dice": 0.7542919429557635,
+        "iou": 0.6055126148461426,
+        "tp": 4152,
+        "fp": 2208,
+        "fn": 497,
+        "prediction_sha256": "41cee853bfe90c4cef33510968a15028e2b730a1d164a0ff8c92f74b595eecfe"
+      },
+      {
+        "sample_id": "30542586415ef294585e",
+        "dice": 0.8146331324049054,
+        "iou": 0.6872413551237988,
+        "tp": 9798,
+        "fp": 3409,
+        "fn": 1050,
+        "prediction_sha256": "d27787c270f7144c401a4fb1607aea8210c38d2cdc08d04d3612e77ef7a9a3e7"
+      },
+      {
+        "sample_id": "78cc9f864779444ec2ea",
+        "dice": 0.7855867823487899,
+        "iou": 0.6468858959458536,
+        "tp": 9462,
+        "fp": 4866,
+        "fn": 299,
+        "prediction_sha256": "ab024cb43877f782f8a34328b0bb67d1a0ee0ab9b3a92b7ee1b4bb2d1bfc6498"
+      }
+    ],
+    "constant_668": [
+      {
+        "sample_id": "95667597434ffba35b0a",
+        "dice": 0.7485839500558151,
+        "iou": 0.5981895070701732,
+        "tp": 9053,
+        "fp": 5009,
+        "fn": 1072,
+        "prediction_sha256": "3caef656fe687444eacce97f9ca74a6671aefa2f9b7a3adbfe3ad3588cd2271e"
+      },
+      {
+        "sample_id": "9b5106498012d7d4c73b",
+        "dice": 0.8259929359186909,
+        "iou": 0.7035672622336833,
+        "tp": 11459,
+        "fp": 2416,
+        "fn": 2412,
+        "prediction_sha256": "a559e1ea0b023b85ab3e52608c2298475ee2a6c1e39c8dbc9c610a3cd97e9508"
+      },
+      {
+        "sample_id": "86ebc00fdc565c238d56",
+        "dice": 0.7548048345551813,
+        "iou": 0.6061739199618108,
+        "tp": 7619,
+        "fp": 2105,
+        "fn": 2845,
+        "prediction_sha256": "970ba5c1a79f3c5df331ff92f695e73c38145f38572178e580c80c1df4a4f432"
+      },
+      {
+        "sample_id": "ea80151a5363c5bf2ccd",
+        "dice": 0.7469740634005764,
+        "iou": 0.5961361545538179,
+        "tp": 5832,
+        "fp": 2383,
+        "fn": 1568,
+        "prediction_sha256": "359f3427ece340cbd26d8ffe00eff193e063f57c4d7c5b8a9d0cb3f39d2ffdb5"
+      },
+      {
+        "sample_id": "42e726b1bce1c22c72ff",
+        "dice": 0.7271751217454657,
+        "iou": 0.5713080677230825,
+        "tp": 9482,
+        "fp": 3858,
+        "fn": 3257,
+        "prediction_sha256": "666f3eceec1cfc150ff9c38f8fc436a97d287533d4f0a213dd385aba69435ab1"
+      },
+      {
+        "sample_id": "616e5da7b556a2377e14",
+        "dice": 0.7586206896551724,
+        "iou": 0.6111111111111112,
+        "tp": 9834,
+        "fp": 4677,
+        "fn": 1581,
+        "prediction_sha256": "9fc888683d37ee9238ca90cb1244658fbd0026b1a1cbd8f7f0e52ec9ec28ccc4"
+      },
+      {
+        "sample_id": "fc934e9df0ead80c87f1",
+        "dice": 0.7656983954003983,
+        "iou": 0.6203495098337697,
+        "tp": 10188,
+        "fp": 4820,
+        "fn": 1415,
+        "prediction_sha256": "3de099b29582424263cc9ec0105e4190b6e8eb74626b69a18274fcb057b45379"
+      },
+      {
+        "sample_id": "e38e240b06a8377a76fb",
+        "dice": 0.768699910952805,
+        "iou": 0.6242994033628638,
+        "tp": 6906,
+        "fp": 3402,
+        "fn": 754,
+        "prediction_sha256": "35187ce00d8f878625a709942146c3b4bcffce7362f46c2e953f0a163f64592b"
+      },
+      {
+        "sample_id": "9b91554828113669de50",
+        "dice": 0.8223078211354882,
+        "iou": 0.6982366325369739,
+        "tp": 9820,
+        "fp": 2954,
+        "fn": 1290,
+        "prediction_sha256": "4ba52b89ee64f1eb36c98bc6e9cdf1516da0842e87d24fe46c7f73aa599be593"
+      },
+      {
+        "sample_id": "086b90f5a48f9c111189",
+        "dice": 0.7795400071395787,
+        "iou": 0.6387263914424202,
+        "tp": 7643,
+        "fp": 2260,
+        "fn": 2063,
+        "prediction_sha256": "94badfe223d3005b02b77d3abdfc8b08d1c2bfc157f5a97149bee3b79dee4b08"
+      },
+      {
+        "sample_id": "92cc9d177dc738c7141a",
+        "dice": 0.7820358522835245,
+        "iou": 0.6420844601622634,
+        "tp": 6173,
+        "fp": 2350,
+        "fn": 1091,
+        "prediction_sha256": "2413e44b7ac74c6542765a60da4d8a214503cebca77b7560d30b75e89a7f5018"
+      },
+      {
+        "sample_id": "7d111ed7e0d99f25e03a",
+        "dice": 0.5359044279963641,
+        "iou": 0.3660310421286031,
+        "tp": 4127,
+        "fp": 6626,
+        "fn": 522,
+        "prediction_sha256": "c7c72291f79fd67fd27448a43e02f0a1abf23b40b26b1c2a3cce476815f70808"
+      },
+      {
+        "sample_id": "30542586415ef294585e",
+        "dice": 0.8097263393048932,
+        "iou": 0.6802858586587742,
+        "tp": 9424,
+        "fp": 3005,
+        "fn": 1424,
+        "prediction_sha256": "f0cce076087bc0702d8e052b4f6a571f33ca351bbfaef1545ba9c2b62350f8e6"
+      },
+      {
+        "sample_id": "78cc9f864779444ec2ea",
+        "dice": 0.8151726605832886,
+        "iou": 0.6880096647538508,
+        "tp": 9112,
+        "fp": 3483,
+        "fn": 649,
+        "prediction_sha256": "49d46e6d6b5cd140eea6005b76d9c090494c29616b6a6ca50f396413aa5f4ace"
+      }
+    ],
+    "shuffled_666": [
+      {
+        "sample_id": "95667597434ffba35b0a",
+        "dice": 0.6947437390797904,
+        "iou": 0.5322661609682637,
+        "tp": 9543,
+        "fp": 7804,
+        "fn": 582,
+        "prediction_sha256": "599da47f878e6a7ba88826574e6ac23a57e05c3b5f60dc0be6fafa58de5b2e8e"
+      },
+      {
+        "sample_id": "9b5106498012d7d4c73b",
+        "dice": 0.7863549132495202,
+        "iou": 0.6479282302826901,
+        "tp": 10039,
+        "fp": 1623,
+        "fn": 3832,
+        "prediction_sha256": "6979c600eb3d71920e041245f62603e2c7a595158b2c3e50f01ea229fdaf09ed"
+      },
+      {
+        "sample_id": "86ebc00fdc565c238d56",
+        "dice": 0.7665148063781321,
+        "iou": 0.6214219759926131,
+        "tp": 8749,
+        "fp": 3615,
+        "fn": 1715,
+        "prediction_sha256": "e80da91e09aee75ca75e02c3672921971369a474b7c822e9a137012e908758b1"
+      },
+      {
+        "sample_id": "ea80151a5363c5bf2ccd",
+        "dice": 0.72004485562097,
+        "iou": 0.5625547573155774,
+        "tp": 6421,
+        "fp": 4014,
+        "fn": 979,
+        "prediction_sha256": "1c69aa13cdc7552e37867f2cfa13b4bc6f7f58bdf859faa99bc65a8dd1ae2dbc"
+      },
+      {
+        "sample_id": "42e726b1bce1c22c72ff",
+        "dice": 0.7046269421205396,
+        "iou": 0.5439567681560564,
+        "tp": 8254,
+        "fp": 2435,
+        "fn": 4485,
+        "prediction_sha256": "2ccd7bad32f27301779b4f37e2fbf36d1008c8894975236b6c347f260a8bbeac"
+      },
+      {
+        "sample_id": "616e5da7b556a2377e14",
+        "dice": 0.7498622355983214,
+        "iou": 0.5998236809982368,
+        "tp": 8845,
+        "fp": 3331,
+        "fn": 2570,
+        "prediction_sha256": "f853b5fe70014cdd9b630178c565f74855e8ce9478ec5008dda9254a272ce0fe"
+      },
+      {
+        "sample_id": "fc934e9df0ead80c87f1",
+        "dice": 0.7685513760744421,
+        "iou": 0.6241034836065574,
+        "tp": 9746,
+        "fp": 4013,
+        "fn": 1857,
+        "prediction_sha256": "d64180d43aa7fed65d0dcceab932f641d620eef342219f0e86f99ded281b46d7"
+      },
+      {
+        "sample_id": "e38e240b06a8377a76fb",
+        "dice": 0.7378069872016604,
+        "iou": 0.5845437106056454,
+        "tp": 6399,
+        "fp": 3287,
+        "fn": 1261,
+        "prediction_sha256": "4cc524fc7863e7b14c3e23bfb840eb07d960c351216ea8dfa840461b1d015886"
+      },
+      {
+        "sample_id": "9b91554828113669de50",
+        "dice": 0.8088474760267776,
+        "iou": 0.6790461000987317,
+        "tp": 8941,
+        "fp": 2057,
+        "fn": 2169,
+        "prediction_sha256": "064cfaa429b09995477a1c2c1cc1aacbf31ebb4fb852c100023a1fb2c174cc22"
+      },
+      {
+        "sample_id": "086b90f5a48f9c111189",
+        "dice": 0.7680828818553369,
+        "iou": 0.62348584214181,
+        "tp": 8081,
+        "fp": 3255,
+        "fn": 1625,
+        "prediction_sha256": "55c816b9955bf43cae784cf2141132075eb735536e532311a5ce0829f1526d58"
+      },
+      {
+        "sample_id": "92cc9d177dc738c7141a",
+        "dice": 0.7269597153678412,
+        "iou": 0.5710421925712225,
+        "tp": 6334,
+        "fp": 3828,
+        "fn": 930,
+        "prediction_sha256": "c4e07429e14bca4f3e38f886ed9cf624b8ffe50bc338e78a1cd09d94a7f2b588"
+      },
+      {
+        "sample_id": "7d111ed7e0d99f25e03a",
+        "dice": 0.7220171094101756,
+        "iou": 0.5649661781285231,
+        "tp": 4009,
+        "fp": 2447,
+        "fn": 640,
+        "prediction_sha256": "c58d10cb345a33f5e7bf632e34588d27f66aa1a329772841adaecf834e5f0812"
+      },
+      {
+        "sample_id": "30542586415ef294585e",
+        "dice": 0.7977831462270855,
+        "iou": 0.6635933806146572,
+        "tp": 8421,
+        "fp": 1842,
+        "fn": 2427,
+        "prediction_sha256": "5fd116a9292f1a39ad8fa7049987b321090828d74819fa9095855d02a630a609"
+      },
+      {
+        "sample_id": "78cc9f864779444ec2ea",
+        "dice": 0.8049867230748459,
+        "iou": 0.6736215727628804,
+        "tp": 8943,
+        "fp": 3515,
+        "fn": 818,
+        "prediction_sha256": "7f27a7d9d9d83f38cad4c52d68b094feac39085115983fc85a3f90202a603306"
+      }
+    ],
+    "shuffled_667": [
+      {
+        "sample_id": "95667597434ffba35b0a",
+        "dice": 0.7088654726886845,
+        "iou": 0.5490252624293459,
+        "tp": 9519,
+        "fp": 7213,
+        "fn": 606,
+        "prediction_sha256": "a9e2ec3bcde1f877d17677044ad346026894798667d879e9dc52580c6039e658"
+      },
+      {
+        "sample_id": "9b5106498012d7d4c73b",
+        "dice": 0.8181304622337421,
+        "iou": 0.6922341562166113,
+        "tp": 12310,
+        "fp": 3912,
+        "fn": 1561,
+        "prediction_sha256": "b8ccb67f8f81c607cbee570fd583b32e00391553f65c09c601218ac5a96f5356"
+      },
+      {
+        "sample_id": "86ebc00fdc565c238d56",
+        "dice": 0.7450083560559416,
+        "iou": 0.5936361087748808,
+        "tp": 8470,
+        "fp": 3804,
+        "fn": 1994,
+        "prediction_sha256": "85ed7681ec507ec6fa249a4304c5c1579d99bf86a8c82db5ca5093c676b08746"
+      },
+      {
+        "sample_id": "ea80151a5363c5bf2ccd",
+        "dice": 0.6925088447931087,
+        "iou": 0.5296470588235294,
+        "tp": 6753,
+        "fp": 5350,
+        "fn": 647,
+        "prediction_sha256": "0849b4ebf6676c3ad9b8fcdd7c236992d1134ab787561f8010c2aa393a6ad4ba"
+      },
+      {
+        "sample_id": "42e726b1bce1c22c72ff",
+        "dice": 0.7317938397516799,
+        "iou": 0.5770306616460462,
+        "tp": 10727,
+        "fp": 5851,
+        "fn": 2012,
+        "prediction_sha256": "ca9578d5d4f39335b9f583c53ba6ed5e0ff8f36806c782d75d70ee957fc0bceb"
+      },
+      {
+        "sample_id": "616e5da7b556a2377e14",
+        "dice": 0.7250034960145434,
+        "iou": 0.5686317521250343,
+        "tp": 10369,
+        "fp": 6820,
+        "fn": 1046,
+        "prediction_sha256": "d66420087c45a70808981ef52e00b92f635de73699c97cdc7982df66eb2c1122"
+      },
+      {
+        "sample_id": "fc934e9df0ead80c87f1",
+        "dice": 0.7330682660556641,
+        "iou": 0.5786170212765958,
+        "tp": 10878,
+        "fp": 7197,
+        "fn": 725,
+        "prediction_sha256": "3262cf50299c0dc24e38232de7295f59600ae10c5ad6773b2beed87e65279cb0"
+      },
+      {
+        "sample_id": "e38e240b06a8377a76fb",
+        "dice": 0.640085653104925,
+        "iou": 0.4706808591043648,
+        "tp": 7473,
+        "fp": 8217,
+        "fn": 187,
+        "prediction_sha256": "fc71b6be382f1abd39b60b5b299183c3ea8c969183d72946467164327a1e7fbb"
+      },
+      {
+        "sample_id": "9b91554828113669de50",
+        "dice": 0.8033677349266702,
+        "iou": 0.6713572401270994,
+        "tp": 10353,
+        "fp": 4311,
+        "fn": 757,
+        "prediction_sha256": "5e8cfca60b4cd65d7696ce85060c2a9c9dfa93f7ebc55ae720e1fcafd5e04da7"
+      },
+      {
+        "sample_id": "086b90f5a48f9c111189",
+        "dice": 0.7649141923181695,
+        "iou": 0.6193206881340979,
+        "tp": 8424,
+        "fp": 3896,
+        "fn": 1282,
+        "prediction_sha256": "2b2d6874e6ff65e2e5e8ce8ecba913b70925ff5bd606e3a49ae0080f56951e56"
+      },
+      {
+        "sample_id": "92cc9d177dc738c7141a",
+        "dice": 0.7137850467289719,
+        "iou": 0.5549500454132607,
+        "tp": 6721,
+        "fp": 4847,
+        "fn": 543,
+        "prediction_sha256": "d10ee1574b0ca72f87155d385de472f2ea58364b53e5374ba83a01c3f285c019"
+      },
+      {
+        "sample_id": "7d111ed7e0d99f25e03a",
+        "dice": 0.5686390144813577,
+        "iou": 0.3972715619849844,
+        "tp": 4339,
+        "fp": 6273,
+        "fn": 310,
+        "prediction_sha256": "15f73f5ac690d556633cc1db26e93d63a957f70ceef4e655b40c122792d36c65"
+      },
+      {
+        "sample_id": "30542586415ef294585e",
+        "dice": 0.8006971243620067,
+        "iou": 0.6676354577537886,
+        "tp": 9648,
+        "fp": 3603,
+        "fn": 1200,
+        "prediction_sha256": "306980f2c2a91c804f0a85a1a54976629dc4cc01300487ef65c134e99eab393f"
+      },
+      {
+        "sample_id": "78cc9f864779444ec2ea",
+        "dice": 0.7760065735414955,
+        "iou": 0.6339957035445757,
+        "tp": 9444,
+        "fp": 5135,
+        "fn": 317,
+        "prediction_sha256": "68160d233297950c4b3ccc8fba9889d8eeabaa5b4770c335e7d40fd7e80375c3"
+      }
+    ],
+    "shuffled_668": [
+      {
+        "sample_id": "95667597434ffba35b0a",
+        "dice": 0.7226922929668058,
+        "iou": 0.5657934176608117,
+        "tp": 9438,
+        "fp": 6556,
+        "fn": 687,
+        "prediction_sha256": "c537d39e182e39fef1f3cb6e16d297075e3163c177e2855174473a49c71ed0ae"
+      },
+      {
+        "sample_id": "9b5106498012d7d4c73b",
+        "dice": 0.8240399517823317,
+        "iou": 0.7007380506091846,
+        "tp": 11963,
+        "fp": 3201,
+        "fn": 1908,
+        "prediction_sha256": "69d5c0b4507275664a9a22df758d0d0a9f2f3c0fe66303ced2682b9099e36ec4"
+      },
+      {
+        "sample_id": "86ebc00fdc565c238d56",
+        "dice": 0.7647005029721079,
+        "iou": 0.6190405685519692,
+        "tp": 8362,
+        "fp": 3044,
+        "fn": 2102,
+        "prediction_sha256": "6a041382059f7efcb2debb2617cd5f3ee3d07849a7b5df478e0c98253fb9917c"
+      },
+      {
+        "sample_id": "ea80151a5363c5bf2ccd",
+        "dice": 0.7350844048997501,
+        "iou": 0.5811331663133552,
+        "tp": 6031,
+        "fp": 2978,
+        "fn": 1369,
+        "prediction_sha256": "367e1dc321e044117a306f066a85c4000ee789bfa7d00628465bd45073540ff7"
+      },
+      {
+        "sample_id": "42e726b1bce1c22c72ff",
+        "dice": 0.737725769524294,
+        "iou": 0.5844417573559049,
+        "tp": 10150,
+        "fp": 4628,
+        "fn": 2589,
+        "prediction_sha256": "83efaa4c2cfed54788e60a9cf4f24015ab6fa53fc2d2f68e2ebc07ee8bde1a07"
+      },
+      {
+        "sample_id": "616e5da7b556a2377e14",
+        "dice": 0.7510891235324522,
+        "iou": 0.6013952938394229,
+        "tp": 10172,
+        "fp": 5499,
+        "fn": 1243,
+        "prediction_sha256": "0162707941c6833da67c2ec7765e6835f4af460a9d550eedcd86d4947f245cee"
+      },
+      {
+        "sample_id": "fc934e9df0ead80c87f1",
+        "dice": 0.7595580753016427,
+        "iou": 0.6123286065861948,
+        "tp": 10450,
+        "fp": 5463,
+        "fn": 1153,
+        "prediction_sha256": "744933a11b2e07071ef9b02d4c91192a0c8e725235402a871f5d19c651cfe769"
+      },
+      {
+        "sample_id": "e38e240b06a8377a76fb",
+        "dice": 0.7353649167733675,
+        "iou": 0.5814838814190831,
+        "tp": 7179,
+        "fp": 4686,
+        "fn": 481,
+        "prediction_sha256": "a1ae979130eeecb55608ce10e66c87f69ac12fd638f1d5f77b4f90065fef6325"
+      },
+      {
+        "sample_id": "9b91554828113669de50",
+        "dice": 0.8210603231306325,
+        "iou": 0.6964396391433096,
+        "tp": 10113,
+        "fp": 3411,
+        "fn": 997,
+        "prediction_sha256": "16c96fd99fb709c2e5984d5fdb2a20b3fddc717b2749d557e8d56b2a1d02d860"
+      },
+      {
+        "sample_id": "086b90f5a48f9c111189",
+        "dice": 0.7813594598710595,
+        "iou": 0.641173040073315,
+        "tp": 7696,
+        "fp": 2297,
+        "fn": 2010,
+        "prediction_sha256": "9041c9dd03c47704d8b4eef0a09facccabf834e6e7f16003149de407fa1fa8b9"
+      },
+      {
+        "sample_id": "92cc9d177dc738c7141a",
+        "dice": 0.7643952728187076,
+        "iou": 0.6186406186406186,
+        "tp": 6080,
+        "fp": 2564,
+        "fn": 1184,
+        "prediction_sha256": "5b5fda565f30489c9533818c1223c6dac05b9387077d8ac23f3687f0498a8479"
+      },
+      {
+        "sample_id": "7d111ed7e0d99f25e03a",
+        "dice": 0.6540187357317169,
+        "iou": 0.4859047841852848,
+        "tp": 4154,
+        "fp": 3900,
+        "fn": 495,
+        "prediction_sha256": "6f4a40632732702bba1fc397b5772430986e50db9d391a5705aac103c92241da"
+      },
+      {
+        "sample_id": "30542586415ef294585e",
+        "dice": 0.801851388541406,
+        "iou": 0.6692420129463353,
+        "tp": 9615,
+        "fp": 3519,
+        "fn": 1233,
+        "prediction_sha256": "5b0e667e48b407cb1e157fa69a9cf9e4573162125b97f4d2f28fea7a3472f0d3"
+      },
+      {
+        "sample_id": "78cc9f864779444ec2ea",
+        "dice": 0.7561630656992825,
+        "iou": 0.6079278117950371,
+        "tp": 9432,
+        "fp": 5754,
+        "fn": 329,
+        "prediction_sha256": "b0c06484483f083b1631333e05207a4c612e2fcaff3c5c7d5efcca908d649b4d"
+      }
+    ]
+  },
+  "per_image": [
+    {
+      "sample_id": "95667597434ffba35b0a",
+      "candidate_dice": 0.744535206512433,
+      "candidate_iou": 0.5930390132965099,
+      "candidate_fp": 5072,
+      "candidate_fn": 1112,
+      "constant_dice": 0.7286538056037386,
+      "constant_iou": 0.5733466376634723,
+      "constant_fp": 6207.333333333333,
+      "constant_fn": 777,
+      "shuffled_dice": 0.7087671682450936,
+      "shuffled_iou": 0.5490282803528072,
+      "shuffled_fp": 7191,
+      "shuffled_fn": 625,
+      "legacy_dice": 0.730848261591988,
+      "legacy_iou": 0.5759456183383311,
+      "legacy_fp": 6110.333333333333,
+      "legacy_fn": 780
+    },
+    {
+      "sample_id": "9b5106498012d7d4c73b",
+      "candidate_dice": 0.8132789152326717,
+      "candidate_iou": 0.6853235822625623,
+      "candidate_fp": 2349,
+      "candidate_fn": 2755.6666666666665,
+      "constant_dice": 0.8266174976826572,
+      "constant_iou": 0.70447433607777,
+      "constant_fp": 2785.6666666666665,
+      "constant_fn": 2136.6666666666665,
+      "shuffled_dice": 0.8095084424218647,
+      "shuffled_iou": 0.6803001457028287,
+      "shuffled_fp": 2912,
+      "shuffled_fn": 2433.6666666666665,
+      "legacy_dice": 0.8260748185797292,
+      "legacy_iou": 0.7037008011943648,
+      "legacy_fp": 2636.6666666666665,
+      "legacy_fn": 2254.6666666666665
+    },
+    {
+      "sample_id": "86ebc00fdc565c238d56",
+      "candidate_dice": 0.7381102019449097,
+      "candidate_iou": 0.585336017029045,
+      "candidate_fp": 1824.6666666666667,
+      "candidate_fn": 3260.6666666666665,
+      "constant_dice": 0.7592059819112693,
+      "constant_iou": 0.6119211475149721,
+      "constant_fp": 3023.6666666666665,
+      "constant_fn": 2210.6666666666665,
+      "shuffled_dice": 0.7587412218020605,
+      "shuffled_iou": 0.6113662177731544,
+      "shuffled_fp": 3487.6666666666665,
+      "shuffled_fn": 1937,
+      "legacy_dice": 0.766425257496398,
+      "legacy_iou": 0.6213824368085787,
+      "legacy_fp": 2852.6666666666665,
+      "legacy_fn": 2191
+    },
+    {
+      "sample_id": "ea80151a5363c5bf2ccd",
+      "candidate_dice": 0.7369898655746276,
+      "candidate_iou": 0.583547551151427,
+      "candidate_fp": 2101.3333333333335,
+      "candidate_fn": 1860.6666666666667,
+      "constant_dice": 0.7432514695424515,
+      "constant_iou": 0.5916071560506241,
+      "constant_fp": 2914.3333333333335,
+      "constant_fn": 1306,
+      "shuffled_dice": 0.715879368437943,
+      "shuffled_iou": 0.557778327484154,
+      "shuffled_fp": 4114,
+      "shuffled_fn": 998.3333333333334,
+      "legacy_dice": 0.7480699712331175,
+      "legacy_iou": 0.5976189836047013,
+      "legacy_fp": 2800,
+      "legacy_fn": 1309.3333333333333
+    },
+    {
+      "sample_id": "42e726b1bce1c22c72ff",
+      "candidate_dice": 0.7337410032592381,
+      "candidate_iou": 0.5795930656682174,
+      "candidate_fp": 2135.6666666666665,
+      "candidate_fn": 4115,
+      "constant_dice": 0.731609811386857,
+      "constant_iou": 0.5768149457896261,
+      "constant_fp": 4659,
+      "constant_fn": 2702,
+      "shuffled_dice": 0.7247155171321712,
+      "shuffled_iou": 0.5684763957193358,
+      "shuffled_fp": 4304.666666666667,
+      "shuffled_fn": 3028.6666666666665,
+      "legacy_dice": 0.7379567980120869,
+      "legacy_iou": 0.5847472241698417,
+      "legacy_fp": 4425,
+      "legacy_fn": 2706.6666666666665
+    },
+    {
+      "sample_id": "616e5da7b556a2377e14",
+      "candidate_dice": 0.760255707274337,
+      "candidate_iou": 0.613247981145412,
+      "candidate_fp": 3941.3333333333335,
+      "candidate_fn": 1997.6666666666667,
+      "constant_dice": 0.732339937363779,
+      "constant_iou": 0.5781314242958436,
+      "constant_fp": 6366,
+      "constant_fn": 1168.3333333333333,
+      "shuffled_dice": 0.7419849517151057,
+      "shuffled_iou": 0.589950242320898,
+      "shuffled_fp": 5216.666666666667,
+      "shuffled_fn": 1619.6666666666667,
+      "legacy_dice": 0.7313418952510049,
+      "legacy_iou": 0.5766739224949439,
+      "legacy_fp": 6333,
+      "legacy_fn": 1193.3333333333333
+    },
+    {
+      "sample_id": "fc934e9df0ead80c87f1",
+      "candidate_dice": 0.7833752502017445,
+      "candidate_iou": 0.6439090417631561,
+      "candidate_fp": 3813.3333333333335,
+      "candidate_fn": 1675,
+      "constant_dice": 0.7529452916642569,
+      "constant_iou": 0.6038829117610816,
+      "constant_fp": 5865,
+      "constant_fn": 1063.6666666666667,
+      "shuffled_dice": 0.753725905810583,
+      "shuffled_iou": 0.6050163704897826,
+      "shuffled_fp": 5557.666666666667,
+      "shuffled_fn": 1245,
+      "legacy_dice": 0.7503712921568558,
+      "legacy_iou": 0.6005705262488377,
+      "legacy_fp": 6047,
+      "legacy_fn": 1009.3333333333334
+    },
+    {
+      "sample_id": "e38e240b06a8377a76fb",
+      "candidate_dice": 0.7730238467656319,
+      "candidate_iou": 0.630345206813968,
+      "candidate_fp": 3212.6666666666665,
+      "candidate_fn": 813.3333333333334,
+      "constant_dice": 0.7526258575570558,
+      "constant_iou": 0.6035304489164359,
+      "constant_fp": 4044.3333333333335,
+      "constant_fn": 603.6666666666666,
+      "shuffled_dice": 0.7044191856933176,
+      "shuffled_iou": 0.5455694837096978,
+      "shuffled_fp": 5396.666666666667,
+      "shuffled_fn": 643,
+      "legacy_dice": 0.7543971505841821,
+      "legacy_iou": 0.6059435592437448,
+      "legacy_fp": 3908.6666666666665,
+      "legacy_fn": 662.6666666666666
+    },
+    {
+      "sample_id": "9b91554828113669de50",
+      "candidate_dice": 0.828748690361967,
+      "candidate_iou": 0.7077306057201173,
+      "candidate_fp": 2662.3333333333335,
+      "candidate_fn": 1368.3333333333333,
+      "constant_dice": 0.8205583981103696,
+      "constant_iou": 0.6957381224701975,
+      "constant_fp": 3354,
+      "constant_fn": 1048.6666666666667,
+      "shuffled_dice": 0.8110918446946934,
+      "shuffled_iou": 0.6822809931230469,
+      "shuffled_fp": 3259.6666666666665,
+      "shuffled_fn": 1307.6666666666667,
+      "legacy_dice": 0.8227296197466653,
+      "legacy_iou": 0.6988683271712445,
+      "legacy_fp": 3234.6666666666665,
+      "legacy_fn": 1086
+    },
+    {
+      "sample_id": "086b90f5a48f9c111189",
+      "candidate_dice": 0.7696422467488352,
+      "candidate_iou": 0.6256611511821448,
+      "candidate_fp": 1606.6666666666667,
+      "candidate_fn": 2625,
+      "constant_dice": 0.7808108472789038,
+      "constant_iou": 0.640564025473277,
+      "constant_fp": 2686.3333333333335,
+      "constant_fn": 1776.3333333333333,
+      "shuffled_dice": 0.7714521780148553,
+      "shuffled_iou": 0.6279931901164076,
+      "shuffled_fp": 3149.3333333333335,
+      "shuffled_fn": 1639,
+      "legacy_dice": 0.7865704858318507,
+      "legacy_iou": 0.6482395065067581,
+      "legacy_fp": 2717,
+      "legacy_fn": 1651.6666666666667
+    },
+    {
+      "sample_id": "92cc9d177dc738c7141a",
+      "candidate_dice": 0.7807724086023988,
+      "candidate_iou": 0.6404617165658517,
+      "candidate_fp": 1593.6666666666667,
+      "candidate_fn": 1595.6666666666667,
+      "constant_dice": 0.7764098412633468,
+      "constant_iou": 0.6348763812705567,
+      "constant_fp": 2626,
+      "constant_fn": 995.3333333333334,
+      "shuffled_dice": 0.7350466783051736,
+      "shuffled_iou": 0.5815442855417006,
+      "shuffled_fp": 3746.3333333333335,
+      "shuffled_fn": 885.6666666666666,
+      "legacy_dice": 0.7676517440205861,
+      "legacy_iou": 0.6230086143573454,
+      "legacy_fp": 2932.6666666666665,
+      "legacy_fn": 914.6666666666666
+    },
+    {
+      "sample_id": "7d111ed7e0d99f25e03a",
+      "candidate_dice": 0.7041364102005722,
+      "candidate_iou": 0.5457277422335242,
+      "candidate_fp": 3313.6666666666665,
+      "candidate_fn": 359.3333333333333,
+      "constant_dice": 0.5910223162167638,
+      "constant_iou": 0.4299409169228539,
+      "constant_fp": 5912,
+      "constant_fn": 451.6666666666667,
+      "shuffled_dice": 0.6482249532077501,
+      "shuffled_iou": 0.4827141747662641,
+      "shuffled_fp": 4206.666666666667,
+      "shuffled_fn": 481.6666666666667,
+      "legacy_dice": 0.6328545510823675,
+      "legacy_iou": 0.4636039486549624,
+      "legacy_fp": 4558.666666666667,
+      "legacy_fn": 401.6666666666667
+    },
+    {
+      "sample_id": "30542586415ef294585e",
+      "candidate_dice": 0.8146033316530437,
+      "candidate_iou": 0.6872129421381319,
+      "candidate_fp": 2075.6666666666665,
+      "candidate_fn": 1968.3333333333333,
+      "constant_dice": 0.8108797769840639,
+      "constant_iou": 0.6819245278485507,
+      "constant_fp": 3319.6666666666665,
+      "constant_fn": 1186.6666666666667,
+      "shuffled_dice": 0.8001105530434994,
+      "shuffled_iou": 0.6668236171049271,
+      "shuffled_fp": 2988,
+      "shuffled_fn": 1620,
+      "legacy_dice": 0.8085263199323063,
+      "legacy_iou": 0.6786236159268988,
+      "legacy_fp": 3548.3333333333335,
+      "legacy_fn": 1080.3333333333333
+    },
+    {
+      "sample_id": "78cc9f864779444ec2ea",
+      "candidate_dice": 0.8159500362065044,
+      "candidate_iou": 0.6891697361404288,
+      "candidate_fp": 3591,
+      "candidate_fn": 563,
+      "constant_dice": 0.8011594016516352,
+      "constant_iou": 0.668448953442794,
+      "constant_fp": 4197.333333333333,
+      "constant_fn": 440,
+      "shuffled_dice": 0.7790521207718746,
+      "shuffled_iou": 0.6385150293674977,
+      "shuffled_fp": 4801.333333333333,
+      "shuffled_fn": 488,
+      "legacy_dice": 0.7904765883715158,
+      "legacy_iou": 0.6538768827683885,
+      "legacy_fp": 4567.333333333333,
+      "legacy_fn": 407
+    }
+  ],
+  "scope": "original_split_final_re_evaluation_not_blind_test",
+  "script_sha256": "284c23850979b4b72309d38112e8621f6cb25c193ecf06e807a422ecd33e9e80"
+}

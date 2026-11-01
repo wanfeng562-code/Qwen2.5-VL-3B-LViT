@@ -1,0 +1,74 @@
+{
+  "status": "passed",
+  "coordinates": [
+    {
+      "grid": [
+        8,
+        12
+      ],
+      "all_positions_restored": true
+    },
+    {
+      "grid": [
+        72,
+        72
+      ],
+      "all_positions_restored": true
+    }
+  ],
+  "train_examples_only_no_self": true,
+  "models": {
+    "V_mid": {
+      "gate_zero_exact_legacy_forward": true,
+      "injection_shape": [
+        2,
+        64,
+        224,
+        224
+      ],
+      "actual_input_permutation_max_output_change": 0.02022811770439148,
+      "adapter_gradient_norms": {
+        "gate": 0.011629486456513405,
+        "adapter.0.weight": 0.0019758392591029406,
+        "adapter.0.bias": 0.0020194584503769875,
+        "adapter.1.weight": 0.10013191401958466,
+        "adapter.2.weight": 0.0018592322012409568,
+        "adapter.2.bias": 0.0021104731131345034,
+        "adapter.4.weight": 0.05182415992021561,
+        "adapter.4.bias": 0.005254906136542559
+      },
+      "first_update_loss": 0.6046146154403687,
+      "restored_next_loss": 0.5086108446121216,
+      "exact_model_optimizer_restore": true,
+      "feature_sha256": "a2fc1b44ecc540a6446db2e83afa87e491ab53ebb1454c2948155419155f55f7",
+      "peak_allocated_bytes": 3432192000
+    },
+    "V_merged": {
+      "gate_zero_exact_legacy_forward": true,
+      "injection_shape": [
+        2,
+        64,
+        224,
+        224
+      ],
+      "actual_input_permutation_max_output_change": 0.016405194997787476,
+      "adapter_gradient_norms": {
+        "gate": 0.008089692331850529,
+        "adapter.0.weight": 0.0015090295346453786,
+        "adapter.0.bias": 0.0016857471782714128,
+        "adapter.1.weight": 0.11259085685014725,
+        "adapter.2.weight": 0.001720369211398065,
+        "adapter.2.bias": 0.0016824724152684212,
+        "adapter.4.weight": 0.06041478365659714,
+        "adapter.4.bias": 0.005291101522743702
+      },
+      "first_update_loss": 0.6049752235412598,
+      "restored_next_loss": 0.509202241897583,
+      "exact_model_optimizer_restore": true,
+      "feature_sha256": "f6e76170b05fbae6984b607b6aa31c4ac899cea37424a0c838405a0558b243ac",
+      "peak_allocated_bytes": 3443801088
+    }
+  },
+  "preflight_updates_per_model": 3,
+  "test_accessed": false
+}

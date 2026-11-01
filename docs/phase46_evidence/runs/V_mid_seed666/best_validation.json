@@ -1,0 +1,49 @@
+{
+  "sample_count": 6,
+  "dice": 0.7701707138737538,
+  "iou": 0.6287663872241778,
+  "dice_percent": 77.01707138737538,
+  "iou_percent": 62.87663872241778,
+  "loss": 0.2565080722173055,
+  "seconds": 0.08268031477928162,
+  "samples_per_second": 72.56866421006303,
+  "prediction_mean": 0.28070641805728275,
+  "samples": [
+    {
+      "sample_id": "615aeda65a045299c2fc",
+      "image_path": "datasets/monuseg/Val_Folder/img/TCGA-18-5592-01Z-00-DX1.png",
+      "dice": 0.8493050666249445,
+      "iou": 0.7380801305293692
+    },
+    {
+      "sample_id": "aaa5770dbc460c55562e",
+      "image_path": "datasets/monuseg/Val_Folder/img/TCGA-AY-A8YK-01A-01-TS1.png",
+      "dice": 0.7870740502613703,
+      "iou": 0.6489052777137589
+    },
+    {
+      "sample_id": "d93f2c167af993de1702",
+      "image_path": "datasets/monuseg/Val_Folder/img/TCGA-E2-A14V-01Z-00-DX1.png",
+      "dice": 0.8044258373205742,
+      "iou": 0.6728364182091046
+    },
+    {
+      "sample_id": "c37276d8c97c1805c527",
+      "image_path": "datasets/monuseg/Val_Folder/img/TCGA-E2-A1B5-01Z-00-DX1.png",
+      "dice": 0.7282125955587914,
+      "iou": 0.5725898786352187
+    },
+    {
+      "sample_id": "998ae3dda0e13ad1ab23",
+      "image_path": "datasets/monuseg/Val_Folder/img/TCGA-G9-6363-01Z-00-DX1.png",
+      "dice": 0.7414378410897684,
+      "iou": 0.5891149959027588
+    },
+    {
+      "sample_id": "02185f96dc0e6a4100d2",
+      "image_path": "datasets/monuseg/Val_Folder/img/TCGA-HE-7129-01Z-00-DX1.png",
+      "dice": 0.7105688923870742,
+      "iou": 0.5510716223548562
+    }
+  ]
+}

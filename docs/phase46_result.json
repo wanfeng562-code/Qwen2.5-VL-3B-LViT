@@ -1,0 +1,26 @@
+{
+  "validation_status": "validation_passed",
+  "formal_runs": 13,
+  "combined_runs": 17,
+  "validation": {
+    "candidate": {
+      "mean": 77.12425151732727,
+      "sd": 0.11976146150254997
+    },
+    "legacy": {
+      "mean": 76.56272644919872,
+      "sd": 0.2985132093407778
+    },
+    "constant": {
+      "mean": 76.6964362479404,
+      "sd": 0.3379203027657085
+    },
+    "shuffled": {
+      "mean": 75.63390292452381,
+      "sd": 0.7435187012290964
+    }
+  },
+  "final_test_evaluated": true,
+  "target_achieved": false,
+  "training_seconds": 4134.735148935579
+}

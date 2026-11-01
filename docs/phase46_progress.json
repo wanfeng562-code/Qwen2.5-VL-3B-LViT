@@ -1,53 +1,20 @@
 {
-  "status": "in_progress",
+  "status": "experiment_completed_goal_not_achieved",
   "goal_achieved": false,
-  "formal_runs_started": 4,
-  "new_formal_limit": 14,
-  "prior_phase45_runs": 4,
-  "skipped_candidate": "S: three-shot descriptions remain identical; val field accuracy 2/12",
-  "screening": {
-    "V_mid": {
-      "best_epoch": 54,
-      "epochs_completed": 104,
-      "best_validation_dice": 0.7701707138737538
-    },
-    "V_merged": {
-      "best_epoch": 58,
-      "epochs_completed": 108,
-      "best_validation_dice": 0.7598392045375603
-    }
+  "new_formal_runs": 13,
+  "previous_phase45_runs": 4,
+  "combined_formal_runs": 17,
+  "combined_limit": 18,
+  "validation_passed": true,
+  "test_evaluated": true,
+  "final_test_scope": "original_split_final_re_evaluation_not_blind_test",
+  "success_gates": {
+    "dice_target": false,
+    "iou_target": false,
+    "beats_fixed": true,
+    "beats_shuffled": true,
+    "not_below_matched_legacy": true,
+    "two_seeds_improved": false
   },
-  "initial_gate": {
-    "beats_constant": true,
-    "correct_minus_constant_pp": 0.7072180294405372,
-    "any_prediction_changed": true,
-    "permuted_drop_pp": 6.531063584599252,
-    "mean_binary_changed_fraction": 0.07722284346818924,
-    "passed": true
-  },
-  "current_runs": {
-    "V_mid_seed666": {
-      "status": "completed",
-      "epoch": null,
-      "epochs_completed": 104,
-      "best_epoch": 54,
-      "best_validation_dice": 0.7701707138737538
-    },
-    "V_merged_seed666": {
-      "status": "completed",
-      "epoch": null,
-      "epochs_completed": 108,
-      "best_epoch": 58,
-      "best_validation_dice": 0.7598392045375603
-    },
-    "confirm_constant_seed666": {
-      "status": "completed",
-      "epoch": null,
-      "epochs_completed": 99,
-      "best_epoch": 49,
-      "best_validation_dice": 0.7630985335793484
-    }
-  },
-  "test_accessed": false,
-  "next_action": "Follow the existing confirmation controller PID; do not restart completed jobs or access test before validation gate."
+  "next_action": "Review completed evidence and obtain an explicit revised training budget before any new formal experiments."
 }

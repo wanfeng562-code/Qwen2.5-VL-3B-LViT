@@ -77,6 +77,12 @@ def main():
         total += result['training_elapsed_seconds']
         lines.append(f"| {name} | {100*metric['dice']:.4f} | {100*metric['iou']:.4f} | {result['epochs_completed']}/{result['best_epoch']} | {result['training_elapsed_seconds']:.2f} | {result['peak_allocated_bytes']/2**30:.3f}/{result['peak_reserved_bytes']/2**30:.3f} |")
     lines += ['', f'本轮分割训练墙钟合计{total:.2f}秒（{total/60:.2f}分钟），不含Qwen/BERT缓存生成、文件校验、分析与模型加载。', '']
+    extraction = read('cache/phase46/extraction_receipt.json')
+    descriptions = [json.loads(line) for line in (ROOT/'cache/phase46/fewshot_attributes.jsonl').read_text().splitlines()]
+    assert extraction['count']==len(descriptions)==30
+    visual_seconds = [r['extract_seconds'] for r in extraction['feature_records']]
+    generation_seconds = [r['generate_seconds'] for r in descriptions]
+    lines += [f"30张训练/验证图的双层视觉缓存与三示例属性生成，生成器记录墙钟{extraction['wall_seconds']:.2f}秒，含模型加载{extraction['model_load_seconds']:.2f}秒，不含进程启动和此前模型文件hash。视觉提取平均{statistics.mean(visual_seconds):.4f}秒/图，属性generate平均{statistics.mean(generation_seconds):.4f}秒/图。属性生成显存allocated/reserved峰值{max(r['peak_allocated_bytes'] for r in descriptions)/2**30:.3f}/{max(r['peak_reserved_bytes'] for r in descriptions)/2**30:.3f}GiB。分步计时的边界与端到端测速不同，不简单相加为服务延迟。", '']
     benchmark_path = ROOT / 'outputs/phase46/benchmark.json'
     if benchmark_path.exists():
         b = read(str(benchmark_path.relative_to(ROOT))); timing = b['timings']
@@ -103,6 +109,15 @@ def main():
         for arm, values in final['aggregates'].items():
             d, i = values['dice'], values['iou']
             lines.append(f"| {arm} | {d['mean_percent']:.4f} ± {d['sample_sd_percent']:.4f} | {i['mean_percent']:.4f} ± {i['sample_sd_percent']:.4f} |")
+        old_scores=[read(f'outputs/lvit/monuseg/legacy_seed{seed}/test/test_metrics.json') for seed in (666,667,668)]
+        old_dice=100*statistics.mean(x['dice'] for x in old_scores)
+        old_iou=100*statistics.mean(x['iou'] for x in old_scores)
+        lines += ['', f"旧原文本基线测试Dice为{old_dice:.4f}%，IoU为{old_iou:.4f}%；本轮候选分别低{old_dice-final['aggregates']['candidate']['dice']['mean_percent']:.4f}和{old_iou-final['aggregates']['candidate']['iou']['mean_percent']:.4f}个百分点。相同新结构的原文本对照也低于旧基线，不能把视觉特征相对新对照的提升解释为整套框架超过原方案。本轮未分别隔离原文本编码变化和融合结构变化的因果影响。", '',
+            '| 条件 | seed | 测试Dice% | 测试IoU% |', '|---|---:|---:|---:|']
+        for arm in ('candidate','constant','shuffled','legacy'):
+            for seed in (666,667,668):
+                scores=final['records'][f'{arm}_{seed}']
+                lines.append(f"| {arm} | {seed} | {100*statistics.mean(x['dice'] for x in scores):.4f} | {100*statistics.mean(x['iou'] for x in scores):.4f} |")
         lines += ['', '| 成功条件 | 结果 |', '|---|---|']
         for name, passed in final['success_gates'].items():
             lines.append(f"| {name} | {'通过' if passed else '未通过'} |")
@@ -117,6 +132,8 @@ def main():
         '- 计划、代码及配置纳入Git；数据、模型、缓存和检查点不纳入Git。',
         '- 图表生成不等于目视验收；最终人工/主代理看图记录另存，不能声称临床有效性。',
         '- 若数值门槛未全通过，保留当前瓶颈与后续假设，不降低门槛，不以单种子或单张改善宣称成功。更细空间特征、任务监督和其他视觉骨干比较仍是待检验假设。', '']
+    if (ROOT/'docs/阶段4.6视觉核验.md').exists():
+        lines += ['主代理已实际打开图表核验，详见[视觉核验与失败案例](阶段4.6视觉核验.md)。图中展示seed666，案例按三种子均值选取，二者不可混淆。', '']
     (ROOT/'docs/阶段4.6实验结果.md').write_text('\n'.join(lines),encoding='utf-8')
     atomic_json(ROOT/'docs/phase46_result.json',dict(validation_status=summary['status'],formal_runs=len(registry['runs']),
         combined_runs=len(registry['runs'])+len(old['runs']),validation=aggregates,final_test_evaluated=bool(final),

@@ -1,0 +1,480 @@
+{
+  "status": "copied",
+  "artifacts": [
+    {
+      "source": "outputs/phase46/registry.json",
+      "destination": "docs/phase46_evidence/registry.json",
+      "bytes": 25064,
+      "sha256": "8908123f51c9bf2833f71616c06093de41a7cb6b9a96599c7668e098f0c7e512"
+    },
+    {
+      "source": "outputs/phase46/development_audit.json",
+      "destination": "docs/phase46_evidence/development_audit.json",
+      "bytes": 9959,
+      "sha256": "51c8d4fc87b1309a845bceb5c393c4cf05778923e21b1f0a7fd6230521fdb7aa"
+    },
+    {
+      "source": "outputs/phase46/confirmation/summary.json",
+      "destination": "docs/phase46_evidence/confirmation_summary.json",
+      "bytes": 9570,
+      "sha256": "01a359c61b7072498e2e7943015ef82979c7477d5cc6405214acd58b8a344ec7"
+    },
+    {
+      "source": "outputs/phase46/confirmation/seed666_sensitivity.json",
+      "destination": "docs/phase46_evidence/seed666_sensitivity.json",
+      "bytes": 11629,
+      "sha256": "d19b17456283999611cce701dfc6ca102bbd8219330443cecc27d5f5ea06e9a0"
+    },
+    {
+      "source": "outputs/phase46/preflight/checks.json",
+      "destination": "docs/phase46_evidence/preflight_checks.json",
+      "bytes": 2212,
+      "sha256": "11947c4cdbe8320d1d3bb7a13a6c2568fdd69465b51ceb8bc68ed8f93b7fa777"
+    },
+    {
+      "source": "outputs/phase46/final_data_check.json",
+      "destination": "docs/phase46_evidence/final_data_check.json",
+      "bytes": 1464,
+      "sha256": "a13c3d9003c62470e932151f290404a8f94db0f8537de106b138ed30b5a95787"
+    },
+    {
+      "source": "outputs/phase46/benchmark.json",
+      "destination": "docs/phase46_evidence/benchmark.json",
+      "bytes": 4004,
+      "sha256": "26b298b5c19b99ae51d26d4a3314b669a1780e16a6c376e0afb304e269aa58cd"
+    },
+    {
+      "source": "cache/phase46/fewshot_scores.json",
+      "destination": "docs/phase46_evidence/fewshot_scores.json",
+      "bytes": 464,
+      "sha256": "fa17bf2019abaf25ca548fd2348eb5eed2279bbab079118d8629144169409ab9"
+    },
+    {
+      "source": "cache/phase46/fewshot_attributes.jsonl",
+      "destination": "docs/phase46_evidence/fewshot_attributes.jsonl",
+      "bytes": 30301,
+      "sha256": "86d82e2e2b3e6b2344969b8f24d6ab3e539fdb5954f1c23918a45c81063e318d"
+    },
+    {
+      "source": "cache/phase46/extraction_identity.json",
+      "destination": "docs/phase46_evidence/extraction_identity.json",
+      "bytes": 265,
+      "sha256": "b45ecf4a83a3c533094f4826b4105dc5ba3dfdf4c2717311f3aa7bafb77682bd"
+    },
+    {
+      "source": "cache/phase46/extraction_receipt.json",
+      "destination": "docs/phase46_evidence/extraction_receipt.json",
+      "bytes": 27749,
+      "sha256": "caafbafda89c984a13783d86352a8852ee8e378297766b5471a0c22cff2196a1"
+    },
+    {
+      "source": "cache/phase46/candidate_gate.json",
+      "destination": "docs/phase46_evidence/candidate_gate.json",
+      "bytes": 640,
+      "sha256": "8d7d95da5f90ab8a6c2320351854d50798f88de01d8ad580792d4160932843d2"
+    },
+    {
+      "source": "outputs/phase46/spatial_resolution_diagnostic.json",
+      "destination": "docs/phase46_evidence/spatial_resolution_diagnostic.json",
+      "bytes": 24827,
+      "sha256": "134db1082f4eb5f1e9b3fcb6dcf61270fbedf91b5865b47295cb2a8497af74c5"
+    },
+    {
+      "source": "outputs/phase46/validation_paired_per_image.csv",
+      "destination": "docs/phase46_evidence/validation_paired_per_image.csv",
+      "bytes": 1893,
+      "sha256": "e780ad55c914473de858d15bfe2f9864bdf8452d63bfa89d98d4fde2150f2715"
+    },
+    {
+      "source": "outputs/phase46/visual_review/review.json",
+      "destination": "docs/phase46_evidence/validation_review.json",
+      "bytes": 17343,
+      "sha256": "4d5d2489fba63882d6c8f1a55e2e7122d7bbf4d304389454045e88281dafbfbe"
+    },
+    {
+      "source": "outputs/phase46/visual_review/comparison_validation.png",
+      "destination": "docs/phase46_evidence/comparison_validation.png",
+      "bytes": 2691416,
+      "sha256": "e22da5f617ff9e1221c161fa1f1e3d00342f097ac7a66557f7c9243dcfed63b4"
+    },
+    {
+      "source": "outputs/phase46/visual_review/training_curves.png",
+      "destination": "docs/phase46_evidence/training_curves.png",
+      "bytes": 497614,
+      "sha256": "11bd64ad94897bd95fa5bf703500cf40885528c2c1fc422ec1b86b76f261cd15"
+    },
+    {
+      "source": "outputs/phase46/final_test/summary.json",
+      "destination": "docs/phase46_evidence/final_summary.json",
+      "bytes": 99649,
+      "sha256": "08be27cb75e1a455b2bff7349c06eb878b9433be46d3a4361d1acb49314e494d"
+    },
+    {
+      "source": "outputs/phase46/final_test/independent_audit.json",
+      "destination": "docs/phase46_evidence/final_independent_audit.json",
+      "bytes": 60378,
+      "sha256": "d4dd0508b90bffd3c3d28eb3ef81dbcd24916f6e78049182d80a1eaab02d7709"
+    },
+    {
+      "source": "outputs/phase46/final_test/audited_per_image.csv",
+      "destination": "docs/phase46_evidence/final_audited_per_image.csv",
+      "bytes": 4179,
+      "sha256": "d804c448f760de3eab93815c990550c3557a43fcf370a74dcc5b5e60a06255e0"
+    },
+    {
+      "source": "outputs/phase46/final_test/paired_per_image.csv",
+      "destination": "docs/phase46_evidence/final_paired_per_image.csv",
+      "bytes": 2842,
+      "sha256": "5b1c33208ce009b57706ee9914337db7b6aa77231830bcdcffcd7a95b3f1074a"
+    },
+    {
+      "source": "outputs/phase46/final_test/visuals.json",
+      "destination": "docs/phase46_evidence/final_visuals.json",
+      "bytes": 461,
+      "sha256": "57165175d11d3c66128bacc82cd7e27cd875cb04885f4cc4ff118ad7a6ae44e8"
+    },
+    {
+      "source": "outputs/phase46/final_test/comparison_final.png",
+      "destination": "docs/phase46_evidence/comparison_final.png",
+      "bytes": 2328695,
+      "sha256": "6ce0bc301fd9179df7581df28cabd2d6601f90b32bf90de51941891c34b59de3"
+    },
+    {
+      "source": "outputs/phase46/final_test/delta_cases.png",
+      "destination": "docs/phase46_evidence/delta_cases.png",
+      "bytes": 1603633,
+      "sha256": "74243b88f3ead6c5698199ab2b242375b508dd9ab68f556f9268194fe880ae77"
+    },
+    {
+      "source": "outputs/phase46/final_test/final_scores.png",
+      "destination": "docs/phase46_evidence/final_scores.png",
+      "bytes": 99146,
+      "sha256": "455e80493b14867e8cdfdac9f077006e70dd5304415a548fcd6e35be46569e48"
+    },
+    {
+      "source": "outputs/phase46/test_authorization.json",
+      "destination": "docs/phase46_evidence/test_authorization.json",
+      "bytes": 11934,
+      "sha256": "96232eb5bbb56f9416bb0bcdb2d23364aadebdd0d1b871bdc46d88c260bb1dfb"
+    },
+    {
+      "source": "outputs/phase46/test_extraction_receipt.json",
+      "destination": "docs/phase46_evidence/test_extraction_receipt.json",
+      "bytes": 9251,
+      "sha256": "d66c5d1c8e8f782e4570b6fa2dcb81d13d57ece9a12b170d676f3c85c92c8109"
+    },
+    {
+      "source": "outputs/phase46/runs/V_mid_seed666/run_config.json",
+      "destination": "docs/phase46_evidence/runs/V_mid_seed666/run_config.json",
+      "bytes": 11042,
+      "sha256": "ef59f125a999e4050268844eca0b27b4d22eb6a110b2f378db94d918608a2a96"
+    },
+    {
+      "source": "outputs/phase46/runs/V_mid_seed666/result.json",
+      "destination": "docs/phase46_evidence/runs/V_mid_seed666/result.json",
+      "bytes": 541,
+      "sha256": "d2263db480767bdcda37aa81506260c740d87f7fd653011e00bd475d7fe7d8b8"
+    },
+    {
+      "source": "outputs/phase46/runs/V_mid_seed666/best_validation.json",
+      "destination": "docs/phase46_evidence/runs/V_mid_seed666/best_validation.json",
+      "bytes": 1554,
+      "sha256": "736c6ded9c5ff61f95acfbf33bef374055c76715d2111142fe623fbe7cd15fdb"
+    },
+    {
+      "source": "outputs/phase46/runs/V_mid_seed666/history.jsonl",
+      "destination": "docs/phase46_evidence/runs/V_mid_seed666/history.jsonl",
+      "bytes": 111658,
+      "sha256": "529264fb2ef7315b092c9de4a5edb4cbe8be5be842500304a192489df79205c8"
+    },
+    {
+      "source": "outputs/phase46/runs/V_merged_seed666/run_config.json",
+      "destination": "docs/phase46_evidence/runs/V_merged_seed666/run_config.json",
+      "bytes": 11051,
+      "sha256": "d1ffd17a7c596446c54498e74024b3d492f6fe50f189c02160b762fd351b5af1"
+    },
+    {
+      "source": "outputs/phase46/runs/V_merged_seed666/result.json",
+      "destination": "docs/phase46_evidence/runs/V_merged_seed666/result.json",
+      "bytes": 547,
+      "sha256": "7474dbc33292e500f5bb2b04c54e5911cb1152750f20075874cf089ababd497d"
+    },
+    {
+      "source": "outputs/phase46/runs/V_merged_seed666/best_validation.json",
+      "destination": "docs/phase46_evidence/runs/V_merged_seed666/best_validation.json",
+      "bytes": 1553,
+      "sha256": "e4da3252bbd27d1f5098b5a73032a0967347092ec4c88d004256951204d5d12d"
+    },
+    {
+      "source": "outputs/phase46/runs/V_merged_seed666/history.jsonl",
+      "destination": "docs/phase46_evidence/runs/V_merged_seed666/history.jsonl",
+      "bytes": 115862,
+      "sha256": "d39c7fb2b1f730bc60dc27c03371cf5c1c74fb5177f143dd1c8d7f6ee44b00c1"
+    },
+    {
+      "source": "outputs/phase46/runs/confirm_constant_seed666/run_config.json",
+      "destination": "docs/phase46_evidence/runs/confirm_constant_seed666/run_config.json",
+      "bytes": 10503,
+      "sha256": "ab54f8369fc8a768dd2625c71106f738297a5f5882b6edc88a06c11fca1cf3ad"
+    },
+    {
+      "source": "outputs/phase46/runs/confirm_constant_seed666/result.json",
+      "destination": "docs/phase46_evidence/runs/confirm_constant_seed666/result.json",
+      "bytes": 563,
+      "sha256": "b39e527533b201a4055157e5fca6445b08fd4030d21706a5f3947a872289a057"
+    },
+    {
+      "source": "outputs/phase46/runs/confirm_constant_seed666/best_validation.json",
+      "destination": "docs/phase46_evidence/runs/confirm_constant_seed666/best_validation.json",
+      "bytes": 1549,
+      "sha256": "fbe9d91685dd3c5b6733c4246095a01581863306666f06698c12ef68d5da850e"
+    },
+    {
+      "source": "outputs/phase46/runs/confirm_constant_seed666/history.jsonl",
+      "destination": "docs/phase46_evidence/runs/confirm_constant_seed666/history.jsonl",
+      "bytes": 105991,
+      "sha256": "23b0961ec07a23efd86d691b2c7754e0562d7d34a5edf208c8633ac6cf572eba"
+    },
+    {
+      "source": "outputs/phase46/runs/confirm_candidate_seed667/run_config.json",
+      "destination": "docs/phase46_evidence/runs/confirm_candidate_seed667/run_config.json",
+      "bytes": 11042,
+      "sha256": "31230fbae47ea5c194b1bf4cc518c650dd4a27c0ded99a44a20b510b4adf689b"
+    },
+    {
+      "source": "outputs/phase46/runs/confirm_candidate_seed667/result.json",
+      "destination": "docs/phase46_evidence/runs/confirm_candidate_seed667/result.json",
+      "bytes": 563,
+      "sha256": "21bedcb4bc331f3b853efc0b43fe4a66b433a79fdf8cb1aafb1d31c7f9affd7a"
+    },
+    {
+      "source": "outputs/phase46/runs/confirm_candidate_seed667/best_validation.json",
+      "destination": "docs/phase46_evidence/runs/confirm_candidate_seed667/best_validation.json",
+      "bytes": 1552,
+      "sha256": "d4d6b7677882cac8c34731dfabcc40c0ad398b05e8d2bb7655cfa5815fb81d72"
+    },
+    {
+      "source": "outputs/phase46/runs/confirm_candidate_seed667/history.jsonl",
+      "destination": "docs/phase46_evidence/runs/confirm_candidate_seed667/history.jsonl",
+      "bytes": 83927,
+      "sha256": "87c271b14bd4b9c4680f1dea1a38a3374ef33556d4b42f7bb7fe8e3f82e69384"
+    },
+    {
+      "source": "outputs/phase46/runs/confirm_candidate_seed668/run_config.json",
+      "destination": "docs/phase46_evidence/runs/confirm_candidate_seed668/run_config.json",
+      "bytes": 11042,
+      "sha256": "2ba570742d061a3f6f32d3339240cc09260f93debbf014d6ada899917488af07"
+    },
+    {
+      "source": "outputs/phase46/runs/confirm_candidate_seed668/result.json",
+      "destination": "docs/phase46_evidence/runs/confirm_candidate_seed668/result.json",
+      "bytes": 564,
+      "sha256": "18ddcca5874be939e601385d0bcec6f1a62d4e818a60c1fcc0560fd4d8d21538"
+    },
+    {
+      "source": "outputs/phase46/runs/confirm_candidate_seed668/best_validation.json",
+      "destination": "docs/phase46_evidence/runs/confirm_candidate_seed668/best_validation.json",
+      "bytes": 1551,
+      "sha256": "1a33bfd0c4667bd061b3f4aef7cd4b61ab7b1af20e6533df8ccb73ffb82a3a60"
+    },
+    {
+      "source": "outputs/phase46/runs/confirm_candidate_seed668/history.jsonl",
+      "destination": "docs/phase46_evidence/runs/confirm_candidate_seed668/history.jsonl",
+      "bytes": 81822,
+      "sha256": "f03b93bf083c394ae5b678b3f540c31d6ed116311d421ab56991d337178b7021"
+    },
+    {
+      "source": "outputs/phase46/runs/confirm_legacy_seed666/run_config.json",
+      "destination": "docs/phase46_evidence/runs/confirm_legacy_seed666/run_config.json",
+      "bytes": 10471,
+      "sha256": "44186b3139fffcd292745106386dccace201628664cc1d6e8a2d0368048120f7"
+    },
+    {
+      "source": "outputs/phase46/runs/confirm_legacy_seed666/result.json",
+      "destination": "docs/phase46_evidence/runs/confirm_legacy_seed666/result.json",
+      "bytes": 558,
+      "sha256": "d0b50f0f1a6397d157e3e09e60f47f471a5bae48aa003527ec5b1bef2db44ea4"
+    },
+    {
+      "source": "outputs/phase46/runs/confirm_legacy_seed666/best_validation.json",
+      "destination": "docs/phase46_evidence/runs/confirm_legacy_seed666/best_validation.json",
+      "bytes": 1553,
+      "sha256": "3b9e50357cf327c5bf9f8190f6788b0c9ae1bffad84b82e3298ebd18d2eb4302"
+    },
+    {
+      "source": "outputs/phase46/runs/confirm_legacy_seed666/history.jsonl",
+      "destination": "docs/phase46_evidence/runs/confirm_legacy_seed666/history.jsonl",
+      "bytes": 101896,
+      "sha256": "86b91a57eb0c98c16d6f7c98868e3040987e6bbc06328478c333ae1a3b78d8fb"
+    },
+    {
+      "source": "outputs/phase46/runs/confirm_legacy_seed667/run_config.json",
+      "destination": "docs/phase46_evidence/runs/confirm_legacy_seed667/run_config.json",
+      "bytes": 10471,
+      "sha256": "e5d008067093fb2578816f7b6ee059bd386fd977d27d9010b7fb1844774647f2"
+    },
+    {
+      "source": "outputs/phase46/runs/confirm_legacy_seed667/result.json",
+      "destination": "docs/phase46_evidence/runs/confirm_legacy_seed667/result.json",
+      "bytes": 559,
+      "sha256": "8a09beba6fa1a47d5c12d93a8b441835b245f0e9065c36c7a65a12a87c31ffca"
+    },
+    {
+      "source": "outputs/phase46/runs/confirm_legacy_seed667/best_validation.json",
+      "destination": "docs/phase46_evidence/runs/confirm_legacy_seed667/best_validation.json",
+      "bytes": 1551,
+      "sha256": "c925562298b7aaf343598873dc26d8e375229e1a88ccdaa0ea66fe461524ed9c"
+    },
+    {
+      "source": "outputs/phase46/runs/confirm_legacy_seed667/history.jsonl",
+      "destination": "docs/phase46_evidence/runs/confirm_legacy_seed667/history.jsonl",
+      "bytes": 105145,
+      "sha256": "cec51ae841cbbd03cc528de5067170f4ce3d02d0a5066a51c20572512e98b151"
+    },
+    {
+      "source": "outputs/phase46/runs/confirm_legacy_seed668/run_config.json",
+      "destination": "docs/phase46_evidence/runs/confirm_legacy_seed668/run_config.json",
+      "bytes": 10471,
+      "sha256": "444d3e438275dd10f656d1ba47984cfd7925ed7ab7b1faee64e519eaaa426029"
+    },
+    {
+      "source": "outputs/phase46/runs/confirm_legacy_seed668/result.json",
+      "destination": "docs/phase46_evidence/runs/confirm_legacy_seed668/result.json",
+      "bytes": 559,
+      "sha256": "a4afaee5dcb895070e10fe74d2e4fb14500dcadbb7d0f397284eca63dd9bfcd4"
+    },
+    {
+      "source": "outputs/phase46/runs/confirm_legacy_seed668/best_validation.json",
+      "destination": "docs/phase46_evidence/runs/confirm_legacy_seed668/best_validation.json",
+      "bytes": 1553,
+      "sha256": "49972fec2bcb2de4602c88de19420fe23c9e3d0c0ed5d961634a4147392a41db"
+    },
+    {
+      "source": "outputs/phase46/runs/confirm_legacy_seed668/history.jsonl",
+      "destination": "docs/phase46_evidence/runs/confirm_legacy_seed668/history.jsonl",
+      "bytes": 112401,
+      "sha256": "a272842b0ef23b399b677a4fcbb6cc16225a874d30f43f50f8f2378d1241652f"
+    },
+    {
+      "source": "outputs/phase46/runs/confirm_constant_seed667/run_config.json",
+      "destination": "docs/phase46_evidence/runs/confirm_constant_seed667/run_config.json",
+      "bytes": 10503,
+      "sha256": "5982c3cc8d37fff7771dc9e7cf6e86ca65ed34019c903d4e8f4cd7019e13a51e"
+    },
+    {
+      "source": "outputs/phase46/runs/confirm_constant_seed667/result.json",
+      "destination": "docs/phase46_evidence/runs/confirm_constant_seed667/result.json",
+      "bytes": 562,
+      "sha256": "b46352d322711c80da80de5a309fb48101a26210bddd031c5a1387e6acb11bc9"
+    },
+    {
+      "source": "outputs/phase46/runs/confirm_constant_seed667/best_validation.json",
+      "destination": "docs/phase46_evidence/runs/confirm_constant_seed667/best_validation.json",
+      "bytes": 1552,
+      "sha256": "4e55340147f78d56f8154809fedd1eb57f7b60246162c3d67cbb2a802a69d508"
+    },
+    {
+      "source": "outputs/phase46/runs/confirm_constant_seed667/history.jsonl",
+      "destination": "docs/phase46_evidence/runs/confirm_constant_seed667/history.jsonl",
+      "bytes": 85867,
+      "sha256": "fdb130ad221e6fa642761878adf09ac9ea85f6591897bdb99110a0ad08aaf2e0"
+    },
+    {
+      "source": "outputs/phase46/runs/confirm_constant_seed668/run_config.json",
+      "destination": "docs/phase46_evidence/runs/confirm_constant_seed668/run_config.json",
+      "bytes": 10503,
+      "sha256": "ff64c2ee1de7fdfe0c5fcf7d3980839de5c4b53e52b5e80ff36cabe77813fad0"
+    },
+    {
+      "source": "outputs/phase46/runs/confirm_constant_seed668/result.json",
+      "destination": "docs/phase46_evidence/runs/confirm_constant_seed668/result.json",
+      "bytes": 564,
+      "sha256": "8d4181d263c53c944441398b06176b05576a0652cc398c5fe92b21eeca101106"
+    },
+    {
+      "source": "outputs/phase46/runs/confirm_constant_seed668/best_validation.json",
+      "destination": "docs/phase46_evidence/runs/confirm_constant_seed668/best_validation.json",
+      "bytes": 1554,
+      "sha256": "e904c2cf32c15a5c26c8a3e1094485e8704f9a3379d25fe27e36c073f51a39b2"
+    },
+    {
+      "source": "outputs/phase46/runs/confirm_constant_seed668/history.jsonl",
+      "destination": "docs/phase46_evidence/runs/confirm_constant_seed668/history.jsonl",
+      "bytes": 115660,
+      "sha256": "4c1d0e8c4e7deec311c8531f392544b253fbc7351a92266d1696155ac987c19c"
+    },
+    {
+      "source": "outputs/phase46/runs/confirm_shuffled_seed666/run_config.json",
+      "destination": "docs/phase46_evidence/runs/confirm_shuffled_seed666/run_config.json",
+      "bytes": 11073,
+      "sha256": "82a726d0e1cfa9de7d6894979e5cad0f851191d1de25545843484347b02e312a"
+    },
+    {
+      "source": "outputs/phase46/runs/confirm_shuffled_seed666/result.json",
+      "destination": "docs/phase46_evidence/runs/confirm_shuffled_seed666/result.json",
+      "bytes": 564,
+      "sha256": "2ad9ac1bfdd50b922ad8e2a0dcd036a6989746100f59ddfe9369297b3d0b5d68"
+    },
+    {
+      "source": "outputs/phase46/runs/confirm_shuffled_seed666/best_validation.json",
+      "destination": "docs/phase46_evidence/runs/confirm_shuffled_seed666/best_validation.json",
+      "bytes": 1554,
+      "sha256": "2f7f3268da4f7c28d0ad3bb6aea7601031be2fc61a7011da3e50d2ee24ec9e99"
+    },
+    {
+      "source": "outputs/phase46/runs/confirm_shuffled_seed666/history.jsonl",
+      "destination": "docs/phase46_evidence/runs/confirm_shuffled_seed666/history.jsonl",
+      "bytes": 143768,
+      "sha256": "855fed4b5f58dbe0a4c512a49e4d4c8be10c9b2b2a86897150b2e65d03f453d0"
+    },
+    {
+      "source": "outputs/phase46/runs/confirm_shuffled_seed667/run_config.json",
+      "destination": "docs/phase46_evidence/runs/confirm_shuffled_seed667/run_config.json",
+      "bytes": 11073,
+      "sha256": "7fc1346411e941fb5a4ed864d80e06b2ed27568606db6df8682ad8ff8044d8a6"
+    },
+    {
+      "source": "outputs/phase46/runs/confirm_shuffled_seed667/result.json",
+      "destination": "docs/phase46_evidence/runs/confirm_shuffled_seed667/result.json",
+      "bytes": 563,
+      "sha256": "0506419fa57856581421f7db68888ea89496ea4035ee8d659504de0a3ae17c60"
+    },
+    {
+      "source": "outputs/phase46/runs/confirm_shuffled_seed667/best_validation.json",
+      "destination": "docs/phase46_evidence/runs/confirm_shuffled_seed667/best_validation.json",
+      "bytes": 1551,
+      "sha256": "090a9d0cca27fa8c85997caa77e96ec7dd861bcc76ce480076a7b1feaf1fcd22"
+    },
+    {
+      "source": "outputs/phase46/runs/confirm_shuffled_seed667/history.jsonl",
+      "destination": "docs/phase46_evidence/runs/confirm_shuffled_seed667/history.jsonl",
+      "bytes": 95739,
+      "sha256": "0a223b0b661ab515dac974b157d47f379d18e0d54ecd6751d6bb36f106f5e117"
+    },
+    {
+      "source": "outputs/phase46/runs/confirm_shuffled_seed668/run_config.json",
+      "destination": "docs/phase46_evidence/runs/confirm_shuffled_seed668/run_config.json",
+      "bytes": 11073,
+      "sha256": "c4fad1f440b1006d15afbbca2c6fe014704d2bf496d0df2065a77aaa993aaf9b"
+    },
+    {
+      "source": "outputs/phase46/runs/confirm_shuffled_seed668/result.json",
+      "destination": "docs/phase46_evidence/runs/confirm_shuffled_seed668/result.json",
+      "bytes": 564,
+      "sha256": "b15e13c38dc4a02a6db4633fa76075331422752f680802cf6b4c7e27d6c6846e"
+    },
+    {
+      "source": "outputs/phase46/runs/confirm_shuffled_seed668/best_validation.json",
+      "destination": "docs/phase46_evidence/runs/confirm_shuffled_seed668/best_validation.json",
+      "bytes": 1551,
+      "sha256": "0d249b9bd7b9c2bf2a25f9ce07888d22a547adec5e9fb6d15a2d74e7d13b4223"
+    },
+    {
+      "source": "outputs/phase46/runs/confirm_shuffled_seed668/history.jsonl",
+      "destination": "docs/phase46_evidence/runs/confirm_shuffled_seed668/history.jsonl",
+      "bytes": 113735,
+      "sha256": "e6b6fce73eedbaa133fddffd71f72eda2aa540ccb2681ad977f9307aba5e6892"
+    }
+  ],
+  "visual_inspection": "See docs/phase46_visual_inspection.json when available; rendering alone is not visual acceptance."
+}

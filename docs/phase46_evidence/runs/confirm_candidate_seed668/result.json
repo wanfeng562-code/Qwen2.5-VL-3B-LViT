@@ -1,0 +1,14 @@
+{
+  "status": "completed",
+  "stop_reason": "validation_patience",
+  "epochs_completed": 76,
+  "best_epoch": 26,
+  "best_validation_dice": 0.7710216382818187,
+  "global_step": 912,
+  "training_elapsed_seconds": 247.35705668199807,
+  "test_evaluated": false,
+  "best_checkpoint": "/root/autodl-tmp/Qwen2.5-VL-3B-LViT/outputs/phase46/runs/confirm_candidate_seed668/best.pt",
+  "last_checkpoint": "/root/autodl-tmp/Qwen2.5-VL-3B-LViT/outputs/phase46/runs/confirm_candidate_seed668/last.pt",
+  "peak_allocated_bytes": 2947063296,
+  "peak_reserved_bytes": 3617587200
+}

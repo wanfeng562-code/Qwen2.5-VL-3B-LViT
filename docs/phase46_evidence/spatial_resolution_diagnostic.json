@@ -1,0 +1,954 @@
+{
+  "status": "completed",
+  "method": "per-image GT oracle top-k binary constant cells at a specified grid",
+  "limitation": "This ceiling applies only to piecewise-constant predictions on that grid. It is not an upper bound for bilinear features fused with the high-resolution LViT branch, not a model result, and not evidence of Qwen improvement.",
+  "mean_oracle_dice": {
+    "train": {
+      "14": 0.4782440794069776,
+      "28": 0.5635680210035425,
+      "56": 0.7016132554975597,
+      "112": 0.8447308918886723,
+      "224": 1.0
+    },
+    "val": {
+      "14": 0.4715689245673019,
+      "28": 0.5621780666817517,
+      "56": 0.6978347300869565,
+      "112": 0.8430735017204309,
+      "224": 1.0
+    }
+  },
+  "records": [
+    {
+      "sample_id": "4ebfa45624cbfcabbc37",
+      "split": "train",
+      "grids": {
+        "14": {
+          "oracle_dice": 0.5410724710199316,
+          "selected_cells": 164,
+          "foreground_pixels": 17971
+        },
+        "28": {
+          "oracle_dice": 0.5953702010040038,
+          "selected_cells": 488,
+          "foreground_pixels": 17971
+        },
+        "56": {
+          "oracle_dice": 0.7229948060030159,
+          "selected_cells": 1488,
+          "foreground_pixels": 17971
+        },
+        "112": {
+          "oracle_dice": 0.8588972883717331,
+          "selected_cells": 5197,
+          "foreground_pixels": 17971
+        },
+        "224": {
+          "oracle_dice": 1.0,
+          "selected_cells": 17971,
+          "foreground_pixels": 17971
+        }
+      }
+    },
+    {
+      "sample_id": "178eb8bf2964678ed1c4",
+      "split": "train",
+      "grids": {
+        "14": {
+          "oracle_dice": 0.5290814888681741,
+          "selected_cells": 120,
+          "foreground_pixels": 15409
+        },
+        "28": {
+          "oracle_dice": 0.6294946104015317,
+          "selected_cells": 355,
+          "foreground_pixels": 15409
+        },
+        "56": {
+          "oracle_dice": 0.7739939958152652,
+          "selected_cells": 1098,
+          "foreground_pixels": 15409
+        },
+        "112": {
+          "oracle_dice": 0.8846398980242193,
+          "selected_cells": 4385,
+          "foreground_pixels": 15409
+        },
+        "224": {
+          "oracle_dice": 1.0,
+          "selected_cells": 15409,
+          "foreground_pixels": 15409
+        }
+      }
+    },
+    {
+      "sample_id": "5c513b311c0304805f86",
+      "split": "train",
+      "grids": {
+        "14": {
+          "oracle_dice": 0.4284535820800812,
+          "selected_cells": 84,
+          "foreground_pixels": 10014
+        },
+        "28": {
+          "oracle_dice": 0.5609131143722339,
+          "selected_cells": 246,
+          "foreground_pixels": 10014
+        },
+        "56": {
+          "oracle_dice": 0.7286235430198417,
+          "selected_cells": 779,
+          "foreground_pixels": 10014
+        },
+        "112": {
+          "oracle_dice": 0.8671809647736779,
+          "selected_cells": 2876,
+          "foreground_pixels": 10014
+        },
+        "224": {
+          "oracle_dice": 1.0,
+          "selected_cells": 10014,
+          "foreground_pixels": 10014
+        }
+      }
+    },
+    {
+      "sample_id": "b6633e3c5b3e51a77077",
+      "split": "train",
+      "grids": {
+        "14": {
+          "oracle_dice": 0.542656891968098,
+          "selected_cells": 129,
+          "foreground_pixels": 16628
+        },
+        "28": {
+          "oracle_dice": 0.6247593729947749,
+          "selected_cells": 422,
+          "foreground_pixels": 16628
+        },
+        "56": {
+          "oracle_dice": 0.760583044789456,
+          "selected_cells": 1199,
+          "foreground_pixels": 16628
+        },
+        "112": {
+          "oracle_dice": 0.8800607287449392,
+          "selected_cells": 4735,
+          "foreground_pixels": 16628
+        },
+        "224": {
+          "oracle_dice": 1.0,
+          "selected_cells": 16628,
+          "foreground_pixels": 16628
+        }
+      }
+    },
+    {
+      "sample_id": "779f832a4f97a44b7e8a",
+      "split": "train",
+      "grids": {
+        "14": {
+          "oracle_dice": 0.6171633163017939,
+          "selected_cells": 132,
+          "foreground_pixels": 19834
+        },
+        "28": {
+          "oracle_dice": 0.6917932107853447,
+          "selected_cells": 433,
+          "foreground_pixels": 19834
+        },
+        "56": {
+          "oracle_dice": 0.804060722846266,
+          "selected_cells": 1420,
+          "foreground_pixels": 19834
+        },
+        "112": {
+          "oracle_dice": 0.8994147594804206,
+          "selected_cells": 5550,
+          "foreground_pixels": 19834
+        },
+        "224": {
+          "oracle_dice": 1.0,
+          "selected_cells": 19834,
+          "foreground_pixels": 19834
+        }
+      }
+    },
+    {
+      "sample_id": "0a9b0013c964e3f69fc9",
+      "split": "train",
+      "grids": {
+        "14": {
+          "oracle_dice": 0.4161132632355654,
+          "selected_cells": 123,
+          "foreground_pixels": 11880
+        },
+        "28": {
+          "oracle_dice": 0.48848504693298406,
+          "selected_cells": 387,
+          "foreground_pixels": 11880
+        },
+        "56": {
+          "oracle_dice": 0.6597646033129904,
+          "selected_cells": 978,
+          "foreground_pixels": 11880
+        },
+        "112": {
+          "oracle_dice": 0.8298514391829155,
+          "selected_cells": 3492,
+          "foreground_pixels": 11880
+        },
+        "224": {
+          "oracle_dice": 1.0,
+          "selected_cells": 11880,
+          "foreground_pixels": 11880
+        }
+      }
+    },
+    {
+      "sample_id": "433522316f725a1c0bfb",
+      "split": "train",
+      "grids": {
+        "14": {
+          "oracle_dice": 0.3936104218362283,
+          "selected_cells": 69,
+          "foreground_pixels": 8128
+        },
+        "28": {
+          "oracle_dice": 0.5280783582089552,
+          "selected_cells": 208,
+          "foreground_pixels": 8128
+        },
+        "56": {
+          "oracle_dice": 0.6973514211886305,
+          "selected_cells": 653,
+          "foreground_pixels": 8128
+        },
+        "112": {
+          "oracle_dice": 0.8490867579908675,
+          "selected_cells": 2348,
+          "foreground_pixels": 8128
+        },
+        "224": {
+          "oracle_dice": 1.0,
+          "selected_cells": 8128,
+          "foreground_pixels": 8128
+        }
+      }
+    },
+    {
+      "sample_id": "8797a589e4c7c01a0a02",
+      "split": "train",
+      "grids": {
+        "14": {
+          "oracle_dice": 0.44618307092952125,
+          "selected_cells": 81,
+          "foreground_pixels": 10323
+        },
+        "28": {
+          "oracle_dice": 0.5552630629980888,
+          "selected_cells": 272,
+          "foreground_pixels": 10323
+        },
+        "56": {
+          "oracle_dice": 0.7122054765442581,
+          "selected_cells": 827,
+          "foreground_pixels": 10323
+        },
+        "112": {
+          "oracle_dice": 0.8530004027386227,
+          "selected_cells": 3006,
+          "foreground_pixels": 10323
+        },
+        "224": {
+          "oracle_dice": 1.0,
+          "selected_cells": 10323,
+          "foreground_pixels": 10323
+        }
+      }
+    },
+    {
+      "sample_id": "f24082fd913a70fc0582",
+      "split": "train",
+      "grids": {
+        "14": {
+          "oracle_dice": 0.5170091436436929,
+          "selected_cells": 107,
+          "foreground_pixels": 13292
+        },
+        "28": {
+          "oracle_dice": 0.60594433627305,
+          "selected_cells": 338,
+          "foreground_pixels": 13292
+        },
+        "56": {
+          "oracle_dice": 0.733777255516386,
+          "selected_cells": 1084,
+          "foreground_pixels": 13292
+        },
+        "112": {
+          "oracle_dice": 0.8649711957285373,
+          "selected_cells": 3794,
+          "foreground_pixels": 13292
+        },
+        "224": {
+          "oracle_dice": 1.0,
+          "selected_cells": 13292,
+          "foreground_pixels": 13292
+        }
+      }
+    },
+    {
+      "sample_id": "0a0bef10f500dc48430b",
+      "split": "train",
+      "grids": {
+        "14": {
+          "oracle_dice": 0.5514495062121695,
+          "selected_cells": 172,
+          "foreground_pixels": 18748
+        },
+        "28": {
+          "oracle_dice": 0.5872080331805283,
+          "selected_cells": 566,
+          "foreground_pixels": 18748
+        },
+        "56": {
+          "oracle_dice": 0.6963064902779011,
+          "selected_cells": 1644,
+          "foreground_pixels": 18748
+        },
+        "112": {
+          "oracle_dice": 0.8353837141183362,
+          "selected_cells": 5555,
+          "foreground_pixels": 18748
+        },
+        "224": {
+          "oracle_dice": 1.0,
+          "selected_cells": 18748,
+          "foreground_pixels": 18748
+        }
+      }
+    },
+    {
+      "sample_id": "430c6ec33f979caae50e",
+      "split": "train",
+      "grids": {
+        "14": {
+          "oracle_dice": 0.510934632339068,
+          "selected_cells": 163,
+          "foreground_pixels": 16573
+        },
+        "28": {
+          "oracle_dice": 0.5424420282882709,
+          "selected_cells": 553,
+          "foreground_pixels": 16573
+        },
+        "56": {
+          "oracle_dice": 0.6425948290735218,
+          "selected_cells": 1500,
+          "foreground_pixels": 16573
+        },
+        "112": {
+          "oracle_dice": 0.8052779983027184,
+          "selected_cells": 4989,
+          "foreground_pixels": 16573
+        },
+        "224": {
+          "oracle_dice": 1.0,
+          "selected_cells": 16573,
+          "foreground_pixels": 16573
+        }
+      }
+    },
+    {
+      "sample_id": "838d210645c955277656",
+      "split": "train",
+      "grids": {
+        "14": {
+          "oracle_dice": 0.47935356620220143,
+          "selected_cells": 128,
+          "foreground_pixels": 14383
+        },
+        "28": {
+          "oracle_dice": 0.5269876767535584,
+          "selected_cells": 446,
+          "foreground_pixels": 14383
+        },
+        "56": {
+          "oracle_dice": 0.6420928153211618,
+          "selected_cells": 1268,
+          "foreground_pixels": 14383
+        },
+        "112": {
+          "oracle_dice": 0.8049818697777077,
+          "selected_cells": 4333,
+          "foreground_pixels": 14383
+        },
+        "224": {
+          "oracle_dice": 1.0,
+          "selected_cells": 14383,
+          "foreground_pixels": 14383
+        }
+      }
+    },
+    {
+      "sample_id": "476239a271709ecdb0d1",
+      "split": "train",
+      "grids": {
+        "14": {
+          "oracle_dice": 0.49979418478464244,
+          "selected_cells": 147,
+          "foreground_pixels": 15814
+        },
+        "28": {
+          "oracle_dice": 0.5655393507021267,
+          "selected_cells": 445,
+          "foreground_pixels": 15814
+        },
+        "56": {
+          "oracle_dice": 0.7049764953801264,
+          "selected_cells": 1325,
+          "foreground_pixels": 15814
+        },
+        "112": {
+          "oracle_dice": 0.8520530342853805,
+          "selected_cells": 4607,
+          "foreground_pixels": 15814
+        },
+        "224": {
+          "oracle_dice": 1.0,
+          "selected_cells": 15814,
+          "foreground_pixels": 15814
+        }
+      }
+    },
+    {
+      "sample_id": "888b2882a2f8d842c4e1",
+      "split": "train",
+      "grids": {
+        "14": {
+          "oracle_dice": 0.46138394037109476,
+          "selected_cells": 100,
+          "foreground_pixels": 12234
+        },
+        "28": {
+          "oracle_dice": 0.611738454256542,
+          "selected_cells": 271,
+          "foreground_pixels": 12234
+        },
+        "56": {
+          "oracle_dice": 0.7603409179763859,
+          "selected_cells": 834,
+          "foreground_pixels": 12234
+        },
+        "112": {
+          "oracle_dice": 0.8817072234589698,
+          "selected_cells": 3455,
+          "foreground_pixels": 12234
+        },
+        "224": {
+          "oracle_dice": 1.0,
+          "selected_cells": 12234,
+          "foreground_pixels": 12234
+        }
+      }
+    },
+    {
+      "sample_id": "0b1645db46be2fd44a6a",
+      "split": "train",
+      "grids": {
+        "14": {
+          "oracle_dice": 0.36042035168036624,
+          "selected_cells": 51,
+          "foreground_pixels": 6166
+        },
+        "28": {
+          "oracle_dice": 0.4608128566437638,
+          "selected_cells": 172,
+          "foreground_pixels": 6166
+        },
+        "56": {
+          "oracle_dice": 0.6492107980528101,
+          "selected_cells": 462,
+          "foreground_pixels": 6166
+        },
+        "112": {
+          "oracle_dice": 0.8162565249813571,
+          "selected_cells": 1811,
+          "foreground_pixels": 6166
+        },
+        "224": {
+          "oracle_dice": 1.0,
+          "selected_cells": 6166,
+          "foreground_pixels": 6166
+        }
+      }
+    },
+    {
+      "sample_id": "bad6e53876eeb122b70c",
+      "split": "train",
+      "grids": {
+        "14": {
+          "oracle_dice": 0.5522152592138131,
+          "selected_cells": 117,
+          "foreground_pixels": 15686
+        },
+        "28": {
+          "oracle_dice": 0.6756013745704468,
+          "selected_cells": 346,
+          "foreground_pixels": 15686
+        },
+        "56": {
+          "oracle_dice": 0.8026012415016258,
+          "selected_cells": 1134,
+          "foreground_pixels": 15686
+        },
+        "112": {
+          "oracle_dice": 0.8961249624511866,
+          "selected_cells": 4401,
+          "foreground_pixels": 15686
+        },
+        "224": {
+          "oracle_dice": 1.0,
+          "selected_cells": 15686,
+          "foreground_pixels": 15686
+        }
+      }
+    },
+    {
+      "sample_id": "3fcb1306b6be4060cfc7",
+      "split": "train",
+      "grids": {
+        "14": {
+          "oracle_dice": 0.4301652760461622,
+          "selected_cells": 83,
+          "foreground_pixels": 10033
+        },
+        "28": {
+          "oracle_dice": 0.5649043243028206,
+          "selected_cells": 236,
+          "foreground_pixels": 10033
+        },
+        "56": {
+          "oracle_dice": 0.7268427276310603,
+          "selected_cells": 800,
+          "foreground_pixels": 10033
+        },
+        "112": {
+          "oracle_dice": 0.8625319396051103,
+          "selected_cells": 2873,
+          "foreground_pixels": 10033
+        },
+        "224": {
+          "oracle_dice": 1.0,
+          "selected_cells": 10033,
+          "foreground_pixels": 10033
+        }
+      }
+    },
+    {
+      "sample_id": "2fe3edc5433966407bec",
+      "split": "train",
+      "grids": {
+        "14": {
+          "oracle_dice": 0.374858934169279,
+          "selected_cells": 89,
+          "foreground_pixels": 9116
+        },
+        "28": {
+          "oracle_dice": 0.4925350625848288,
+          "selected_cells": 272,
+          "foreground_pixels": 9116
+        },
+        "56": {
+          "oracle_dice": 0.6754183496826313,
+          "selected_cells": 730,
+          "foreground_pixels": 9116
+        },
+        "112": {
+          "oracle_dice": 0.8403199675982179,
+          "selected_cells": 2659,
+          "foreground_pixels": 9116
+        },
+        "224": {
+          "oracle_dice": 1.0,
+          "selected_cells": 9116,
+          "foreground_pixels": 9116
+        }
+      }
+    },
+    {
+      "sample_id": "6cdb388b5bbc0268bc6e",
+      "split": "train",
+      "grids": {
+        "14": {
+          "oracle_dice": 0.4643182433596731,
+          "selected_cells": 110,
+          "foreground_pixels": 12463
+        },
+        "28": {
+          "oracle_dice": 0.5655639329127559,
+          "selected_cells": 313,
+          "foreground_pixels": 12463
+        },
+        "56": {
+          "oracle_dice": 0.7249270573346925,
+          "selected_cells": 999,
+          "foreground_pixels": 12463
+        },
+        "112": {
+          "oracle_dice": 0.8588309613169336,
+          "selected_cells": 3612,
+          "foreground_pixels": 12463
+        },
+        "224": {
+          "oracle_dice": 1.0,
+          "selected_cells": 12463,
+          "foreground_pixels": 12463
+        }
+      }
+    },
+    {
+      "sample_id": "41e2991d7477b8a7c174",
+      "split": "train",
+      "grids": {
+        "14": {
+          "oracle_dice": 0.2801355206847361,
+          "selected_cells": 65,
+          "foreground_pixels": 5792
+        },
+        "28": {
+          "oracle_dice": 0.3466014897579143,
+          "selected_cells": 178,
+          "foreground_pixels": 5792
+        },
+        "56": {
+          "oracle_dice": 0.48534883720930233,
+          "selected_cells": 713,
+          "foreground_pixels": 5792
+        },
+        "112": {
+          "oracle_dice": 0.7257761053621825,
+          "selected_cells": 1741,
+          "foreground_pixels": 5792
+        },
+        "224": {
+          "oracle_dice": 1.0,
+          "selected_cells": 5792,
+          "foreground_pixels": 5792
+        }
+      }
+    },
+    {
+      "sample_id": "5af6c2afbc86ba054d9c",
+      "split": "train",
+      "grids": {
+        "14": {
+          "oracle_dice": 0.4791332100095542,
+          "selected_cells": 135,
+          "foreground_pixels": 14633
+        },
+        "28": {
+          "oracle_dice": 0.5222078987460448,
+          "selected_cells": 438,
+          "foreground_pixels": 14633
+        },
+        "56": {
+          "oracle_dice": 0.62910825602154,
+          "selected_cells": 1221,
+          "foreground_pixels": 14633
+        },
+        "112": {
+          "oracle_dice": 0.7964535697620159,
+          "selected_cells": 4378,
+          "foreground_pixels": 14633
+        },
+        "224": {
+          "oracle_dice": 1.0,
+          "selected_cells": 14633,
+          "foreground_pixels": 14633
+        }
+      }
+    },
+    {
+      "sample_id": "b8f1fee012ffaf568f70",
+      "split": "train",
+      "grids": {
+        "14": {
+          "oracle_dice": 0.5464732594988402,
+          "selected_cells": 168,
+          "foreground_pixels": 18210
+        },
+        "28": {
+          "oracle_dice": 0.581874551022723,
+          "selected_cells": 542,
+          "foreground_pixels": 18210
+        },
+        "56": {
+          "oracle_dice": 0.6782746878547106,
+          "selected_cells": 1615,
+          "foreground_pixels": 18210
+        },
+        "112": {
+          "oracle_dice": 0.8183037710538084,
+          "selected_cells": 5511,
+          "foreground_pixels": 18210
+        },
+        "224": {
+          "oracle_dice": 1.0,
+          "selected_cells": 18210,
+          "foreground_pixels": 18210
+        }
+      }
+    },
+    {
+      "sample_id": "b36dc7447f923c6bf173",
+      "split": "train",
+      "grids": {
+        "14": {
+          "oracle_dice": 0.5440899657319369,
+          "selected_cells": 105,
+          "foreground_pixels": 14558
+        },
+        "28": {
+          "oracle_dice": 0.6413824311329827,
+          "selected_cells": 325,
+          "foreground_pixels": 14558
+        },
+        "56": {
+          "oracle_dice": 0.7608455284552845,
+          "selected_cells": 1012,
+          "foreground_pixels": 14558
+        },
+        "112": {
+          "oracle_dice": 0.8766528265729798,
+          "selected_cells": 4188,
+          "foreground_pixels": 14558
+        },
+        "224": {
+          "oracle_dice": 1.0,
+          "selected_cells": 14558,
+          "foreground_pixels": 14558
+        }
+      }
+    },
+    {
+      "sample_id": "3e2b323a3540bf192a71",
+      "split": "train",
+      "grids": {
+        "14": {
+          "oracle_dice": 0.5117884055808402,
+          "selected_cells": 147,
+          "foreground_pixels": 15980
+        },
+        "28": {
+          "oracle_dice": 0.560131725258746,
+          "selected_cells": 481,
+          "foreground_pixels": 15980
+        },
+        "56": {
+          "oracle_dice": 0.6664742311325705,
+          "selected_cells": 1383,
+          "foreground_pixels": 15980
+        },
+        "112": {
+          "oracle_dice": 0.8157835016452967,
+          "selected_cells": 4818,
+          "foreground_pixels": 15980
+        },
+        "224": {
+          "oracle_dice": 1.0,
+          "selected_cells": 15980,
+          "foreground_pixels": 15980
+        }
+      }
+    },
+    {
+      "sample_id": "615aeda65a045299c2fc",
+      "split": "val",
+      "grids": {
+        "14": {
+          "oracle_dice": 0.6269151762998699,
+          "selected_cells": 129,
+          "foreground_pixels": 20039
+        },
+        "28": {
+          "oracle_dice": 0.6922965206747028,
+          "selected_cells": 440,
+          "foreground_pixels": 20039
+        },
+        "56": {
+          "oracle_dice": 0.7971144347186804,
+          "selected_cells": 1468,
+          "foreground_pixels": 20039
+        },
+        "112": {
+          "oracle_dice": 0.895617192462418,
+          "selected_cells": 5617,
+          "foreground_pixels": 20039
+        },
+        "224": {
+          "oracle_dice": 1.0,
+          "selected_cells": 20039,
+          "foreground_pixels": 20039
+        }
+      }
+    },
+    {
+      "sample_id": "aaa5770dbc460c55562e",
+      "split": "val",
+      "grids": {
+        "14": {
+          "oracle_dice": 0.525224427866987,
+          "selected_cells": 151,
+          "foreground_pixels": 16707
+        },
+        "28": {
+          "oracle_dice": 0.5645535248041775,
+          "selected_cells": 487,
+          "foreground_pixels": 16707
+        },
+        "56": {
+          "oracle_dice": 0.6563123046250031,
+          "selected_cells": 1495,
+          "foreground_pixels": 16707
+        },
+        "112": {
+          "oracle_dice": 0.8096885813148789,
+          "selected_cells": 4999,
+          "foreground_pixels": 16707
+        },
+        "224": {
+          "oracle_dice": 1.0,
+          "selected_cells": 16707,
+          "foreground_pixels": 16707
+        }
+      }
+    },
+    {
+      "sample_id": "d93f2c167af993de1702",
+      "split": "val",
+      "grids": {
+        "14": {
+          "oracle_dice": 0.45327972600699873,
+          "selected_cells": 68,
+          "foreground_pixels": 9454
+        },
+        "28": {
+          "oracle_dice": 0.5683929721276791,
+          "selected_cells": 192,
+          "foreground_pixels": 9454
+        },
+        "56": {
+          "oracle_dice": 0.7232837253960633,
+          "selected_cells": 711,
+          "foreground_pixels": 9454
+        },
+        "112": {
+          "oracle_dice": 0.8652531457445755,
+          "selected_cells": 2683,
+          "foreground_pixels": 9454
+        },
+        "224": {
+          "oracle_dice": 1.0,
+          "selected_cells": 9454,
+          "foreground_pixels": 9454
+        }
+      }
+    },
+    {
+      "sample_id": "c37276d8c97c1805c527",
+      "split": "val",
+      "grids": {
+        "14": {
+          "oracle_dice": 0.4005432937181664,
+          "selected_cells": 35,
+          "foreground_pixels": 5765
+        },
+        "28": {
+          "oracle_dice": 0.5134687934343769,
+          "selected_cells": 146,
+          "foreground_pixels": 5765
+        },
+        "56": {
+          "oracle_dice": 0.68278455752552,
+          "selected_cells": 454,
+          "foreground_pixels": 5765
+        },
+        "112": {
+          "oracle_dice": 0.8417939083859621,
+          "selected_cells": 1686,
+          "foreground_pixels": 5765
+        },
+        "224": {
+          "oracle_dice": 1.0,
+          "selected_cells": 5765,
+          "foreground_pixels": 5765
+        }
+      }
+    },
+    {
+      "sample_id": "998ae3dda0e13ad1ab23",
+      "split": "val",
+      "grids": {
+        "14": {
+          "oracle_dice": 0.45444265904897935,
+          "selected_cells": 88,
+          "foreground_pixels": 11078
+        },
+        "28": {
+          "oracle_dice": 0.5903096128076734,
+          "selected_cells": 270,
+          "foreground_pixels": 11078
+        },
+        "56": {
+          "oracle_dice": 0.7487073422957601,
+          "selected_cells": 879,
+          "foreground_pixels": 11078
+        },
+        "112": {
+          "oracle_dice": 0.8786805028262887,
+          "selected_cells": 3157,
+          "foreground_pixels": 11078
+        },
+        "224": {
+          "oracle_dice": 1.0,
+          "selected_cells": 11078,
+          "foreground_pixels": 11078
+        }
+      }
+    },
+    {
+      "sample_id": "02185f96dc0e6a4100d2",
+      "split": "val",
+      "grids": {
+        "14": {
+          "oracle_dice": 0.36900826446280993,
+          "selected_cells": 113,
+          "foreground_pixels": 9792
+        },
+        "28": {
+          "oracle_dice": 0.44404697624190065,
+          "selected_cells": 310,
+          "foreground_pixels": 9792
+        },
+        "56": {
+          "oracle_dice": 0.5788060159607121,
+          "selected_cells": 1017,
+          "foreground_pixels": 9792
+        },
+        "112": {
+          "oracle_dice": 0.7674076795884622,
+          "selected_cells": 2995,
+          "foreground_pixels": 9792
+        },
+        "224": {
+          "oracle_dice": 1.0,
+          "selected_cells": 9792,
+          "foreground_pixels": 9792
+        }
+      }
+    }
+  ],
+  "test_accessed": false
+}

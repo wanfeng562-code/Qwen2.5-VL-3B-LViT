@@ -56,11 +56,12 @@ def main():
             draw.text((10+col*400,y+7),label,font=font,fill='black')
     canvas.save(out/'comparison_validation.png')
     seeds=sorted({r['seed'] for r in summary['records']});fig,axes=plt.subplots(len(seeds),2,figsize=(15,4.3*len(seeds)),squeeze=False)
+    colors={'candidate':'#1f77b4','constant':'#ff7f0e','legacy':'#2ca02c','shuffled':'#d62728'}
     for i,seed in enumerate(seeds):
         for rec in (r for r in summary['records'] if r['seed']==seed):
             history=[json.loads(x) for x in (ROOT/rec['run']/'history.jsonl').read_text().splitlines()]
-            axes[i,0].plot([x['epoch'] for x in history],[x['train_loss'] for x in history],label=rec['arm'])
-            axes[i,1].plot([x['epoch'] for x in history],[100*x['validation']['dice'] for x in history],label=rec['arm'])
+            axes[i,0].plot([x['epoch'] for x in history],[x['train_loss'] for x in history],label=rec['arm'],color=colors[rec['arm']])
+            axes[i,1].plot([x['epoch'] for x in history],[100*x['validation']['dice'] for x in history],label=rec['arm'],color=colors[rec['arm']])
         axes[i,0].set_title(f'Seed {seed}: training loss');axes[i,1].set_title(f'Seed {seed}: validation Dice (%)')
         for ax in axes[i]:ax.set_xlabel('Epoch');ax.grid(alpha=.2);ax.legend()
     fig.tight_layout();fig.savefig(out/'training_curves.png',dpi=130);plt.close(fig)

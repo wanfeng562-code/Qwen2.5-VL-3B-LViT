@@ -1,0 +1,19 @@
+{
+  "status": "rendered_pending_human_or_agent_visual_inspection",
+  "comparison_ids": [
+    "7d111ed7e0d99f25e03a",
+    "086b90f5a48f9c111189",
+    "9b91554828113669de50"
+  ],
+  "delta_ids": [
+    "86ebc00fdc565c238d56",
+    "7d111ed7e0d99f25e03a"
+  ],
+  "selection": "3-seed candidate Dice rank 0,6,13; extreme differences versus constant",
+  "displayed_seed": 666,
+  "files": [
+    "comparison_final.png",
+    "delta_cases.png",
+    "final_scores.png"
+  ]
+}

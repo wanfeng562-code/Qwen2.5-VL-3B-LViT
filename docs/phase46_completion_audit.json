@@ -1,0 +1,63 @@
+{
+  "goal_achieved": false,
+  "experiment_completed": true,
+  "requirements": [
+    {
+      "requirement": "Three-seed test Dice >=78.5412 percent",
+      "status": "failed",
+      "actual": 77.12259371813511
+    },
+    {
+      "requirement": "Three-seed test IoU >=63.4906 percent",
+      "status": "failed",
+      "actual": 62.93075252221784
+    },
+    {
+      "requirement": "At least two seeds improve old baseline",
+      "status": "failed",
+      "actual": 1
+    },
+    {
+      "requirement": "Candidate beats fixed and shuffled by >=0.5pp and is not below matched legacy",
+      "status": "passed",
+      "evidence": "outputs/phase46/final_test/independent_audit.json"
+    },
+    {
+      "requirement": "Three seeds, all images, saved predictions, frozen selection and independent scoring",
+      "status": "passed",
+      "evidence": [
+        "outputs/phase46/development_audit.json",
+        "outputs/phase46/visual_review/review.json",
+        "outputs/phase46/final_test/independent_audit.json"
+      ]
+    },
+    {
+      "requirement": "No test-based selection or retraining",
+      "status": "passed",
+      "evidence": [
+        "outputs/phase46/test_authorization.json",
+        "outputs/phase46/finalization/status.json"
+      ]
+    },
+    {
+      "requirement": "Formal training count <=18",
+      "status": "passed",
+      "actual": 17
+    },
+    {
+      "requirement": "Code, configuration, fingerprints, raw attributes, costs and visual error analysis delivered",
+      "status": "passed",
+      "evidence": [
+        "docs/阶段4.6实验结果.md",
+        "docs/phase46_visual_inspection.json",
+        "docs/phase46_evidence/provenance.json"
+      ]
+    },
+    {
+      "requirement": "Conditional LoRA branch",
+      "status": "not_started_gate_failed_in_phase45",
+      "evidence": "docs/阶段4.5实验结果.md"
+    }
+  ],
+  "next_phase_five_allowed": false
+}

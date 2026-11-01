@@ -1,0 +1,276 @@
+{
+  "status": "completed",
+  "mode": "test",
+  "count": 14,
+  "model_load_seconds": 2.953863895498216,
+  "wall_seconds": 11.1792221814394,
+  "records": [
+    {
+      "sample_id": "95667597434ffba35b0a",
+      "dataset": "monuseg",
+      "split": "test",
+      "image_path": "datasets/monuseg/Test_Folder/img/TCGA-2Z-A9J9-01A-01-TS1.tif",
+      "image_sha256": "6f840831ec7a253f3999a022094813cf4d0dbde1acece834b5c8cd4a0228bef3",
+      "grid_thw": [
+        [
+          1,
+          70,
+          70
+        ]
+      ],
+      "preprocess_seconds": 0.12659677304327488,
+      "extract_seconds": 0.7588904500007629,
+      "peak_allocated_bytes": 7808718848,
+      "peak_reserved_bytes": 8214544384,
+      "pixel_values_sha256": "d8486fd661b9039f15c1fe2e0fcfd003902da691c5151584610afab9b56786cb"
+    },
+    {
+      "sample_id": "9b5106498012d7d4c73b",
+      "dataset": "monuseg",
+      "split": "test",
+      "image_path": "datasets/monuseg/Test_Folder/img/TCGA-44-2665-01B-06-BS6.tif",
+      "image_sha256": "ccee75b157976a0028f4a97ae1609dc4825f409db6b0c83a91c84988769a687f",
+      "grid_thw": [
+        [
+          1,
+          70,
+          70
+        ]
+      ],
+      "preprocess_seconds": 0.10487694013863802,
+      "extract_seconds": 0.33831518329679966,
+      "peak_allocated_bytes": 7834276864,
+      "peak_reserved_bytes": 8214544384,
+      "pixel_values_sha256": "1322182bfea6d9e5a5206eebe81f7b3b63564381ef20e41c6018d330dafa6d96"
+    },
+    {
+      "sample_id": "86ebc00fdc565c238d56",
+      "dataset": "monuseg",
+      "split": "test",
+      "image_path": "datasets/monuseg/Test_Folder/img/TCGA-69-7764-01A-01-TS1.tif",
+      "image_sha256": "a7597618d03717959034e09e812d62520a3994b67dab2843b8323f9482d608c9",
+      "grid_thw": [
+        [
+          1,
+          70,
+          70
+        ]
+      ],
+      "preprocess_seconds": 0.09424351900815964,
+      "extract_seconds": 0.34391932748258114,
+      "peak_allocated_bytes": 7834826240,
+      "peak_reserved_bytes": 8214544384,
+      "pixel_values_sha256": "8bbfc950868b87c5c03e42d9851579b7d4b6d9e2eb3b628c31c66598f0a9759e"
+    },
+    {
+      "sample_id": "ea80151a5363c5bf2ccd",
+      "dataset": "monuseg",
+      "split": "test",
+      "image_path": "datasets/monuseg/Test_Folder/img/TCGA-A6-6782-01A-01-BS1.tif",
+      "image_sha256": "fa25bd8974cbd8c69e12a71e2910aac4db381db97428b2d7a5d50a21a3ce85c3",
+      "grid_thw": [
+        [
+          1,
+          70,
+          70
+        ]
+      ],
+      "preprocess_seconds": 0.10305849928408861,
+      "extract_seconds": 0.3422310333698988,
+      "peak_allocated_bytes": 7834826240,
+      "peak_reserved_bytes": 8214544384,
+      "pixel_values_sha256": "db6837a276dbe4032d06231553c4d5010778674348f6d1213406dfaff12567e4"
+    },
+    {
+      "sample_id": "42e726b1bce1c22c72ff",
+      "dataset": "monuseg",
+      "split": "test",
+      "image_path": "datasets/monuseg/Test_Folder/img/TCGA-AC-A2FO-01A-01-TS1.tif",
+      "image_sha256": "78e04aef83cb36d03d55a0c3b3e3145196f4cea9871ee8be932e60eb36aebaf1",
+      "grid_thw": [
+        [
+          1,
+          70,
+          70
+        ]
+      ],
+      "preprocess_seconds": 0.10945531632751226,
+      "extract_seconds": 0.3463794747367501,
+      "peak_allocated_bytes": 7833806848,
+      "peak_reserved_bytes": 8214544384,
+      "pixel_values_sha256": "7794244a707dc1b3d152c703964f1561be582da8a8a921f322b360c020b33771"
+    },
+    {
+      "sample_id": "616e5da7b556a2377e14",
+      "dataset": "monuseg",
+      "split": "test",
+      "image_path": "datasets/monuseg/Test_Folder/img/TCGA-AO-A0J2-01A-01-BSA.tif",
+      "image_sha256": "cb674ebeef747e098ac192671ee4899ddcd27316ce9ac7ba827bc5ec62b6238b",
+      "grid_thw": [
+        [
+          1,
+          70,
+          70
+        ]
+      ],
+      "preprocess_seconds": 0.10271318908780813,
+      "extract_seconds": 0.34946826566010714,
+      "peak_allocated_bytes": 7834276864,
+      "peak_reserved_bytes": 8214544384,
+      "pixel_values_sha256": "d2ade4482f6d971c43b1cbf610fe34dfb5afad4d88d39c3fccd3923b3da1ab49"
+    },
+    {
+      "sample_id": "fc934e9df0ead80c87f1",
+      "dataset": "monuseg",
+      "split": "test",
+      "image_path": "datasets/monuseg/Test_Folder/img/TCGA-CU-A0YN-01A-02-BSB.tif",
+      "image_sha256": "ad3e7ada1f6c50204e6d797961f18945e80e55c113327ecaf24c1b1787d5000d",
+      "grid_thw": [
+        [
+          1,
+          70,
+          70
+        ]
+      ],
+      "preprocess_seconds": 0.10962083004415035,
+      "extract_seconds": 0.34452776424586773,
+      "peak_allocated_bytes": 7833806848,
+      "peak_reserved_bytes": 8214544384,
+      "pixel_values_sha256": "48cc6bc571f1a535759a04b4fa0ca2dcdc6cbb48ab727ab40b358093d2f74a3b"
+    },
+    {
+      "sample_id": "e38e240b06a8377a76fb",
+      "dataset": "monuseg",
+      "split": "test",
+      "image_path": "datasets/monuseg/Test_Folder/img/TCGA-EJ-A46H-01A-03-TSC.tif",
+      "image_sha256": "160abd191a91a13ac760009e94337a3201e79183ac169a58349e178c3cc6c6c1",
+      "grid_thw": [
+        [
+          1,
+          70,
+          70
+        ]
+      ],
+      "preprocess_seconds": 0.09923752676695585,
+      "extract_seconds": 0.34144753497093916,
+      "peak_allocated_bytes": 7834276864,
+      "peak_reserved_bytes": 8214544384,
+      "pixel_values_sha256": "848b2bf5ca443dfe2896e1aa35bf6111ca6ed20127f72b165302297f38c0ab5f"
+    },
+    {
+      "sample_id": "9b91554828113669de50",
+      "dataset": "monuseg",
+      "split": "test",
+      "image_path": "datasets/monuseg/Test_Folder/img/TCGA-FG-A4MU-01B-01-TS1.tif",
+      "image_sha256": "dc6e9f570879195067b2690a57e8f4f34d7fa80d03ab04741e63d3ab6d38edec",
+      "grid_thw": [
+        [
+          1,
+          70,
+          70
+        ]
+      ],
+      "preprocess_seconds": 0.1062307907268405,
+      "extract_seconds": 0.3426329651847482,
+      "peak_allocated_bytes": 7833806848,
+      "peak_reserved_bytes": 8214544384,
+      "pixel_values_sha256": "3d2f105009702705ae221485f3e9598749448c8771de7d6a9ddca51914490702"
+    },
+    {
+      "sample_id": "086b90f5a48f9c111189",
+      "dataset": "monuseg",
+      "split": "test",
+      "image_path": "datasets/monuseg/Test_Folder/img/TCGA-GL-6846-01A-01-BS1.tif",
+      "image_sha256": "e39c83138708921d035e5358a30314b8ae4ee26a24c3425db4b71a7181028f11",
+      "grid_thw": [
+        [
+          1,
+          70,
+          70
+        ]
+      ],
+      "preprocess_seconds": 0.10671219415962696,
+      "extract_seconds": 0.3405739776790142,
+      "peak_allocated_bytes": 7834276864,
+      "peak_reserved_bytes": 8214544384,
+      "pixel_values_sha256": "86d1f6ec777f7b1271a9f1ccf7a701d138dd1df8c0def0648f65f3b819442eb6"
+    },
+    {
+      "sample_id": "92cc9d177dc738c7141a",
+      "dataset": "monuseg",
+      "split": "test",
+      "image_path": "datasets/monuseg/Test_Folder/img/TCGA-HC-7209-01A-01-TS1.tif",
+      "image_sha256": "b4853ff681af7d0c01ac00784c13324338b9a0e73a8350d5f4fce1391b1db4c7",
+      "grid_thw": [
+        [
+          1,
+          70,
+          70
+        ]
+      ],
+      "preprocess_seconds": 0.10601994674652815,
+      "extract_seconds": 0.3501625806093216,
+      "peak_allocated_bytes": 7833806848,
+      "peak_reserved_bytes": 8214544384,
+      "pixel_values_sha256": "aafa196273038305737e21209425889bee6147d66fa851965fea6d468607d56b"
+    },
+    {
+      "sample_id": "7d111ed7e0d99f25e03a",
+      "dataset": "monuseg",
+      "split": "test",
+      "image_path": "datasets/monuseg/Test_Folder/img/TCGA-HT-8564-01Z-00-DX1.tif",
+      "image_sha256": "2a4a24f52889519a47ebe119a55e4b2bbf9cf3d072f6cb0c2d7639e0fca01fb5",
+      "grid_thw": [
+        [
+          1,
+          70,
+          70
+        ]
+      ],
+      "preprocess_seconds": 0.09212552011013031,
+      "extract_seconds": 0.341311720199883,
+      "peak_allocated_bytes": 7834276864,
+      "peak_reserved_bytes": 8214544384,
+      "pixel_values_sha256": "6c6f5d6f150db64a5b76a9a030416ba0ede656b098e6d1e9e714f2311a146d86"
+    },
+    {
+      "sample_id": "30542586415ef294585e",
+      "dataset": "monuseg",
+      "split": "test",
+      "image_path": "datasets/monuseg/Test_Folder/img/TCGA-IZ-8196-01A-01-BS1.tif",
+      "image_sha256": "25192feade6c6e1bb51a871f3944321ac45bc4a483fdc7c3c5d8c7f698e32dbc",
+      "grid_thw": [
+        [
+          1,
+          70,
+          70
+        ]
+      ],
+      "preprocess_seconds": 0.10547782108187675,
+      "extract_seconds": 0.3475940339267254,
+      "peak_allocated_bytes": 7833806848,
+      "peak_reserved_bytes": 8214544384,
+      "pixel_values_sha256": "4a0e098b5922453b36f76bd58ff43b7f0a3df05d43e7e4c5dcb3fc386a094151"
+    },
+    {
+      "sample_id": "78cc9f864779444ec2ea",
+      "dataset": "monuseg",
+      "split": "test",
+      "image_path": "datasets/monuseg/Test_Folder/img/TCGA-ZF-A9R5-01A-01-TS1.tif",
+      "image_sha256": "966b04a86252191f903044dc47452cd6f1b10ee8f91fee90edeb07d62e0168da",
+      "grid_thw": [
+        [
+          1,
+          70,
+          70
+        ]
+      ],
+      "preprocess_seconds": 0.10185190290212631,
+      "extract_seconds": 0.3535527093335986,
+      "peak_allocated_bytes": 7834276864,
+      "peak_reserved_bytes": 8214544384,
+      "pixel_values_sha256": "5c01e48cde89999457c508f0e720222490f3bbe5773126fe8f2f7184f21a755e"
+    }
+  ],
+  "script_sha256": "7397b211fa9a7f9132f19001bf2039671c6b2913ee4953d0dc6fec51815252b4"
+}
