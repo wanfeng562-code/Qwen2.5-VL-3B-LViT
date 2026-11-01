@@ -28,7 +28,7 @@
 
 ## 训练、恢复和测量
 
-固定 Adam lr=1e-3、batch=2、weight_decay=0，完整 float32；参考原 CosineAnnealingWarmRestarts(T_0=10,T_mult=1,eta_min=1e-4)，使用现代 Torch 实现并在 epoch末更新。配置示例 max_epochs=2000、min_epochs=50、patience=50；最终统一预算由速度/过拟合验收后主代理冻结，在两种文本来源及 seeds 666/667/668 中保持一致。
+固定 Adam lr=1e-3、batch=2、weight_decay=0，完整 float32；参考原 CosineAnnealingWarmRestarts(T_0=10,T_mult=1,eta_min=1e-4)，使用现代 Torch 实现并在 epoch末更新。正式冻结配置 max_epochs=2000、min_epochs=50、patience=50，在两种文本来源及 seeds 666/667/668 中保持一致；六组已完成，结果见 [阶段二至四实验结果](阶段二至四实验结果.md)。
 
 种子控制 Python、NumPy、Torch、CUDA；禁用 TF32/cuDNN benchmark，开启 deterministic algorithms，CLI 在导入 torch 前设置 CUBLAS_WORKSPACE_CONFIG=:4096:8。shuffle 使用独立 Torch Generator，以 seed+epoch×100003 确定当前 epoch 顺序；无随机数据增强。空文本或第一行空白会拒绝，避免原 first-line 政策静默产生全零文本特征。
 
@@ -40,7 +40,7 @@
 
 ```bash
 python scripts/cache_text_features.py --dataset monuseg --source provided_legacy_text --output cache/text_features/monuseg_provided_legacy_text_v1.pt --device cpu
-python scripts/cache_text_features.py --dataset monuseg --source qwen_predicted_text --descriptions cache/qwen/monuseg_plain_v1.jsonl --output cache/text_features/monuseg_qwen_predicted_text_v1.pt --device cpu
+python scripts/cache_text_features.py --dataset monuseg --source qwen_predicted_text --descriptions cache/qwen/monuseg_plain_v2.jsonl --output cache/text_features/monuseg_qwen_predicted_text_v1.pt --device cpu
 python scripts/check_lvit.py --config configs/training_monuseg_legacy_v1.json --output-dir outputs/lvit_checks/legacy --mode full --steps 100
 python scripts/train_lvit.py --config configs/training_monuseg_legacy_v1.json --seed 666 --output-dir outputs/lvit/monuseg/legacy_seed666
 python scripts/train_lvit.py --config configs/training_monuseg_legacy_v1.json --seed 666 --output-dir outputs/lvit/monuseg/legacy_seed666 --resume outputs/lvit/monuseg/legacy_seed666/last.pt

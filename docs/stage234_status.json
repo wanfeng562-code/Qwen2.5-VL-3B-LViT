@@ -1,31 +1,110 @@
 {
-  "status": "in_progress",
+  "status": "completed",
+  "completed_date": "2026-11-01",
+  "scope": "phases2_to4_first_2d_task_monuseg",
   "phase2": {
+    "status": "completed",
     "engineering": "passed",
-    "real_overfit": "passed",
-    "save_resume": "passed",
-    "engine_epoch_and_terminal_resume": "passed",
-    "formal_three_seed_baseline": "running"
+    "real_learning": "passed",
+    "exact_next_update_resume": "passed",
+    "formal_baseline_seeds": [
+      666,
+      667,
+      668
+    ]
   },
   "phase3": {
     "status": "completed",
     "pilot_count": 60,
-    "raw_structured_valid": 0,
-    "explicit_adapter_valid": 60,
-    "plain_decision": "frozen_for_controlled_comparison",
+    "splits": [
+      "train",
+      "val"
+    ],
+    "raw_strict_valid": 0,
+    "envelope_adapter_valid": 60,
+    "plain_decision": "frozen_controlled_comparison_completed",
     "spatial_decision": "requires_localization_improvement_or_medical_adaptation_before_phase5"
   },
   "phase4": {
-    "status": "running",
-    "required_training_runs": 6,
-    "test_evaluation": "only_after_all_training_runs",
-    "joint_inference": "pending_trained_checkpoint"
+    "status": "completed",
+    "training_runs": 6,
+    "test_samples_per_run": 14,
+    "all_training_before_test": true,
+    "aggregate": {
+      "legacy": {
+        "dice_percent": {
+          "mean": 77.54119969449974,
+          "sample_std": 0.9983279886116871
+        },
+        "iou_percent": {
+          "mean": 63.490564669554594,
+          "sample_std": 1.2670337168407322
+        },
+        "train_seconds": {
+          "mean": 283.09541208359104,
+          "sample_std": 26.16441734156472
+        }
+      },
+      "qwen": {
+        "dice_percent": {
+          "mean": 75.6072990666594,
+          "sample_std": 2.1357924016190055
+        },
+        "iou_percent": {
+          "mean": 61.09761619995936,
+          "sample_std": 2.6010468645339575
+        },
+        "train_seconds": {
+          "mean": 314.0042916396633,
+          "sample_std": 76.39087262366796
+        }
+      }
+    },
+    "paired_differences": [
+      {
+        "seed": 666,
+        "dice_percentage_points": -4.313392299597169,
+        "iou_percentage_points": -5.241634923099433
+      },
+      {
+        "seed": 667,
+        "dice_percentage_points": -1.1476041620345114,
+        "iou_percentage_points": -1.4922781885792844
+      },
+      {
+        "seed": 668,
+        "dice_percentage_points": -0.3407054218893535,
+        "iou_percentage_points": -0.44493229710697335
+      }
+    ],
+    "joint_inference": "passed",
+    "visual_review": "completed"
+  },
+  "audit": {
+    "counts": {
+      "passed": 20,
+      "pending": 0,
+      "failed": 0
+    },
+    "source_artifacts": "read_only",
+    "independent_png_gt_runs": 6,
+    "all_dataset_assets": 1845,
+    "vendor_files": 31
   },
   "evidence": {
-    "training_checks": "outputs/lvit_checks/legacy_full/checks.json",
-    "epoch_checks": "outputs/lvit_checks/engine_smoke/verification.json",
-    "queue_checks": "outputs/lvit_checks/queue_repairs/verification.json",
-    "pilot": "outputs/visual_review/pilot_v2/summary.json",
-    "formal_state": "outputs/stage234/formal_experiments/status.json"
-  }
+    "final_report": "docs/阶段二至四实验结果.md",
+    "audit": "outputs/stage234/final_audit.json",
+    "formal_results": "outputs/stage234/formal_experiments/summary.json",
+    "joint": "outputs/stage234/joint_inference/pipeline_result.json",
+    "localization_review": "docs/阶段三视觉审查.md",
+    "segmentation_review": "docs/阶段四分割视觉审查.md"
+  },
+  "limitations": [
+    "legacy text provenance unverified",
+    "three seeds and fourteen test images",
+    "no external clinical validation",
+    "cov19 and mosmeddata full training not performed in this scope",
+    "spatial fusion and LoRA not performed"
+  ],
+  "next_phase": "phase5_conditional_on_localization_quality"
 }
