@@ -45,6 +45,11 @@
     "dataset_source": "/root/autodl-tmp/datasets",
     "lvit_source": "/root/autodl-tmp/对比方法/LViT-main"
   },
-  "remote_publication": "pending_git_authentication",
+  "remote_publication": {
+    "status": "initial_commit_pushed_and_verified",
+    "initial_commit": "8aa58edbaa02dc14d771cb601eb2ffe93a028b38",
+    "transport": "repository-scoped SSH deploy key over port 443",
+    "verified_at": "2026-11-01T19:18:16.430765+08:00"
+  },
   "next_phase": "LViT environment and loader adaptation, then one-batch training validation"
 }
