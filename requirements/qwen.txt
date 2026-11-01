@@ -1,0 +1,6 @@
+# Existing torch==2.5.1+cu124 and torchvision==0.20.1+cu124 are retained.
+# This records the already validated environment; no reinstall is needed.
+transformers==4.51.3
+accelerate==1.6.0
+qwen-vl-utils==0.0.8
+Pillow==11.0.0

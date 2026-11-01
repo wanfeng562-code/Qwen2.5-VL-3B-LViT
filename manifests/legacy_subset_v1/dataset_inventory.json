@@ -1,0 +1,28 @@
+{
+  "protocol": "legacy_subset_v1",
+  "counts": {
+    "monuseg": {
+      "train": 24,
+      "val": 6,
+      "test": 14
+    },
+    "cov19": {
+      "train": 160,
+      "val": 40,
+      "test": 200
+    },
+    "mosmeddata": {
+      "train": 160,
+      "val": 40,
+      "test": 273
+    }
+  },
+  "samples": 917,
+  "data_files": 1845,
+  "data_bytes": 259470688,
+  "data_source": "/root/autodl-tmp/datasets",
+  "project_data_root": "datasets",
+  "source_files_preserved": true,
+  "copy_kind": "independent_regular_files",
+  "generated_at": "2026-11-01T19:01:21.363237+08:00"
+}

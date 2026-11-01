@@ -1,0 +1,52 @@
+# BEGIN Qwen-LViT project ignores
+# Large artifacts and experiment results
+/weights/
+/datasets/
+/cache/
+/outputs/
+/runs/
+/wandb/
+*.safetensors
+*.pth
+*.pth.tar
+*.pt
+*.ckpt
+*.bin
+*.onnx
+*.log
+events.out.tfevents.*
+
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Local credentials and connection files
+.env
+.env.*
+!.env.example
+.ssh/
+/secrets/
+云服务器配置.txt
+# END Qwen-LViT project ignores
+
+# BEGIN stage1 repository layout
+!/datasets/
+/datasets/*
+!/datasets/README.md
+!/weights/
+/weights/*
+!/weights/README.md
+!/cache/
+/cache/*
+!/cache/README.md
+!/outputs/
+/outputs/*
+!/outputs/README.md
+/src/lvit/LV_loss/
+云服务器账密.txt
+云服务器配置.txt
+# END stage1 repository layout

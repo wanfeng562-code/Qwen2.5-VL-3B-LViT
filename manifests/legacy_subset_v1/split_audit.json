@@ -1,0 +1,88 @@
+{
+  "monuseg": {
+    "comparisons": [
+      {
+        "first": "train",
+        "second": "val",
+        "known_case_or_series_overlap": [],
+        "identical_image_count": 0
+      },
+      {
+        "first": "train",
+        "second": "test",
+        "known_case_or_series_overlap": [],
+        "identical_image_count": 0
+      },
+      {
+        "first": "val",
+        "second": "test",
+        "known_case_or_series_overlap": [],
+        "identical_image_count": 0
+      }
+    ],
+    "unknown_identifier_samples": 0,
+    "interpretation": "no_overlap_detected_on_available_patient_ids"
+  },
+  "cov19": {
+    "comparisons": [
+      {
+        "first": "train",
+        "second": "val",
+        "known_case_or_series_overlap": [
+          "sub-S10477",
+          "sub-S10636"
+        ],
+        "identical_image_count": 0
+      },
+      {
+        "first": "train",
+        "second": "test",
+        "known_case_or_series_overlap": [],
+        "identical_image_count": 0
+      },
+      {
+        "first": "val",
+        "second": "test",
+        "known_case_or_series_overlap": [],
+        "identical_image_count": 0
+      }
+    ],
+    "unknown_identifier_samples": 82,
+    "interpretation": "historical_reproduction_with_disclosed_group_overlap"
+  },
+  "mosmeddata": {
+    "comparisons": [
+      {
+        "first": "train",
+        "second": "val",
+        "known_case_or_series_overlap": [
+          "Jun_coronacases_case8",
+          "bjorke"
+        ],
+        "identical_image_count": 0
+      },
+      {
+        "first": "train",
+        "second": "test",
+        "known_case_or_series_overlap": [
+          "Jun_coronacases_case8",
+          "Jun_radiopaedia_40_86625_0_case18",
+          "bjorke"
+        ],
+        "identical_image_count": 0
+      },
+      {
+        "first": "val",
+        "second": "test",
+        "known_case_or_series_overlap": [
+          "Jun_coronacases_case8",
+          "Morozov_study_0299",
+          "bjorke"
+        ],
+        "identical_image_count": 0
+      }
+    ],
+    "unknown_identifier_samples": 0,
+    "interpretation": "historical_reproduction_with_disclosed_group_overlap"
+  }
+}

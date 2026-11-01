@@ -1,0 +1,50 @@
+{
+  "phase": "stage1",
+  "status": "data_and_protocol_passed",
+  "protocol": "legacy_subset_v1",
+  "user_confirmed_historical_membership": true,
+  "first_task": "monuseg",
+  "verification": {
+    "status": "passed",
+    "protocol": "legacy_subset_v1",
+    "samples": 917,
+    "verified_data_assets": 1845,
+    "text_workbooks": 9,
+    "counts": {
+      "monuseg": {
+        "train": 24,
+        "val": 6,
+        "test": 14
+      },
+      "cov19": {
+        "train": 160,
+        "val": 40,
+        "test": 200
+      },
+      "mosmeddata": {
+        "train": 160,
+        "val": 40,
+        "test": 273
+      }
+    },
+    "dataset_hashes_match": true,
+    "known_overlap_disclosed_and_frozen": true,
+    "monuseg_patient_ids_disjoint": true,
+    "metric_edge_cases_passed": true,
+    "git_ignore_rules_passed": true,
+    "scope": "Phase-one data and protocol validation; does not execute the legacy BERT/DataLoader or train LViT."
+  },
+  "copy": {
+    "data_files": 1845,
+    "data_bytes": 259470688,
+    "lvit_files": 31,
+    "lvit_bytes": 132541,
+    "all_hashes_matched": true,
+    "source_files_unchanged": true,
+    "independent_copies": true,
+    "dataset_source": "/root/autodl-tmp/datasets",
+    "lvit_source": "/root/autodl-tmp/对比方法/LViT-main"
+  },
+  "remote_publication": "pending_git_authentication",
+  "next_phase": "LViT environment and loader adaptation, then one-batch training validation"
+}

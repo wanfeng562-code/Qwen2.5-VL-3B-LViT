@@ -1,0 +1,168 @@
+{
+  "official_repository": "https://github.com/HUANGLIZI/LViT",
+  "source": "/root/autodl-tmp/对比方法/LViT-main",
+  "kind": "user_uploaded_modified_copy",
+  "copied_at": "2026-11-01T19:01:21.363237+08:00",
+  "files": [
+    {
+      "path": "Config.py",
+      "bytes": 2284,
+      "sha256": "69b5ef642ecfa70f8a6d68f703877a70f5f027322e3be8dba532d7ffcd17e0d2"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1065,
+      "sha256": "a1fea0ea5085458a3f61b9097c5982ab7d758c51b1ff27b21c92a10742f65472"
+    },
+    {
+      "path": "LV_loss/LV_loss.xlsx",
+      "bytes": 9946,
+      "sha256": "cd184c6958635cdb235a730695b1213b6d6c8f3321981fabf2ad9077d988f816"
+    },
+    {
+      "path": "LV_loss/fig1.png",
+      "bytes": 1641,
+      "sha256": "b9f2d1ae75690325f42d921f72884f064ee55ac192a87bc92d236a112bcad223"
+    },
+    {
+      "path": "LV_loss/fig10.png",
+      "bytes": 2289,
+      "sha256": "388c8b2aab22e2d90aad531f518f08cc9feb11f2e8983dc6ee19b2f0f60981c0"
+    },
+    {
+      "path": "LV_loss/fig11.png",
+      "bytes": 2352,
+      "sha256": "d272380ac4d799530b744e0f2c52d8afcdfb11e1416e3cb47e07cfa2d23cde2f"
+    },
+    {
+      "path": "LV_loss/fig12.png",
+      "bytes": 2949,
+      "sha256": "b80a508c4f90ac730ef0334271fab07a6e11b7c59ccdec4a580c6baf72b1d726"
+    },
+    {
+      "path": "LV_loss/fig13.png",
+      "bytes": 2966,
+      "sha256": "547546c220d3f38effaa0d910ff0917f7a48f5f5a6e0b8e28551b3d6e8cc17ac"
+    },
+    {
+      "path": "LV_loss/fig14.png",
+      "bytes": 3020,
+      "sha256": "0246322c365da05fc6c3e612d4432171a06f3990538c8aea0b284590deb92844"
+    },
+    {
+      "path": "LV_loss/fig2.png",
+      "bytes": 1724,
+      "sha256": "eb85bb56761ba5f6e7b7a993643f873bde72bf0375aedaeb6e33df8d0a492c54"
+    },
+    {
+      "path": "LV_loss/fig3.png",
+      "bytes": 1538,
+      "sha256": "971eb7dcea799e1e42235d61a7bd3f2fe331794582be85d0c113a2df108e7cb0"
+    },
+    {
+      "path": "LV_loss/fig4.png",
+      "bytes": 1624,
+      "sha256": "a5f4225f357e9378d1d471ae31a6d884794b6812563bc7cd8fef3211169a0524"
+    },
+    {
+      "path": "LV_loss/fig5.png",
+      "bytes": 1709,
+      "sha256": "d7f433c31cc9185e4a9b152193b5c4ee910d3c7231512c44d36605b62cb17e85"
+    },
+    {
+      "path": "LV_loss/fig6.png",
+      "bytes": 1562,
+      "sha256": "285c00b5bd193d69746fe733bbb5f62007e7da3d838ea1fb8d9f0d2b99cb8851"
+    },
+    {
+      "path": "LV_loss/fig7.png",
+      "bytes": 2857,
+      "sha256": "1dad6b114f4438d27e5875e7b00b748a053cb56acc7c783ab09824015d686e41"
+    },
+    {
+      "path": "LV_loss/fig8.png",
+      "bytes": 2277,
+      "sha256": "04d3963b28f7f9f8c3ccfc93c3077b752af4862030a00af1367623ab40bfdd36"
+    },
+    {
+      "path": "LV_loss/fig9.png",
+      "bytes": 2357,
+      "sha256": "a4c800659b72154dfe1bcf0ed306595c76e762fba37449dd9839f2a131b5146f"
+    },
+    {
+      "path": "Load_Dataset.py",
+      "bytes": 7756,
+      "sha256": "f8c96fd7ac8277eebf2c4db64a8b36482c6f6d25f304a3dbbeb350607906afe2"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6712,
+      "sha256": "3c1f094a8ee56233f80504e36cd7d1bdfa5b048ac5ed02c93d8af61986bb490f"
+    },
+    {
+      "path": "Train_one_epoch.py",
+      "bytes": 7570,
+      "sha256": "d7fd762e351e8154cf3b130f874565e5693f32e7787cb4d07a55d4b8ff95053c"
+    },
+    {
+      "path": "nets/LViT.py",
+      "bytes": 6683,
+      "sha256": "25daed5053d01b017307944b25901d89e61897a95ae41188fb5d27d1731b2a4a"
+    },
+    {
+      "path": "nets/UNet.py",
+      "bytes": 3777,
+      "sha256": "16282c479bea5dc945fe348acdb54941bfd38517c9a7a87361853c4036fcc7e3"
+    },
+    {
+      "path": "nets/Vit.py",
+      "bytes": 8047,
+      "sha256": "97dae44c284ad1bef92957e7bd96db9055042d6396e492da97943cd13a339d88"
+    },
+    {
+      "path": "nets/pixlevel.py",
+      "bytes": 1548,
+      "sha256": "647e6aab18b51eab01479ef5d8b50df91a8641aca3c26819e493c599e345e482"
+    },
+    {
+      "path": "nets/textlevel.py",
+      "bytes": 951,
+      "sha256": "2bd132984927e971fd2eade9cc23a64081f5e0d12d07ee02bcaf65566e49c19b"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 872,
+      "sha256": "49e12e3ef2574ef82b489da1b3f31dd67f9750fda5c91b5b9c803c38de28564c"
+    },
+    {
+      "path": "test.sh",
+      "bytes": 1468,
+      "sha256": "672c630bc52de8d1107744b945367edde360ee6992a0e0c8add340d9c1bda0db"
+    },
+    {
+      "path": "test_model.py",
+      "bytes": 7438,
+      "sha256": "6170ab483b48f830476a3fa3f7c4c1233030c7fdf82bb7898ba47d59b3c7707f"
+    },
+    {
+      "path": "train.sh",
+      "bytes": 1290,
+      "sha256": "e271d5714b873620055f89dd5a04073adb1e309c521e315262047c240c1e2db9"
+    },
+    {
+      "path": "train_model.py",
+      "bytes": 10763,
+      "sha256": "8ac1c1d313b8948d1fbab9b7452594b12fee0546afcf501ec71006d8e9129c6c"
+    },
+    {
+      "path": "utils.py",
+      "bytes": 23506,
+      "sha256": "eccae6c18e66a9a6b7f7513a0a0ed95611e8f0bc58a6e9c2f09ee4d1ee415293"
+    }
+  ],
+  "excluded": [
+    "__pycache__",
+    "*.pyc",
+    ".git"
+  ]
+}

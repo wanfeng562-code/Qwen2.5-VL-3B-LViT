@@ -1,0 +1,180 @@
+{
+  "protocol_id": "legacy_subset_v1",
+  "created_at": "2026-11-01T19:01:21.363237+08:00",
+  "user_confirmed": {
+    "historical_paper2_splits": true,
+    "retain_membership": true,
+    "execution_order": [
+      "monuseg",
+      "cov19",
+      "mosmeddata"
+    ]
+  },
+  "historical_split_seed": null,
+  "split_reproducibility": "immutable_lists_and_sha256",
+  "training_seeds_planned": [
+    666,
+    667,
+    668
+  ],
+  "dataset_root": "datasets",
+  "manifest_root": "manifests/legacy_subset_v1",
+  "counts": {
+    "monuseg": {
+      "train": 24,
+      "val": 6,
+      "test": 14
+    },
+    "cov19": {
+      "train": 160,
+      "val": 40,
+      "test": 200
+    },
+    "mosmeddata": {
+      "train": 160,
+      "val": 40,
+      "test": 273
+    }
+  },
+  "image_input": {
+    "lvit_size": [
+      224,
+      224
+    ],
+    "lvit_color_order": "BGR",
+    "qwen_color_order": "RGB",
+    "grayscale_to_three_channels": true,
+    "image_resize": "bilinear",
+    "lvit_scale": "divide_by_255",
+    "patching": false
+  },
+  "mask_input": {
+    "foreground_rule": "grayscale_gt_0",
+    "binarize_before_resize": true,
+    "resize": "nearest",
+    "raw_files_modified": false,
+    "legacy_comparison_policy": "legacy_loader_resize_v1"
+  },
+  "metrics": {
+    "primary": "foreground_dice_per_image_macro",
+    "secondary": "foreground_iou_per_image_macro",
+    "probability_threshold": 0.5,
+    "comparison": "greater_equal",
+    "evaluation_grid": [
+      224,
+      224
+    ],
+    "both_empty": 1.0,
+    "one_empty": 0.0,
+    "report_unit": "percent",
+    "denominator": "actual_manifest_length",
+    "checkpoint_selection": "best_validation_macro_dice",
+    "checkpoint_tie": "earliest",
+    "test_used_for_tuning": false
+  },
+  "text_sources": [
+    "provided_legacy_text",
+    "qwen_predicted_text",
+    "qwen_predicted_grounded_evidence",
+    "oracle_reference"
+  ],
+  "legacy_text_provenance": "not_independently_verified",
+  "geometric_augmentation_contract": "synchronize_images_masks_boxes_and_spatial_text",
+  "smoke_test_geometric_augmentation": false,
+  "patient_group_limitations": {
+    "monuseg": {
+      "comparisons": [
+        {
+          "first": "train",
+          "second": "val",
+          "known_case_or_series_overlap": [],
+          "identical_image_count": 0
+        },
+        {
+          "first": "train",
+          "second": "test",
+          "known_case_or_series_overlap": [],
+          "identical_image_count": 0
+        },
+        {
+          "first": "val",
+          "second": "test",
+          "known_case_or_series_overlap": [],
+          "identical_image_count": 0
+        }
+      ],
+      "unknown_identifier_samples": 0,
+      "interpretation": "no_overlap_detected_on_available_patient_ids"
+    },
+    "cov19": {
+      "comparisons": [
+        {
+          "first": "train",
+          "second": "val",
+          "known_case_or_series_overlap": [
+            "sub-S10477",
+            "sub-S10636"
+          ],
+          "identical_image_count": 0
+        },
+        {
+          "first": "train",
+          "second": "test",
+          "known_case_or_series_overlap": [],
+          "identical_image_count": 0
+        },
+        {
+          "first": "val",
+          "second": "test",
+          "known_case_or_series_overlap": [],
+          "identical_image_count": 0
+        }
+      ],
+      "unknown_identifier_samples": 82,
+      "interpretation": "historical_reproduction_with_disclosed_group_overlap"
+    },
+    "mosmeddata": {
+      "comparisons": [
+        {
+          "first": "train",
+          "second": "val",
+          "known_case_or_series_overlap": [
+            "Jun_coronacases_case8",
+            "bjorke"
+          ],
+          "identical_image_count": 0
+        },
+        {
+          "first": "train",
+          "second": "test",
+          "known_case_or_series_overlap": [
+            "Jun_coronacases_case8",
+            "Jun_radiopaedia_40_86625_0_case18",
+            "bjorke"
+          ],
+          "identical_image_count": 0
+        },
+        {
+          "first": "val",
+          "second": "test",
+          "known_case_or_series_overlap": [
+            "Jun_coronacases_case8",
+            "Morozov_study_0299",
+            "bjorke"
+          ],
+          "identical_image_count": 0
+        }
+      ],
+      "unknown_identifier_samples": 0,
+      "interpretation": "historical_reproduction_with_disclosed_group_overlap"
+    }
+  },
+  "phase2_required": [
+    "LViT dependencies",
+    "text encoder compatibility",
+    "dataset paths and aliases",
+    "nearest mask resize",
+    "actual test denominator",
+    "training hyperparameters"
+  ]
+}
