@@ -1,0 +1,10 @@
+{
+  "generation_config_sha256": "186c336ba4e55c06b35950f715814092a7f7e0afb98137b4ebe1b6b58f39bb1e",
+  "output_contract_sha256": "5420e13c2b66c408beef517f9e896691ffd21ec20a6e16b93ee069f7a9edd0a9",
+  "frozen_before_test_generation": true,
+  "pilot_calibration_samples": 6,
+  "revisions_after_v2": 0,
+  "plain_decision": "freeze_for_controlled_MoNuSeg_comparison; no clinical accuracy claim",
+  "structured_decision": "evaluate_full_60_with_explicit_envelope_adapter; not approved for spatial fusion",
+  "test_sampling_for_joint_inference": "sample_id sorted first of monuseg test; checkpoint qwen seed666 chosen in advance"
+}

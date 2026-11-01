@@ -1,0 +1,12 @@
+{
+  "version": "qwen_output_contract_v1",
+  "strip_single_full_json_code_fence": true,
+  "wrap_top_level_array_in_regions": true,
+  "reject_missing_or_extra_fields": true,
+  "reject_any_invalid_region": true,
+  "clip_coordinates": false,
+  "fill_descriptions": false,
+  "max_regions": 3,
+  "retain_raw_output": true,
+  "coordinate_transform": "declared_frame_to_normalized_0_1000_without_rounding"
+}

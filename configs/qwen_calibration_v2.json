@@ -1,0 +1,60 @@
+{
+  "purpose": "one_predeclared_prompt_revision_on_train_val_only",
+  "selection_rule": "first_sample_id_in_each_dataset_and_split_from_60_pilot",
+  "records": [
+    {
+      "sample_id": "0a0bef10f500dc48430b",
+      "dataset": "monuseg",
+      "split": "train",
+      "image_path": "datasets/monuseg/Train_Folder/img/TCGA-B0-5698-01Z-00-DX1.png",
+      "image_sha256": "771aed30afed27bd849d8cfdf07f710a56830eea4447e5e275172cb4b4ae8932",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "sample_id": "02185f96dc0e6a4100d2",
+      "dataset": "monuseg",
+      "split": "val",
+      "image_path": "datasets/monuseg/Val_Folder/img/TCGA-HE-7129-01Z-00-DX1.png",
+      "image_sha256": "5b94fd54735e350aa2440908f48ffdd80b059489037f14ecd4f351e6dbe4c653",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "sample_id": "07c0d0dc4c932d59956f",
+      "dataset": "cov19",
+      "split": "train",
+      "image_path": "datasets/cov19/Train_Folder/img/sub-S10418_ses-E18354_run-1_bp-chest_vp-ap_cr.png",
+      "image_sha256": "c84f3fb73eb8428b905e99b475961484a26ccf973b21cf7c134d72dfa973c61a",
+      "width": 224,
+      "height": 224
+    },
+    {
+      "sample_id": "c062388197d87e0eda44",
+      "dataset": "cov19",
+      "split": "val",
+      "image_path": "datasets/cov19/Val_Folder/img/covid_3303.png",
+      "image_sha256": "18f527c1f085dc096a8ec7416c8283228bc9d94c90837ed265d44961a0ca8900",
+      "width": 224,
+      "height": 224
+    },
+    {
+      "sample_id": "1923fd8335fc6ec99c18",
+      "dataset": "mosmeddata",
+      "split": "train",
+      "image_path": "datasets/mosmeddata/Train_Folder/img/Jun_radiopaedia_14_85914_0_case13_103.png",
+      "image_sha256": "ec905240ef2d7176baf1507c260065931e4c42e9cc7bfc4c8704ec20c5b2484e",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "sample_id": "457eebda519c4b19d4d2",
+      "dataset": "mosmeddata",
+      "split": "val",
+      "image_path": "datasets/mosmeddata/Val_Folder/img/Morozov_study_0299_11.png",
+      "image_sha256": "0228442c7bea1237820ff5cc0a97d90e9d6eb5a06747e12951afa22d29863543",
+      "width": 512,
+      "height": 512
+    }
+  ]
+}

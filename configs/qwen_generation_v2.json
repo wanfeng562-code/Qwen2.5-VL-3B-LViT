@@ -1,0 +1,33 @@
+{
+  "version": "qwen_medical_v2",
+  "model_directory": "weights/Qwen2.5-VL-3B-Instruct",
+  "dtype": "bfloat16",
+  "attention": "sdpa",
+  "min_pixels": 200704,
+  "max_pixels": 1003520,
+  "do_sample": false,
+  "plain_max_new_tokens": 64,
+  "structured_max_new_tokens": 384,
+  "coordinate_system": "absolute_resized_pixels_xyxy",
+  "datasets": {
+    "monuseg": {
+      "modality": "H&E histology",
+      "target": "cell nuclei",
+      "prefix": "Nuclei:"
+    },
+    "cov19": {
+      "modality": "chest X-ray",
+      "target": "lung infection regions",
+      "prefix": "Lung regions:"
+    },
+    "mosmeddata": {
+      "modality": "chest CT",
+      "target": "lung infection regions",
+      "prefix": "Lung regions:"
+    }
+  },
+  "plain_prompt": "Describe visible {target} in this {modality} image in one short phrase, at most 12 English words. Start with '{prefix}'. State only visible appearance and broad image location. If uncertain, say uncertain. Do not infer a diagnosis or provide treatment.",
+  "structured_prompt": "Identify up to three spatially separate image regions containing visible {target} in this {modality} image. Return only one valid JSON object, without Markdown or other text. The object must have the field regions, a list of region objects. Each region object must contain id (unique integer), description (a concise phrase describing image-specific visible evidence in that region, not instructions or placeholders), and box (four numbers in order x_min, y_min, x_max, y_max). The displayed image is [[IMAGE_WIDTH]] pixels wide and [[IMAGE_HEIGHT]] pixels high. Use absolute pixel coordinates in this displayed image, not normalized coordinates; x increases left to right, y increases top to bottom. Draw the tightest reasonable box around each visible target region; avoid overlapping or whole-image boxes unless truly necessary. If no target region can be identified, regions must be an empty list. Do not infer diagnoses.",
+  "plain_word_limit": 12,
+  "coordinate_reference": "https://qwenlm.github.io/blog/qwen2.5-vl/"
+}

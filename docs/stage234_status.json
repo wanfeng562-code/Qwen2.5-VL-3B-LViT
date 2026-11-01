@@ -1,0 +1,31 @@
+{
+  "status": "in_progress",
+  "phase2": {
+    "engineering": "passed",
+    "real_overfit": "passed",
+    "save_resume": "passed",
+    "engine_epoch_and_terminal_resume": "passed",
+    "formal_three_seed_baseline": "running"
+  },
+  "phase3": {
+    "status": "completed",
+    "pilot_count": 60,
+    "raw_structured_valid": 0,
+    "explicit_adapter_valid": 60,
+    "plain_decision": "frozen_for_controlled_comparison",
+    "spatial_decision": "requires_localization_improvement_or_medical_adaptation_before_phase5"
+  },
+  "phase4": {
+    "status": "running",
+    "required_training_runs": 6,
+    "test_evaluation": "only_after_all_training_runs",
+    "joint_inference": "pending_trained_checkpoint"
+  },
+  "evidence": {
+    "training_checks": "outputs/lvit_checks/legacy_full/checks.json",
+    "epoch_checks": "outputs/lvit_checks/engine_smoke/verification.json",
+    "queue_checks": "outputs/lvit_checks/queue_repairs/verification.json",
+    "pilot": "outputs/visual_review/pilot_v2/summary.json",
+    "formal_state": "outputs/stage234/formal_experiments/status.json"
+  }
+}

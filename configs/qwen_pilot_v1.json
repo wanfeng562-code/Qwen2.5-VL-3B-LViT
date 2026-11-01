@@ -1,0 +1,546 @@
+{
+  "schema_version": 1,
+  "protocol": "legacy_subset_v1",
+  "records": [
+    {
+      "sample_id": "0a0bef10f500dc48430b",
+      "dataset": "monuseg",
+      "split": "train",
+      "image_path": "datasets/monuseg/Train_Folder/img/TCGA-B0-5698-01Z-00-DX1.png",
+      "image_sha256": "771aed30afed27bd849d8cfdf07f710a56830eea4447e5e275172cb4b4ae8932",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "sample_id": "0a9b0013c964e3f69fc9",
+      "dataset": "monuseg",
+      "split": "train",
+      "image_path": "datasets/monuseg/Train_Folder/img/TCGA-A7-A13E-01Z-00-DX1.png",
+      "image_sha256": "e78097309c943d07e0cb9fae66dfdca09daa45982249f999631efc3072c4be09",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "sample_id": "0b1645db46be2fd44a6a",
+      "dataset": "monuseg",
+      "split": "train",
+      "image_path": "datasets/monuseg/Train_Folder/img/TCGA-G2-A2EK-01A-02-TSB.png",
+      "image_sha256": "808d1356f0a92017064d384c0ba9080c9a7c67be1a1b4726af1c5b92ed2a1ac0",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "sample_id": "178eb8bf2964678ed1c4",
+      "dataset": "monuseg",
+      "split": "train",
+      "image_path": "datasets/monuseg/Train_Folder/img/TCGA-21-5786-01Z-00-DX1.png",
+      "image_sha256": "f5c25498ca811861aca96c8c2bd3d15dd1b1b8b6fa1915ce33ea8853ee45adb2",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "sample_id": "2fe3edc5433966407bec",
+      "dataset": "monuseg",
+      "split": "train",
+      "image_path": "datasets/monuseg/Train_Folder/img/TCGA-G9-6356-01Z-00-DX1.png",
+      "image_sha256": "05d8d9ebdd0524497b1fbd006d367952572c772880138c7b7b164ad4d53c5200",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "sample_id": "3e2b323a3540bf192a71",
+      "dataset": "monuseg",
+      "split": "train",
+      "image_path": "datasets/monuseg/Train_Folder/img/TCGA-RD-A8N9-01A-01-TS1.png",
+      "image_sha256": "af0ca0b3ee6f6ef4a43d2d52898242a94988d62ea6f8e324a9c950feb74b3350",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "sample_id": "3fcb1306b6be4060cfc7",
+      "dataset": "monuseg",
+      "split": "train",
+      "image_path": "datasets/monuseg/Train_Folder/img/TCGA-G9-6348-01Z-00-DX1.png",
+      "image_sha256": "225e90c76beda98926c15ed7d71693ed1cbacefe1649eaae2f4fcfe23d9f293b",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "sample_id": "41e2991d7477b8a7c174",
+      "dataset": "monuseg",
+      "split": "train",
+      "image_path": "datasets/monuseg/Train_Folder/img/TCGA-HE-7128-01Z-00-DX1.png",
+      "image_sha256": "8413116e36c4b70c6d4b00efcd352d62ed1f81a5afa04e63288a2a97d1400ef0",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "sample_id": "430c6ec33f979caae50e",
+      "dataset": "monuseg",
+      "split": "train",
+      "image_path": "datasets/monuseg/Train_Folder/img/TCGA-B0-5710-01Z-00-DX1.png",
+      "image_sha256": "836e54ac817f4289e8a7348c909dfcb4ace2f29f0a2bbae550b02ac4e93d280b",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "sample_id": "433522316f725a1c0bfb",
+      "dataset": "monuseg",
+      "split": "train",
+      "image_path": "datasets/monuseg/Train_Folder/img/TCGA-A7-A13F-01Z-00-DX1.png",
+      "image_sha256": "e2d580856aacca4fc37170c00ed7b473dc02f9f71c6584089438ceda39f6e018",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "sample_id": "476239a271709ecdb0d1",
+      "dataset": "monuseg",
+      "split": "train",
+      "image_path": "datasets/monuseg/Train_Folder/img/TCGA-CH-5767-01Z-00-DX1.png",
+      "image_sha256": "78cef4581bc59265d8c59e0ce64cdb1eb29ab11b5591156e14907be4e1ed6e2e",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "sample_id": "4ebfa45624cbfcabbc37",
+      "dataset": "monuseg",
+      "split": "train",
+      "image_path": "datasets/monuseg/Train_Folder/img/TCGA-21-5784-01Z-00-DX1.png",
+      "image_sha256": "1974752c4b5d3ab34bf3656b7d03f5907d26056be7a576b4f0353d996357187c",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "sample_id": "5af6c2afbc86ba054d9c",
+      "dataset": "monuseg",
+      "split": "train",
+      "image_path": "datasets/monuseg/Train_Folder/img/TCGA-HE-7130-01Z-00-DX1.png",
+      "image_sha256": "d0027497cc8289d5b190e371430628244ae6900ee72abcb78e7b71e52f399ba9",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "sample_id": "5c513b311c0304805f86",
+      "dataset": "monuseg",
+      "split": "train",
+      "image_path": "datasets/monuseg/Train_Folder/img/TCGA-38-6178-01Z-00-DX1.png",
+      "image_sha256": "03321a9cec037498490eb0af2328c93b76687f90d9f56b9d7510680ed9da5311",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "sample_id": "6cdb388b5bbc0268bc6e",
+      "dataset": "monuseg",
+      "split": "train",
+      "image_path": "datasets/monuseg/Train_Folder/img/TCGA-G9-6362-01Z-00-DX1.png",
+      "image_sha256": "b9a806e8ef2fe92c79fac48df8856e6dd4703de190337e6edf12b8c22e27d4b5",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "sample_id": "779f832a4f97a44b7e8a",
+      "dataset": "monuseg",
+      "split": "train",
+      "image_path": "datasets/monuseg/Train_Folder/img/TCGA-50-5931-01Z-00-DX1.png",
+      "image_sha256": "5fd149f6eab0404a90433bb94bb53bd70f809def2a0ed3a2de4a9a708f2c5e07",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "sample_id": "838d210645c955277656",
+      "dataset": "monuseg",
+      "split": "train",
+      "image_path": "datasets/monuseg/Train_Folder/img/TCGA-B0-5711-01Z-00-DX1.png",
+      "image_sha256": "121419bf5f3cf356ffaa7d3bb415f63969dbb32d472948c5729a3388f52cc176",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "sample_id": "8797a589e4c7c01a0a02",
+      "dataset": "monuseg",
+      "split": "train",
+      "image_path": "datasets/monuseg/Train_Folder/img/TCGA-AR-A1AK-01Z-00-DX1.png",
+      "image_sha256": "981b35cdb253cac715516ab75648075c3ecc40dc1f94f5112016fd5141d6a6de",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "sample_id": "888b2882a2f8d842c4e1",
+      "dataset": "monuseg",
+      "split": "train",
+      "image_path": "datasets/monuseg/Train_Folder/img/TCGA-DK-A2I6-01A-01-TS1.png",
+      "image_sha256": "b8521e71f88c77641818611d6188476c2f11f2cffc776f4089a1b28d94364a17",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "sample_id": "b36dc7447f923c6bf173",
+      "dataset": "monuseg",
+      "split": "train",
+      "image_path": "datasets/monuseg/Train_Folder/img/TCGA-NH-A8F7-01A-01-TS1.png",
+      "image_sha256": "0ab49d500a74756996e74b2c9db618a0a1a4d15b2b9c29dbfbd0eee750c37930",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "sample_id": "b6633e3c5b3e51a77077",
+      "dataset": "monuseg",
+      "split": "train",
+      "image_path": "datasets/monuseg/Train_Folder/img/TCGA-49-4488-01Z-00-DX1.png",
+      "image_sha256": "bedd6e0212d01cdb5d8b7ceab078ce32a98f9c7537ff0ea4a5bb53318ce09324",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "sample_id": "b8f1fee012ffaf568f70",
+      "dataset": "monuseg",
+      "split": "train",
+      "image_path": "datasets/monuseg/Train_Folder/img/TCGA-KB-A93J-01A-01-TS1.png",
+      "image_sha256": "c15ead1b5fe9850ae5bd9043bc4f214a506ab64b908fea3347f920215e7bb4b8",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "sample_id": "bad6e53876eeb122b70c",
+      "dataset": "monuseg",
+      "split": "train",
+      "image_path": "datasets/monuseg/Train_Folder/img/TCGA-G9-6336-01Z-00-DX1.png",
+      "image_sha256": "2a0ef0da6497eee6e9066a2005a937e8023d21de4644fea104f4ec2bb5702f4a",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "sample_id": "f24082fd913a70fc0582",
+      "dataset": "monuseg",
+      "split": "train",
+      "image_path": "datasets/monuseg/Train_Folder/img/TCGA-AR-A1AS-01Z-00-DX1.png",
+      "image_sha256": "e7ef0ef5fd587de94f11ccaef6422a1c60c1f276f05d986f52cfb145f7db4998",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "sample_id": "02185f96dc0e6a4100d2",
+      "dataset": "monuseg",
+      "split": "val",
+      "image_path": "datasets/monuseg/Val_Folder/img/TCGA-HE-7129-01Z-00-DX1.png",
+      "image_sha256": "5b94fd54735e350aa2440908f48ffdd80b059489037f14ecd4f351e6dbe4c653",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "sample_id": "615aeda65a045299c2fc",
+      "dataset": "monuseg",
+      "split": "val",
+      "image_path": "datasets/monuseg/Val_Folder/img/TCGA-18-5592-01Z-00-DX1.png",
+      "image_sha256": "305ac08325434c57ca4f1c8d2bc76db937973c78697e3b0badcee5a6bd99c23b",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "sample_id": "998ae3dda0e13ad1ab23",
+      "dataset": "monuseg",
+      "split": "val",
+      "image_path": "datasets/monuseg/Val_Folder/img/TCGA-G9-6363-01Z-00-DX1.png",
+      "image_sha256": "f2d2283e9711d62e7dc3507864e6fab2929dad982af0aa2cd52fcae70a3dd251",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "sample_id": "aaa5770dbc460c55562e",
+      "dataset": "monuseg",
+      "split": "val",
+      "image_path": "datasets/monuseg/Val_Folder/img/TCGA-AY-A8YK-01A-01-TS1.png",
+      "image_sha256": "90224dad13075871681b2410b604838138620adee303938399d11541ea9f5c58",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "sample_id": "c37276d8c97c1805c527",
+      "dataset": "monuseg",
+      "split": "val",
+      "image_path": "datasets/monuseg/Val_Folder/img/TCGA-E2-A1B5-01Z-00-DX1.png",
+      "image_sha256": "1d326945963640ac18bf5b03dcda04912f461baf4b5ff6fa71f91af093d90478",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "sample_id": "d93f2c167af993de1702",
+      "dataset": "monuseg",
+      "split": "val",
+      "image_path": "datasets/monuseg/Val_Folder/img/TCGA-E2-A14V-01Z-00-DX1.png",
+      "image_sha256": "4b86cbcfcbed1220ba1cbbd321acb163b8a047cc462236c7db97623bf9ea3a92",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "sample_id": "e8dd92df7e457f55226f",
+      "dataset": "cov19",
+      "split": "train",
+      "image_path": "datasets/cov19/Train_Folder/img/sub-S10613_ses-E18392_run-1_bp-chest_vp-ap_cr.png",
+      "image_sha256": "47168ea13397ef82ff03d6cc6435abd6d17a51e7c9a7f095484a9384414b98e9",
+      "width": 224,
+      "height": 224
+    },
+    {
+      "sample_id": "37b6c843b001d0bfc5bf",
+      "dataset": "cov19",
+      "split": "train",
+      "image_path": "datasets/cov19/Train_Folder/img/covid_2510.png",
+      "image_sha256": "0d600de990b6f203d46649a696d304c0f8329786b93cf2c7a815e1c70c86ea7c",
+      "width": 224,
+      "height": 224
+    },
+    {
+      "sample_id": "feb074944355e4e42ab7",
+      "dataset": "cov19",
+      "split": "train",
+      "image_path": "datasets/cov19/Train_Folder/img/covid_3908.png",
+      "image_sha256": "9e54c0c6181b2aa6ab86541b91a3e45f1085bd39ecbcc3d903cea8914fbf91e5",
+      "width": 224,
+      "height": 224
+    },
+    {
+      "sample_id": "10aecc22aef3eff930e9",
+      "dataset": "cov19",
+      "split": "train",
+      "image_path": "datasets/cov19/Train_Folder/img/sub-S11215_ses-E19925_run-1_bp-chest_vp-pa_cr.png",
+      "image_sha256": "76839402a2738deba7579ca7f0cc62a1a4dcb38c51343179cad9d4ca9e122d59",
+      "width": 224,
+      "height": 224
+    },
+    {
+      "sample_id": "e2cfbc768d294c4e22be",
+      "dataset": "cov19",
+      "split": "train",
+      "image_path": "datasets/cov19/Train_Folder/img/sub-S11864_ses-E25767_run-1_bp-chest_vp-ap_dx.png",
+      "image_sha256": "537f973394e3f7998b513bd55a0a4f9f6f6d7b7a561eee7004304b2df052e35e",
+      "width": 224,
+      "height": 224
+    },
+    {
+      "sample_id": "e9e5d64afdb816c866e7",
+      "dataset": "cov19",
+      "split": "train",
+      "image_path": "datasets/cov19/Train_Folder/img/covid_912.png",
+      "image_sha256": "c1a0bc835e88f23249aed4bab307c79e4552b9ea888eb4e9ac69ba70e3f30e22",
+      "width": 224,
+      "height": 224
+    },
+    {
+      "sample_id": "13675b9bb0d20a283b4a",
+      "dataset": "cov19",
+      "split": "train",
+      "image_path": "datasets/cov19/Train_Folder/img/covid_2818.png",
+      "image_sha256": "1151091cbd15ea004dda07fdc8448c4bd0e7df5d90714218111a2308cf0a2ad2",
+      "width": 224,
+      "height": 224
+    },
+    {
+      "sample_id": "23d6e91e476e0e0fa72d",
+      "dataset": "cov19",
+      "split": "train",
+      "image_path": "datasets/cov19/Train_Folder/img/covid_2477.png",
+      "image_sha256": "2c6cab44459b4c2a7ee054049abe57950cf58d7c254ccbabd00908d65b3ce586",
+      "width": 224,
+      "height": 224
+    },
+    {
+      "sample_id": "5253d51c2953f80cce28",
+      "dataset": "cov19",
+      "split": "train",
+      "image_path": "datasets/cov19/Train_Folder/img/covid_3445.png",
+      "image_sha256": "a554522aff9974559c64c156361af36acb26efe0d8c59ee2efa142fa3a68c2b7",
+      "width": 224,
+      "height": 224
+    },
+    {
+      "sample_id": "07c0d0dc4c932d59956f",
+      "dataset": "cov19",
+      "split": "train",
+      "image_path": "datasets/cov19/Train_Folder/img/sub-S10418_ses-E18354_run-1_bp-chest_vp-ap_cr.png",
+      "image_sha256": "c84f3fb73eb8428b905e99b475961484a26ccf973b21cf7c134d72dfa973c61a",
+      "width": 224,
+      "height": 224
+    },
+    {
+      "sample_id": "bc9152a12e06842045fb",
+      "dataset": "cov19",
+      "split": "train",
+      "image_path": "datasets/cov19/Train_Folder/img/sub-S10837_ses-E18852_run-1_bp-chest_vp-ap_cr.png",
+      "image_sha256": "75c2c1f54ee3b24a903ef06ffefd78a1e10abf451ce1540d3801f00d0cd1b17f",
+      "width": 224,
+      "height": 224
+    },
+    {
+      "sample_id": "389c39ff098d91f6330b",
+      "dataset": "cov19",
+      "split": "train",
+      "image_path": "datasets/cov19/Train_Folder/img/sub-S11251_ses-E24122_run-1_bp-chest_vp-ap_cr.png",
+      "image_sha256": "46e8eae6a9d6aab988e512f3f95ce57a5e3e6d5db5293126a4d3300cc841c2d7",
+      "width": 224,
+      "height": 224
+    },
+    {
+      "sample_id": "c062388197d87e0eda44",
+      "dataset": "cov19",
+      "split": "val",
+      "image_path": "datasets/cov19/Val_Folder/img/covid_3303.png",
+      "image_sha256": "18f527c1f085dc096a8ec7416c8283228bc9d94c90837ed265d44961a0ca8900",
+      "width": 224,
+      "height": 224
+    },
+    {
+      "sample_id": "c6a52204b83ed5fb9a3c",
+      "dataset": "cov19",
+      "split": "val",
+      "image_path": "datasets/cov19/Val_Folder/img/covid_3122.png",
+      "image_sha256": "4cb242f6a85b70dc9e5492abce79445a53431e77e10f116595b397925381776f",
+      "width": 224,
+      "height": 224
+    },
+    {
+      "sample_id": "cc24d51db5838eaa3e0e",
+      "dataset": "cov19",
+      "split": "val",
+      "image_path": "datasets/cov19/Val_Folder/img/covid_2999.png",
+      "image_sha256": "f2df6b1957b03d7c608a13cd34c909447cb2b764065c643a455cd2cb55ca7910",
+      "width": 224,
+      "height": 224
+    },
+    {
+      "sample_id": "cb78b599672610d9099c",
+      "dataset": "mosmeddata",
+      "split": "train",
+      "image_path": "datasets/mosmeddata/Train_Folder/img/Morozov_study_0266_20.png",
+      "image_sha256": "61168a190c7091863eab43f08f2dc82dae3b17be7d384cac878b7505eb0ceed6",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "sample_id": "6b90fbf33a1c2f306dbb",
+      "dataset": "mosmeddata",
+      "split": "train",
+      "image_path": "datasets/mosmeddata/Train_Folder/img/Jun_radiopaedia_14_85914_0_case13_67.png",
+      "image_sha256": "b9685e0df203a44ff7248ed684d36402d7254d8b97dc0efc42f7b07c2830867d",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "sample_id": "1923fd8335fc6ec99c18",
+      "dataset": "mosmeddata",
+      "split": "train",
+      "image_path": "datasets/mosmeddata/Train_Folder/img/Jun_radiopaedia_14_85914_0_case13_103.png",
+      "image_sha256": "ec905240ef2d7176baf1507c260065931e4c42e9cc7bfc4c8704ec20c5b2484e",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "sample_id": "3c69d630e196ba050b5c",
+      "dataset": "mosmeddata",
+      "split": "train",
+      "image_path": "datasets/mosmeddata/Train_Folder/img/Jun_coronacases_case3_101.png",
+      "image_sha256": "374f1f9084f68b37a31f28f3af23b7b44aa36d8d38f06b6eaf305220ed4b4471",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "sample_id": "f0cbee8567c118e05d53",
+      "dataset": "mosmeddata",
+      "split": "train",
+      "image_path": "datasets/mosmeddata/Train_Folder/img/Morozov_study_0289_31.png",
+      "image_sha256": "f7d79ae94859d9d7e4bc024ad2e04e956554f715c6cb9eea22cf3e0a26a4dfc4",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "sample_id": "2099990e1d29375cfd23",
+      "dataset": "mosmeddata",
+      "split": "train",
+      "image_path": "datasets/mosmeddata/Train_Folder/img/Jun_coronacases_case7_126.png",
+      "image_sha256": "d20e4c30b7a66d3f69b15e64dd6fee1a46cabdfc73891e9081b627a514f00b67",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "sample_id": "7baf60c9d7b1ff211694",
+      "dataset": "mosmeddata",
+      "split": "train",
+      "image_path": "datasets/mosmeddata/Train_Folder/img/Jun_radiopaedia_10_85902_3_case12_142.png",
+      "image_sha256": "4fbe723dff6d4bf0d846a8d6e263c54b8c2fe81bd34b6da928eaa7965c60dfde",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "sample_id": "8f141932ce140311a29c",
+      "dataset": "mosmeddata",
+      "split": "train",
+      "image_path": "datasets/mosmeddata/Train_Folder/img/Morozov_study_0280_23.png",
+      "image_sha256": "d892a96771aeb806c66fe218ae3a49908d546ed42d465d486c8777843cd27f06",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "sample_id": "cee8d740313f6f2201dc",
+      "dataset": "mosmeddata",
+      "split": "train",
+      "image_path": "datasets/mosmeddata/Train_Folder/img/Jun_coronacases_case1_140.png",
+      "image_sha256": "3c358a17efec44e2285f5e28541c1586b4f7c56c383f1af13123b01ff5d916fb",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "sample_id": "4213d1d9133ca80187d7",
+      "dataset": "mosmeddata",
+      "split": "train",
+      "image_path": "datasets/mosmeddata/Train_Folder/img/Morozov_study_0277_16.png",
+      "image_sha256": "f4423fadeed9ea613a7c175fb27f3c0fc6c8a87a33cbb1cd4f64f19b3b251ac1",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "sample_id": "6ae4487263a567ab7ad2",
+      "dataset": "mosmeddata",
+      "split": "train",
+      "image_path": "datasets/mosmeddata/Train_Folder/img/Jun_coronacases_case2_79.png",
+      "image_sha256": "68d929002fbd2f8e44e28dd7787f3e4f280f05dea0bfad20568cb68cae0efbb2",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "sample_id": "c2f087dd245dcc163429",
+      "dataset": "mosmeddata",
+      "split": "train",
+      "image_path": "datasets/mosmeddata/Train_Folder/img/Morozov_study_0274_36.png",
+      "image_sha256": "a2dfea560d8cc531c502f4f9289ba9e3bd000488e299a0ff9ead26aaaa945193",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "sample_id": "6b19279e2a7b4b504265",
+      "dataset": "mosmeddata",
+      "split": "val",
+      "image_path": "datasets/mosmeddata/Val_Folder/img/bjorke_95.png",
+      "image_sha256": "75dde88431c5574d34dbacf37a078ee5ba44937a68f6f64cef2e3ea1b2b08618",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "sample_id": "ebc733a4f99e58dc35f9",
+      "dataset": "mosmeddata",
+      "split": "val",
+      "image_path": "datasets/mosmeddata/Val_Folder/img/Morozov_study_0304_15.png",
+      "image_sha256": "3738bff2f613dde2cb6fc947d8126cfd63efaefb6d6fbaefab65251a2ca7af5e",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "sample_id": "457eebda519c4b19d4d2",
+      "dataset": "mosmeddata",
+      "split": "val",
+      "image_path": "datasets/mosmeddata/Val_Folder/img/Morozov_study_0299_11.png",
+      "image_sha256": "0228442c7bea1237820ff5cc0a97d90e9d6eb5a06747e12951afa22d29863543",
+      "width": 512,
+      "height": 512
+    }
+  ]
+}
