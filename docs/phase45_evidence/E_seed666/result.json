@@ -1,0 +1,14 @@
+{
+  "status": "completed",
+  "stop_reason": "validation_patience",
+  "epochs_completed": 110,
+  "best_epoch": 60,
+  "best_validation_dice": 0.7728541006723287,
+  "global_step": 1320,
+  "training_elapsed_seconds": 337.5391725478694,
+  "test_evaluated": false,
+  "best_checkpoint": "/root/autodl-tmp/Qwen2.5-VL-3B-LViT/outputs/phase45/runs/E_seed666/best.pt",
+  "last_checkpoint": "/root/autodl-tmp/Qwen2.5-VL-3B-LViT/outputs/phase45/runs/E_seed666/last.pt",
+  "peak_allocated_bytes": 2936560128,
+  "peak_reserved_bytes": 3464495104
+}

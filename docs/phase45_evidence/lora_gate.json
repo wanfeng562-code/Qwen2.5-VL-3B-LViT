@@ -1,0 +1,9 @@
+{
+  "F_vs_constant_pp": -0.734355394310604,
+  "F_vs_constant_passed": false,
+  "permutation_drop_pp": 0.0,
+  "permutation_passed": false,
+  "attribute_accuracy": 0.16666666666666666,
+  "attribute_accuracy_below80": true,
+  "eligible": false
+}

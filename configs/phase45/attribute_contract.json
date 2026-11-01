@@ -1,0 +1,37 @@
+{
+  "version": "phase45_area_attributes_v1",
+  "coverage_quantiles": [
+    0.24187533333333333,
+    0.31370766666666666
+  ],
+  "quantile_method": "numpy_linear",
+  "threshold_source": "24_train_full_images_only",
+  "location_order": [
+    "upper_left",
+    "upper_right",
+    "lower_left",
+    "lower_right"
+  ],
+  "uniform_range_threshold": 0.05,
+  "coverage_values": [
+    "low",
+    "medium",
+    "high",
+    "unknown"
+  ],
+  "location_values": [
+    "upper_left",
+    "upper_right",
+    "lower_left",
+    "lower_right",
+    "uniform",
+    "unknown"
+  ],
+  "model_path": "weights/Qwen2.5-VL-3B-Instruct",
+  "min_pixels": 200704,
+  "max_pixels": 1003520,
+  "max_new_tokens": 64,
+  "do_sample": false,
+  "output_contract": "strict fields and enums; strip at most one complete JSON fence; no semantic repairs",
+  "prompt": "Examine the cell nuclei in this H&E histology image. Estimate the fraction of image pixels occupied by nuclei, not the number of nuclei. Set coverage to low if this fraction is below 0.24187533, medium if from 0.24187533 to below 0.31370767, or high otherwise. Divide the displayed image into four equal quadrants. Set location to upper_left, upper_right, lower_left, or lower_right for the quadrant with the highest fraction of nuclear foreground pixels. If the largest and smallest quadrant fractions differ by less than 0.05, set location to uniform. If you cannot determine a field, use unknown. Return only a JSON object with exactly two string fields named coverage and location. Do not include Markdown, explanations, diagnoses, or additional fields."
+}

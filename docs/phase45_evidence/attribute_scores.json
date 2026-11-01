@@ -1,0 +1,26 @@
+{
+  "train": {
+    "count": 24,
+    "correct": {
+      "coverage": 8,
+      "location": 0
+    },
+    "field_accuracy": 0.16666666666666666,
+    "exact_match": 0.0,
+    "valid": 24,
+    "strict_json": 0,
+    "unique_sentences": 1
+  },
+  "val": {
+    "count": 6,
+    "correct": {
+      "coverage": 2,
+      "location": 0
+    },
+    "field_accuracy": 0.16666666666666666,
+    "exact_match": 0.0,
+    "valid": 6,
+    "strict_json": 0,
+    "unique_sentences": 1
+  }
+}

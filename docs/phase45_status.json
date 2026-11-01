@@ -1,0 +1,18 @@
+{
+  "implementation_status": "screening_and_audits_completed_early_evidence_stop",
+  "scientific_target": "not_met",
+  "phase5_ready": false,
+  "formal_runs": 4,
+  "formal_run_limit": 18,
+  "selected_screening_candidate": "P",
+  "lora_eligible": false,
+  "lora_runs": 0,
+  "three_seed_training_performed": false,
+  "three_seed_validation_gate": "not_run",
+  "stop_basis": "evidence_stop_before_confirmation",
+  "test_generated": false,
+  "test_evaluated": false,
+  "audit_checks_passed": 11,
+  "conditional_lora_and_final_test_implementation": "not_completed_or_validated",
+  "report": "docs/阶段4.5实验结果.md"
+}

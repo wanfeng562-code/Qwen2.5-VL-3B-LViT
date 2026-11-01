@@ -1,0 +1,388 @@
+{
+  "status": "passed",
+  "counts": {
+    "train": 24,
+    "val": 6
+  },
+  "test_guard": "passed",
+  "attribute_flip_and_rotation": "passed",
+  "cache_checks": {
+    "legacy": {
+      "unique_raw_texts": 1,
+      "maximum_feature_difference_between_images": 0.0,
+      "maximum_train_mean_difference": 7.152557373046875e-07
+    },
+    "complete": {
+      "unique_raw_texts": 1,
+      "maximum_feature_difference_between_images": 0.0,
+      "maximum_train_mean_difference": 9.5367431640625e-07
+    }
+  },
+  "models": {
+    "legacy": {
+      "shared_initial_tensors_equal": 541,
+      "first_update": {
+        "text_gradient_l2": 0.11560143950181473,
+        "loss": 0.6068570613861084,
+        "gradient_l2": 3.156182050704956,
+        "gradient_tensors": 254,
+        "prediction_min": 0.1144120991230011,
+        "prediction_max": 0.7694388031959534,
+        "prediction_mean": 0.41818109154701233,
+        "target_foreground_fraction": 0.33262914419174194
+      },
+      "exact_restored_next_loss": 0.5165844559669495,
+      "model_and_optimizer_exact": true,
+      "checkpoint_roundtrip_sha256": "5d496a4c4cef2fef150df265e00370a34977d61bf296460954c5464d2ed40d9d"
+    },
+    "cross_attention": {
+      "shared_initial_tensors_equal": 534,
+      "first_update": {
+        "text_gradient_l2": 0.004573798877422738,
+        "loss": 0.6049058437347412,
+        "gradient_l2": 3.1902267932891846,
+        "gradient_tensors": 259,
+        "prediction_min": 0.1141277626156807,
+        "prediction_max": 0.7360214591026306,
+        "prediction_mean": 0.4179891347885132,
+        "target_foreground_fraction": 0.33262914419174194
+      },
+      "exact_restored_next_loss": 0.5201023817062378,
+      "model_and_optimizer_exact": true,
+      "checkpoint_roundtrip_sha256": "fb32babec8f9cba5be3b23848b870e72551e603bedf9060d29471f1ce6036336"
+    }
+  },
+  "processor_replay_distinct_inputs": [
+    {
+      "sample_id": "4ebfa45624cbfcabbc37",
+      "pixel_values_sha256": "871b55d267514b67ceaf4306675ed1544772a4fce0b91374905dedea22baf3d8",
+      "grid": [
+        [
+          1,
+          70,
+          70
+        ]
+      ]
+    },
+    {
+      "sample_id": "178eb8bf2964678ed1c4",
+      "pixel_values_sha256": "9bb2568cc50587c561b80064bbfe54b67d825211f448bf9add658c8afdac0b31",
+      "grid": [
+        [
+          1,
+          70,
+          70
+        ]
+      ]
+    },
+    {
+      "sample_id": "5c513b311c0304805f86",
+      "pixel_values_sha256": "28ca0333fddfafeb6f7d50f9d68d89c734d6b87e345a3975f198ec643628c81e",
+      "grid": [
+        [
+          1,
+          70,
+          70
+        ]
+      ]
+    },
+    {
+      "sample_id": "b6633e3c5b3e51a77077",
+      "pixel_values_sha256": "5b635909df3350884857ac289ffaa6ad08aa801905be9a989b3250143104f9a4",
+      "grid": [
+        [
+          1,
+          70,
+          70
+        ]
+      ]
+    },
+    {
+      "sample_id": "779f832a4f97a44b7e8a",
+      "pixel_values_sha256": "8e82f65419cece40c063be060fa4ad38c1faad225d17740114c1d4d6c77a049e",
+      "grid": [
+        [
+          1,
+          70,
+          70
+        ]
+      ]
+    },
+    {
+      "sample_id": "0a9b0013c964e3f69fc9",
+      "pixel_values_sha256": "4632183e8e1f88cd3824bfe01d6ae3418d6b5e9c8b32173f59934de73026b8d4",
+      "grid": [
+        [
+          1,
+          70,
+          70
+        ]
+      ]
+    },
+    {
+      "sample_id": "433522316f725a1c0bfb",
+      "pixel_values_sha256": "d85e2e3b552364a3a4f4f3c48c041a0c1d9700518b36da79ca20220b828e148e",
+      "grid": [
+        [
+          1,
+          70,
+          70
+        ]
+      ]
+    },
+    {
+      "sample_id": "8797a589e4c7c01a0a02",
+      "pixel_values_sha256": "93a530b8eb38c3594939a50f9e5c0f1fa57217ba7c10cd37c39cdf2395456b29",
+      "grid": [
+        [
+          1,
+          70,
+          70
+        ]
+      ]
+    },
+    {
+      "sample_id": "f24082fd913a70fc0582",
+      "pixel_values_sha256": "810d917a76a99b78100b5165a709736ce6babb0ef08f89ee8d0baedfeffeecd5",
+      "grid": [
+        [
+          1,
+          70,
+          70
+        ]
+      ]
+    },
+    {
+      "sample_id": "0a0bef10f500dc48430b",
+      "pixel_values_sha256": "a8636a779b0103d92d8c4b7e3958d6e4576a2c6e6f132fe3c09b5411e050352b",
+      "grid": [
+        [
+          1,
+          70,
+          70
+        ]
+      ]
+    },
+    {
+      "sample_id": "430c6ec33f979caae50e",
+      "pixel_values_sha256": "7fccf06834971da2a2d1a460fd0c1057cb7390f6357b6e1bc73e0a10b06ad8fd",
+      "grid": [
+        [
+          1,
+          70,
+          70
+        ]
+      ]
+    },
+    {
+      "sample_id": "838d210645c955277656",
+      "pixel_values_sha256": "d8e83431dcf7e6a7be3e085ad84712dbe207bdfa1edaf68b5f3f84bc6e83ea94",
+      "grid": [
+        [
+          1,
+          70,
+          70
+        ]
+      ]
+    },
+    {
+      "sample_id": "476239a271709ecdb0d1",
+      "pixel_values_sha256": "1bc80c1e3033f3a0d26e180875c363d48250350cdc1e6f482ccd387f269a704c",
+      "grid": [
+        [
+          1,
+          70,
+          70
+        ]
+      ]
+    },
+    {
+      "sample_id": "888b2882a2f8d842c4e1",
+      "pixel_values_sha256": "8a58bde173ae31930020bb51f7174b4baf835c2b89e416352b22e2318c0ec948",
+      "grid": [
+        [
+          1,
+          70,
+          70
+        ]
+      ]
+    },
+    {
+      "sample_id": "0b1645db46be2fd44a6a",
+      "pixel_values_sha256": "2fa8c9ec4a2598e6a193922155aa42cfccc3e0f1110aff068337d47731d66231",
+      "grid": [
+        [
+          1,
+          70,
+          70
+        ]
+      ]
+    },
+    {
+      "sample_id": "bad6e53876eeb122b70c",
+      "pixel_values_sha256": "0d1507141da223a6b39069b6d0f31285a9e4b029b01cc2f530b69db24a19d076",
+      "grid": [
+        [
+          1,
+          70,
+          70
+        ]
+      ]
+    },
+    {
+      "sample_id": "3fcb1306b6be4060cfc7",
+      "pixel_values_sha256": "088c6065b1504bd8ada118d166a4d767b98dd0eb01bffa7a1b0d200f587e2581",
+      "grid": [
+        [
+          1,
+          70,
+          70
+        ]
+      ]
+    },
+    {
+      "sample_id": "2fe3edc5433966407bec",
+      "pixel_values_sha256": "cbcf2bb464c02c53cc5c03a0502ed0285c22f37ca1247342e8350f470177d6b3",
+      "grid": [
+        [
+          1,
+          70,
+          70
+        ]
+      ]
+    },
+    {
+      "sample_id": "6cdb388b5bbc0268bc6e",
+      "pixel_values_sha256": "58fecad3ec98182fc230963cdd7b5b32ab63e444cdc5e7834e711a4a7b25df2b",
+      "grid": [
+        [
+          1,
+          70,
+          70
+        ]
+      ]
+    },
+    {
+      "sample_id": "41e2991d7477b8a7c174",
+      "pixel_values_sha256": "c1f7076131561989b2ada2f314d5023ff8ae6fbc55148f6aaa567c68f88af476",
+      "grid": [
+        [
+          1,
+          70,
+          70
+        ]
+      ]
+    },
+    {
+      "sample_id": "5af6c2afbc86ba054d9c",
+      "pixel_values_sha256": "7121a1478c05226a4aef104236a01dfb5beb5271748ac68dea881e99cb90ff97",
+      "grid": [
+        [
+          1,
+          70,
+          70
+        ]
+      ]
+    },
+    {
+      "sample_id": "b8f1fee012ffaf568f70",
+      "pixel_values_sha256": "58ea2ece5a076baec8a07903e360d56690994e1f81e5c2d4c5f867d350e11436",
+      "grid": [
+        [
+          1,
+          70,
+          70
+        ]
+      ]
+    },
+    {
+      "sample_id": "b36dc7447f923c6bf173",
+      "pixel_values_sha256": "9b8e3f5954510187478bd373d6e92185042ae972112a5e52c662ecc5d7d62575",
+      "grid": [
+        [
+          1,
+          70,
+          70
+        ]
+      ]
+    },
+    {
+      "sample_id": "3e2b323a3540bf192a71",
+      "pixel_values_sha256": "375871de3bf102540b5fdf8ab75739ffe91ec4eb7ad6e87c1c354fdb729a9b9d",
+      "grid": [
+        [
+          1,
+          70,
+          70
+        ]
+      ]
+    },
+    {
+      "sample_id": "615aeda65a045299c2fc",
+      "pixel_values_sha256": "f5ce70e121aadded40618fff42904e1742da477e7443482bf29bbc543eeeb843",
+      "grid": [
+        [
+          1,
+          70,
+          70
+        ]
+      ]
+    },
+    {
+      "sample_id": "aaa5770dbc460c55562e",
+      "pixel_values_sha256": "2fce60f940029ebc1bea8f7c1350b860f04c0de13602be26cca36659de575ed3",
+      "grid": [
+        [
+          1,
+          70,
+          70
+        ]
+      ]
+    },
+    {
+      "sample_id": "d93f2c167af993de1702",
+      "pixel_values_sha256": "8107d59f9b57da7fc214d2fa2e87db4ce6ddbb1735545f114853624b8fef3e96",
+      "grid": [
+        [
+          1,
+          70,
+          70
+        ]
+      ]
+    },
+    {
+      "sample_id": "c37276d8c97c1805c527",
+      "pixel_values_sha256": "ef52737341dcfffd88b154a882f22c861356ccb3a6dc7babe62d86447f993e9f",
+      "grid": [
+        [
+          1,
+          70,
+          70
+        ]
+      ]
+    },
+    {
+      "sample_id": "998ae3dda0e13ad1ab23",
+      "pixel_values_sha256": "92d005bd1850ef7241359fe844db55af0b1d05dae5f424f8de2ab91f9a2292f0",
+      "grid": [
+        [
+          1,
+          70,
+          70
+        ]
+      ]
+    },
+    {
+      "sample_id": "02185f96dc0e6a4100d2",
+      "pixel_values_sha256": "e32f1c1b7d562e9cc764923a62791f41e0f25026dc4ef2237b9897b02cfa46e6",
+      "grid": [
+        [
+          1,
+          70,
+          70
+        ]
+      ]
+    }
+  ],
+  "limits": "processor hashes independently replayed after generation; not a trace captured during original generation"
+}
