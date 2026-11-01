@@ -18,9 +18,10 @@ def main():
     assert summary['status'] in ('stopped_initial_gate','stopped_validation_gate','validation_passed')
     out=ROOT/'outputs/phase46/visual_review';out.mkdir(exist_ok=True)
     rows=rows_for(('val',));lookup={r['sample_id']:r for r in rows}
-    selected={r['arm']:r for r in summary['records'] if r['seed']==666};metrics={}
-    for arm,rec in selected.items():
-        d=out/arm
+    selected={r['arm']:r for r in summary['records'] if r['seed']==666};metrics={};all_metrics={}
+    for rec in summary['records']:
+        arm,seed=rec['arm'],rec['seed']
+        d=out/(arm if seed==666 else f'{arm}_seed{seed}')
         if (d/'val_metrics.json').exists():result=json.loads((d/'val_metrics.json').read_text())
         else:result=evaluate_checkpoint(rec['run']+'/best.pt','val',str(d.relative_to(ROOT)),save_predictions=True)
         assert abs(result['dice']-rec['best_validation_dice'])<1e-12
@@ -33,7 +34,8 @@ def main():
             saved=next(x for x in result['samples'] if x['sample_id']==row['sample_id'])
             assert abs(dice-saved['dice'])<1e-12 and abs(iou-saved['iou'])<1e-12
             values.append({'sample_id':row['sample_id'],'dice':dice,'iou':iou,'fp':int((pred&~gt).sum()),'fn':int((~pred&gt).sum())})
-        metrics[arm]=values
+        all_metrics[f'{arm}_{seed}']=values
+        if seed==666:metrics[arm]=values
     picks=[x['sample_id'] for i,x in enumerate(sorted(metrics['candidate'],key=lambda x:(x['dice'],x['sample_id']))) if i in (0,2,5)]
     font=ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf',18)
     canvas=Image.new('RGB',(1600,1470),'white');draw=ImageDraw.Draw(canvas)
@@ -69,7 +71,7 @@ def main():
         row['candidate_minus_constant_pp']=100*(row['candidate_dice']-row['constant_dice']);table.append(row)
     with (out/'per_image_validation.csv').open('w',newline='') as f:
         writer=csv.DictWriter(f,fieldnames=list(table[0]),lineterminator='\n');writer.writeheader();writer.writerows(table)
-    atomic_json(out/'review.json',{'status':'completed','split':'val','sample_count':6,'seed':666,'metrics':metrics,'selected_ids':picks,
+    atomic_json(out/'review.json',{'status':'completed','split':'val','sample_count':6,'displayed_seed':666,'metrics':metrics,'all_seed_metrics':all_metrics,'independently_rescored_pngs':6*len(all_metrics),'selected_ids':picks,
                                 'selection_rule':'candidate lowest/lower median/highest validation Dice, ID tie break','png_independent_scores':'passed','test_evaluated':False})
     print('VALIDATION_REVIEW_COMPLETE',list(metrics))
 
