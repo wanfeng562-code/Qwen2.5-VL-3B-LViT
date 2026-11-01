@@ -1,0 +1,271 @@
+{
+  "version": "phase46_train_examples_and_frozen_visual_v1",
+  "sample_count": 30,
+  "splits": [
+    "train",
+    "val"
+  ],
+  "min_pixels": 200704,
+  "max_pixels": 1003520,
+  "example_max_pixels": 200704,
+  "max_new_tokens": 64,
+  "examples_per_query": 3,
+  "exclude_query_from_examples": true,
+  "example_selection": "class medians from train only, then distance to median; never use query label",
+  "examples": {
+    "low": [
+      {
+        "sample_id": "2fe3edc5433966407bec",
+        "image_path": "datasets/monuseg/Train_Folder/img/TCGA-G9-6356-01Z-00-DX1.png",
+        "image_sha256": "05d8d9ebdd0524497b1fbd006d367952572c772880138c7b7b164ad4d53c5200",
+        "answer": {
+          "coverage": "low",
+          "location": "upper_right"
+        }
+      },
+      {
+        "sample_id": "3fcb1306b6be4060cfc7",
+        "image_path": "datasets/monuseg/Train_Folder/img/TCGA-G9-6348-01Z-00-DX1.png",
+        "image_sha256": "225e90c76beda98926c15ed7d71693ed1cbacefe1649eaae2f4fcfe23d9f293b",
+        "answer": {
+          "coverage": "low",
+          "location": "uniform"
+        }
+      },
+      {
+        "sample_id": "433522316f725a1c0bfb",
+        "image_path": "datasets/monuseg/Train_Folder/img/TCGA-A7-A13F-01Z-00-DX1.png",
+        "image_sha256": "e2d580856aacca4fc37170c00ed7b473dc02f9f71c6584089438ceda39f6e018",
+        "answer": {
+          "coverage": "low",
+          "location": "lower_left"
+        }
+      },
+      {
+        "sample_id": "5c513b311c0304805f86",
+        "image_path": "datasets/monuseg/Train_Folder/img/TCGA-38-6178-01Z-00-DX1.png",
+        "image_sha256": "03321a9cec037498490eb0af2328c93b76687f90d9f56b9d7510680ed9da5311",
+        "answer": {
+          "coverage": "low",
+          "location": "upper_left"
+        }
+      },
+      {
+        "sample_id": "0b1645db46be2fd44a6a",
+        "image_path": "datasets/monuseg/Train_Folder/img/TCGA-G2-A2EK-01A-02-TSB.png",
+        "image_sha256": "808d1356f0a92017064d384c0ba9080c9a7c67be1a1b4726af1c5b92ed2a1ac0",
+        "answer": {
+          "coverage": "low",
+          "location": "lower_left"
+        }
+      },
+      {
+        "sample_id": "8797a589e4c7c01a0a02",
+        "image_path": "datasets/monuseg/Train_Folder/img/TCGA-AR-A1AK-01Z-00-DX1.png",
+        "image_sha256": "981b35cdb253cac715516ab75648075c3ecc40dc1f94f5112016fd5141d6a6de",
+        "answer": {
+          "coverage": "low",
+          "location": "lower_right"
+        }
+      },
+      {
+        "sample_id": "41e2991d7477b8a7c174",
+        "image_path": "datasets/monuseg/Train_Folder/img/TCGA-HE-7128-01Z-00-DX1.png",
+        "image_sha256": "8413116e36c4b70c6d4b00efcd352d62ed1f81a5afa04e63288a2a97d1400ef0",
+        "answer": {
+          "coverage": "low",
+          "location": "uniform"
+        }
+      },
+      {
+        "sample_id": "0a9b0013c964e3f69fc9",
+        "image_path": "datasets/monuseg/Train_Folder/img/TCGA-A7-A13E-01Z-00-DX1.png",
+        "image_sha256": "e78097309c943d07e0cb9fae66dfdca09daa45982249f999631efc3072c4be09",
+        "answer": {
+          "coverage": "low",
+          "location": "uniform"
+        }
+      }
+    ],
+    "medium": [
+      {
+        "sample_id": "838d210645c955277656",
+        "image_path": "datasets/monuseg/Train_Folder/img/TCGA-B0-5711-01Z-00-DX1.png",
+        "image_sha256": "121419bf5f3cf356ffaa7d3bb415f63969dbb32d472948c5729a3388f52cc176",
+        "answer": {
+          "coverage": "medium",
+          "location": "upper_left"
+        }
+      },
+      {
+        "sample_id": "b36dc7447f923c6bf173",
+        "image_path": "datasets/monuseg/Train_Folder/img/TCGA-NH-A8F7-01A-01-TS1.png",
+        "image_sha256": "0ab49d500a74756996e74b2c9db618a0a1a4d15b2b9c29dbfbd0eee750c37930",
+        "answer": {
+          "coverage": "medium",
+          "location": "lower_left"
+        }
+      },
+      {
+        "sample_id": "f24082fd913a70fc0582",
+        "image_path": "datasets/monuseg/Train_Folder/img/TCGA-AR-A1AS-01Z-00-DX1.png",
+        "image_sha256": "e7ef0ef5fd587de94f11ccaef6422a1c60c1f276f05d986f52cfb145f7db4998",
+        "answer": {
+          "coverage": "medium",
+          "location": "lower_right"
+        }
+      },
+      {
+        "sample_id": "5af6c2afbc86ba054d9c",
+        "image_path": "datasets/monuseg/Train_Folder/img/TCGA-HE-7130-01Z-00-DX1.png",
+        "image_sha256": "d0027497cc8289d5b190e371430628244ae6900ee72abcb78e7b71e52f399ba9",
+        "answer": {
+          "coverage": "medium",
+          "location": "uniform"
+        }
+      },
+      {
+        "sample_id": "6cdb388b5bbc0268bc6e",
+        "image_path": "datasets/monuseg/Train_Folder/img/TCGA-G9-6362-01Z-00-DX1.png",
+        "image_sha256": "b9a806e8ef2fe92c79fac48df8856e6dd4703de190337e6edf12b8c22e27d4b5",
+        "answer": {
+          "coverage": "medium",
+          "location": "upper_right"
+        }
+      },
+      {
+        "sample_id": "178eb8bf2964678ed1c4",
+        "image_path": "datasets/monuseg/Train_Folder/img/TCGA-21-5786-01Z-00-DX1.png",
+        "image_sha256": "f5c25498ca811861aca96c8c2bd3d15dd1b1b8b6fa1915ce33ea8853ee45adb2",
+        "answer": {
+          "coverage": "medium",
+          "location": "upper_right"
+        }
+      },
+      {
+        "sample_id": "888b2882a2f8d842c4e1",
+        "image_path": "datasets/monuseg/Train_Folder/img/TCGA-DK-A2I6-01A-01-TS1.png",
+        "image_sha256": "b8521e71f88c77641818611d6188476c2f11f2cffc776f4089a1b28d94364a17",
+        "answer": {
+          "coverage": "medium",
+          "location": "uniform"
+        }
+      },
+      {
+        "sample_id": "bad6e53876eeb122b70c",
+        "image_path": "datasets/monuseg/Train_Folder/img/TCGA-G9-6336-01Z-00-DX1.png",
+        "image_sha256": "2a0ef0da6497eee6e9066a2005a937e8023d21de4644fea104f4ec2bb5702f4a",
+        "answer": {
+          "coverage": "medium",
+          "location": "upper_left"
+        }
+      }
+    ],
+    "high": [
+      {
+        "sample_id": "430c6ec33f979caae50e",
+        "image_path": "datasets/monuseg/Train_Folder/img/TCGA-B0-5710-01Z-00-DX1.png",
+        "image_sha256": "836e54ac817f4289e8a7348c909dfcb4ace2f29f0a2bbae550b02ac4e93d280b",
+        "answer": {
+          "coverage": "high",
+          "location": "uniform"
+        }
+      },
+      {
+        "sample_id": "4ebfa45624cbfcabbc37",
+        "image_path": "datasets/monuseg/Train_Folder/img/TCGA-21-5784-01Z-00-DX1.png",
+        "image_sha256": "1974752c4b5d3ab34bf3656b7d03f5907d26056be7a576b4f0353d996357187c",
+        "answer": {
+          "coverage": "high",
+          "location": "uniform"
+        }
+      },
+      {
+        "sample_id": "b6633e3c5b3e51a77077",
+        "image_path": "datasets/monuseg/Train_Folder/img/TCGA-49-4488-01Z-00-DX1.png",
+        "image_sha256": "bedd6e0212d01cdb5d8b7ceab078ce32a98f9c7537ff0ea4a5bb53318ce09324",
+        "answer": {
+          "coverage": "high",
+          "location": "uniform"
+        }
+      },
+      {
+        "sample_id": "b8f1fee012ffaf568f70",
+        "image_path": "datasets/monuseg/Train_Folder/img/TCGA-KB-A93J-01A-01-TS1.png",
+        "image_sha256": "c15ead1b5fe9850ae5bd9043bc4f214a506ab64b908fea3347f920215e7bb4b8",
+        "answer": {
+          "coverage": "high",
+          "location": "upper_left"
+        }
+      },
+      {
+        "sample_id": "3e2b323a3540bf192a71",
+        "image_path": "datasets/monuseg/Train_Folder/img/TCGA-RD-A8N9-01A-01-TS1.png",
+        "image_sha256": "af0ca0b3ee6f6ef4a43d2d52898242a94988d62ea6f8e324a9c950feb74b3350",
+        "answer": {
+          "coverage": "high",
+          "location": "upper_right"
+        }
+      },
+      {
+        "sample_id": "0a0bef10f500dc48430b",
+        "image_path": "datasets/monuseg/Train_Folder/img/TCGA-B0-5698-01Z-00-DX1.png",
+        "image_sha256": "771aed30afed27bd849d8cfdf07f710a56830eea4447e5e275172cb4b4ae8932",
+        "answer": {
+          "coverage": "high",
+          "location": "upper_left"
+        }
+      },
+      {
+        "sample_id": "476239a271709ecdb0d1",
+        "image_path": "datasets/monuseg/Train_Folder/img/TCGA-CH-5767-01Z-00-DX1.png",
+        "image_sha256": "78cef4581bc59265d8c59e0ce64cdb1eb29ab11b5591156e14907be4e1ed6e2e",
+        "answer": {
+          "coverage": "high",
+          "location": "uniform"
+        }
+      },
+      {
+        "sample_id": "779f832a4f97a44b7e8a",
+        "image_path": "datasets/monuseg/Train_Folder/img/TCGA-50-5931-01Z-00-DX1.png",
+        "image_sha256": "5fd149f6eab0404a90433bb94bb53bd70f809def2a0ed3a2de4a9a708f2c5e07",
+        "answer": {
+          "coverage": "high",
+          "location": "lower_right"
+        }
+      }
+    ]
+  },
+  "query_prompt": "Examine the cell nuclei in this H&E histology image. Estimate the fraction of image pixels occupied by nuclei, not the number of nuclei. Set coverage to low if this fraction is below 0.24187533, medium if from 0.24187533 to below 0.31370767, or high otherwise. Divide the displayed image into four equal quadrants. Set location to upper_left, upper_right, lower_left, or lower_right for the quadrant with the highest fraction of nuclear foreground pixels. If the largest and smallest quadrant fractions differ by less than 0.05, set location to uniform. If you cannot determine a field, use unknown. Return only a JSON object with exactly two string fields named coverage and location. Do not include Markdown, explanations, diagnoses, or additional fields.",
+  "visual_layers": [
+    "block15_before_merger",
+    "final_merged"
+  ],
+  "cached_grid": [
+    28,
+    28
+  ],
+  "visual_dtype": "float32 compute from BF16 tower, float16 storage",
+  "model_path": "weights/Qwen2.5-VL-3B-Instruct",
+  "processor_input": "same query resolution as phase45; examples capped separately",
+  "text_training_gate": "more than one sentence and validation field accuracy above phase45 2/12; score unknown as incorrect",
+  "screening": [
+    "S_fewshot_text",
+    "V_mid_visual",
+    "V_merged_visual"
+  ],
+  "tie_margin_pp": 0.1,
+  "selection": "best seed666 validation Dice, within 0.1pp prefer S then V_mid then V_merged",
+  "formal_training_limit": 14,
+  "previous_phase45_formal_runs": 4,
+  "combined_limit": 18,
+  "training_protocol": "unchanged FP32 Adam, no augmentation, 24/6/14, max2000/min50/patience50",
+  "test_policy": "closed until 3-seed matched validation gates; original-split final re-evaluation only",
+  "success": {
+    "mean_test_dice_percent_at_least": 78.5412,
+    "mean_test_iou_percent_at_least": 63.4906,
+    "beats_fixed_and_shuffled_pp": 0.5,
+    "not_below_matched_legacy": true,
+    "improves_old_baseline_at_least_seeds": 2
+  }
+}
